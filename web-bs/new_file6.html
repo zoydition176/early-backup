@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div>
+			<input type="password" name="" id="" value="" />
+			<div class="psw-eyes">123</div>
+		</div>
+		
+		
+		<div>
+			<input type="password" name="" id="" value="" />
+			<div class="psw-eyes">123</div>
+		</div>
+		
+		<div>
+			<input type="password" name="" id="" value="" />
+			<div class="psw-eyes">123</div>
+		</div>
+		<input type="text" placeholder="标题" id="essay_title" maxlength="10" />
+	</body>
+	<script type="text/javascript">
+		function PasswordtoText() {
+		    var obj_arr = document.getElementsByClassName('psw-eyes');
+		    for(i=0;i<obj_arr.length;i++){
+		        obj_arr[i].addEventListener('click',function () {
+		            var inputobj = this.parentNode.children;
+		            var a = inputobj[0];
+		            console.log(inputobj)
+		            if(a.type == 'password'){
+		                a.type = 'type';
+		            }else{
+		                a.type = 'password';
+		            }
+		        });
+		    }
+		}
+		PasswordtoText();
+	</script>
+</html>

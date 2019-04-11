@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.user_after:after{
+				content: '';
+				display: block;
+				clear: both;
+				width: 0;
+				height: 0;
+			}
+			.user_body{
+				width: 100%;
+    			background-color: #fff;
+			}
+			.user_content *{
+				box-sizing: border-box;
+			}
+			.user_content img{
+				vertical-align: middle;
+			}
+			.user_body_bg{
+				width: 100%;
+				background-color: #efeff1;
+			}
+			.user_body_wrap{
+				width: 1190px;
+				margin: 0 auto;
+			}
+			.user_tit_01{
+				text-align: center;
+				font-size: 28px;
+				font-weight: 600;
+				color: #333333;
+				padding: 60px 0;
+			}
+			.user_wrap_row{
+				margin-left: -8px;
+				margin-right: -8px;
+			}
+			.user_hot_items{
+				float: left;
+				padding: 0 8px;
+				width: 33.333%;		
+			}
+			.user_hot_box{
+				text-align: center;
+				background: #fff;
+				margin-bottom: 55px;
+				position: relative;
+			}
+			.user_hot_box a{
+				text-decoration: none;
+			}
+			.user_hot_box h3{
+				font-size: 26px;
+				line-height: 16px;
+				color: #333333;
+				font-weight: 400;
+				padding-bottom: 14px;
+			}
+			.user_hot_box p{
+				font-size: 16px;
+				color: #666;
+				font-weight: 300;
+				padding-bottom: 42px;
+			}
+			.user_hot_box span{
+				display: block;
+				font-size: 22px;
+				color: #ce0d2c;
+				font-weight: 400;
+				padding-bottom: 50px;
+			}
+			.user_hot_tp{
+				position: absolute;
+				top: 16px;
+				right: 16px;
+				height: 34px;
+				line-height: 34px;
+				color: #FFFFFF;
+				font-size: 16px;
+				background: #ce0d2c;
+				padding: 0 18px;
+				border-radius: 3px;
+			}
+			.user_hot_link{
+				margin: 65px 0 70px;
+			}
+			.user_p{
+				padding-bottom: 90px;
+			}
+			.user_p_left_items{
+				float: left;
+				width: 33.3333%;
+				padding: 0 8px;
+			}
+			.user_p_right_items{
+				float: left;
+				width: 66.6667%;
+				/*padding: 0 8px;
+				margin-left: -8px;
+				margin-right: -8px;*/
+			}
+			.user_p_banner img{
+				width: 100%;
+				height: auto;
+			}
+			.user_p_title{
+				height: 50px;
+				line-height: 50px;
+				margin: 60px 0 25px;
+			}
+			.user_p_title .user_p_title_main{
+				color: #333333;
+				font-size: 38px;
+				text-decoration: none;
+			}
+			.user_p_title .user_p_title_more{
+				float: right;
+				display: block;
+				margin-top: 24px;
+				line-height: 20px;
+				font-size: 16px;
+				color: #999999;
+				text-decoration: none;
+			}
+			.user_p_items_100{
+				width: 100%;
+				float: left;
+				padding: 0 8px;
+				margin-bottom: 18px;
+			}
+			.user_p_right_items .user_p_items_100:nth-of-type(2){
+				margin-bottom: 0;
+			}
+			.user_p_items_50{
+				width: 50%;
+				float: left;
+				padding: 0 8px;
+			}
+			.user_p_items01{
+				background: #fff;		
+				padding: 60px 0px 32px;
+			}
+			.user_p_items01_b{
+				float: left;
+				padding-left: 55px;
+			}
+			.user_p_items01_b h3{
+				font-size: 24px;
+				color: #333333;
+				font-weight: 400;
+			}
+			.user_p_items01_b p{
+				font-size: 16px;
+				color: #666666;
+				padding: 10px 0 175px;
+			}
+			.user_p_items01_b span{
+				display: block;
+				font-size: 24px;
+				color: #ce0d2c;
+			}
+			.user_p_items01_p{
+				float: right;
+				padding-right: 28px;
+			}
+			.user_p_items01 a{
+				text-decoration: none;
+			}
+			.user_p_items02{
+				text-align: center;
+				background: #fff;
+				height: 392px;
+			}
+			.user_p_items02 a{
+				text-decoration: none;
+			}
+			.user_p_items02 img{
+				max-width: 100%;
+				height: auto;
+			}
+			.user_p_items02 h3{
+				font-size: 24px;
+				color: #333333;
+				font-weight: 400;
+			}
+			.user_p_items02 p{
+				font-size: 16px;
+				color: #666666;
+				padding: 16px 0 30px;
+			}
+			.user_p_items02 span{
+				display: block;
+				font-size: 24px;
+				color: #ce0d2c;
+			}
+			.user_body_s_wrap{
+				width: 1000px;
+				margin: 0 auto;
+			}
+			.user_p_left_adv_row{
+				margin-left: -4px;
+				margin-right: -4px;
+			}
+			.user_p_left_adv{
+				float: left;
+				width: 25%;
+				padding: 0 4px;
+			}
+			.user_p_left_adv_v{
+				float: left;
+				width: 50%;
+				padding: 0 4px;
+				margin-bottom: 16px;
+			}
+			.user_p_left_adv_v img{
+				width: 100%;
+				height: auto;
+			}
+			.user_p_left_adv a{
+				display: block;
+				background: #FFFFFF;
+				text-align: center;
+				text-decoration: none;
+				color: #666;
+				padding-top: 40px;
+				padding-bottom: 48px;
+				margin-top: 80px;
+			}
+			.user_p_left_adv a h3{
+				font-size: 24px;
+				font-weight: 400;
+				color: #333333;
+				padding-bottom: 8px;
+			}
+			.user_p_left_adv a p,.user_p_left_adv a span{
+				font-size: 16px;
+			}
+			.user_p_left_adv a p{
+				margin-bottom: 20px;
+				height: 24px;
+			}
+			.user_body_bot{
+				font-size: 36px;
+				font-weight: 600;
+				color: #333333;
+				text-align: center;
+				padding: 85px 0 15px;
+			}
+			.user_body_bot_p{
+				color: #666666;
+				font-size: 18px;
+				text-align: center;
+				padding-bottom: 65px;
+			}
+			.user_bot_img img{
+				width: 100%;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="user_content">
+			<div class="user_body_bg">
+				<div class="user_tit_01">
+					热卖推荐
+				</div>
+				<div class="user_body_wrap">
+					<div class="user_wrap_row user_after">
+						<div class="user_hot_items">
+							<div class="user_hot_box">
+								<a href="">
+									<div class="user_hot_tp">
+										人气单品
+									</div>
+									<img src="img/jd/jd_03.jpg" alt="" />
+									<h3>40G QSFP+ 模块</h3>
+									<p>高效传输，飞速体验</p>
+									<span>￥800.00</span>
+								</a>		
+							</div>
+						</div>
+						<div class="user_hot_items">
+							<div class="user_hot_box">
+								<a href="">
+									<div class="user_hot_tp">
+										店铺热卖
+									</div>
+									<img src="img/jd/jd_05.jpg" alt="" />
+									<h3>10G SFP+ 模块</h3>
+									<p>真机测试，严格把控</p>
+									<span>￥150.00</span>
+								</a>
+							</div>
+						</div>
+						<div class="user_hot_items">
+							<div class="user_hot_box">
+								<a href="">
+									<div class="user_hot_tp">
+										好评产品
+									</div>
+									<img src="img/jd/jd_07.jpg" alt="" />
+									<h3>1G SFP 模块</h3>
+									<p>品质真心，五年质保</p>
+									<span>￥59.00</span>
+								</a>	
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="user_body">
+				<div class="user_body_wrap">
+					<div class="user_wrap_row user_after">
+						<div class="user_hot_items">
+							<div class="user_hot_link">
+								<a href="">
+									<img src="img/jd/jd_13.jpg" alt="" />
+								</a>					
+							</div>
+						</div>
+						<div class="user_hot_items">
+							<div class="user_hot_link">
+								<a href="">
+									<img src="img/jd/jd_15.jpg" alt="" />
+								</a>					
+							</div>
+						</div>
+						<div class="user_hot_items">
+							<div class="user_hot_link">
+								<a href="">
+									<img src="img/jd/jd_17.jpg" alt="" />
+								</a>					
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="user_body_bg">
+				<div class="user_p_banner">
+					<img src="img/jd/jd_22.jpg" alt="" />
+				</div>
+				<div class="user_body_wrap user_p">
+					<div class="user_p_title user_after">
+						<a href="" class="user_p_title_main">数据中心交换机</a>
+						<a href="" class="user_p_title_more">
+							更多>
+						</a>
+					</div>
+					<div class="user_wrap_row user_after">
+						<div class="user_p_left_items">
+							<img src="img/jd/jd_25.jpg" alt="" />
+						</div>
+						<div class="user_p_right_items">
+							<div class="user_p_items_100">
+								<div class="user_p_items01 user_after">
+									<a href="">
+										<div class="user_p_items01_b">
+											<h3>N8500-32C 交换机</h3>
+											<p>FS研发，Cumulus系统</p>
+											<span>￥74888.00</span>
+										</div>
+										<div class="user_p_items01_p">
+											<img src="img/jd/jd_28.jpg" alt="" />
+										</div>
+									</a>
+								</div>
+							</div>
+							
+							<div class="user_p_items_50">
+								<div class="user_p_items02">
+									<a href="">
+										<img src="img/jd/jd_32.jpg" alt="" />
+										<h3>N5850-48S6Q 交换机</h3>
+										<p>搭建开发多元的网络系统</p>
+										<span>￥35888.00</span>
+									</a>	
+								</div>
+							</div>
+							
+							<div class="user_p_items_50">
+								<div class="user_p_items02">
+									<a href="">
+										<img src="img/jd/jd_34.jpg" alt="" />
+										<h3>N8500-48B6C 交换机</h3>
+										<p>搭建开发多元的网络系统</p>
+										<span>￥49888.00</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="user_p_banner">
+					<img src="img/jd/jd_39.jpg" alt="" />
+				</div>
+				<div class="user_body_wrap user_p">
+					<div class="user_p_title user_after">
+						<a href="" class="user_p_title_main">光模块&高速线缆</a>
+						<a href="" class="user_p_title_more">
+							更多 >
+						</a>
+					</div>
+					<div class="user_wrap_row user_after">
+						<div class="user_p_left_items">
+							<img src="img/jd/jd_42.jpg" alt="" />
+						</div>
+						<div class="user_p_right_items">
+							<div class="user_p_items_100">
+								<div class="user_p_items01 user_after">
+									<a href="">
+										<div class="user_p_items01_b">
+											<h3>QSFP28 光模块</h3>
+											<p>性能卓越，高速稳定</p>
+											<span>￥2099.00</span>
+										</div>
+										<div class="user_p_items01_p">
+											<img src="img/jd/jd_45.jpg" alt="" />
+										</div>
+									</a>
+								</div>
+							</div>
+							
+							<div class="user_p_items_100">
+								<div class="user_p_items01 user_after">
+									<a href="">
+										<div class="user_p_items01_b">
+											<h3>SFP+ 光模块</h3>
+											<p>数据中心建设必备</p>
+											<span>￥150.00</span>
+										</div>
+										<div class="user_p_items01_p">
+											<img src="img/jd/jd_48.jpg" alt="" />
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="user_p_banner">
+					<img src="img/jd/jd_51.jpg" alt="" />
+				</div>
+				<div class="user_body_wrap user_p">
+					<div class="user_p_title user_after">
+						<a href="" class="user_p_title_main">光纤布线体系</a>
+						<a href="" class="user_p_title_more">
+							更多 >
+						</a>
+					</div>
+					<div class="user_wrap_row user_after">
+						<div class="user_p_left_items">
+							<img src="img/jd/jd_54.jpg" alt="" />
+						</div>
+						<div class="user_p_right_items">
+							<div class="user_p_items_100">
+								<div class="user_p_items01 user_after">
+									<a href="">
+										<div class="user_p_items01_b">
+											<h3>MTP-LC 分支光纤跳线</h3>
+											<p>高密度数据中心解决方案</p>
+											<span>￥240.00</span>
+										</div>
+										<div class="user_p_items01_p">
+											<img src="img/jd/jd_57.jpg" alt="" />
+										</div>
+									</a>
+								</div>
+							</div>
+							
+							<div class="user_p_items_100">
+								<div class="user_p_items01 user_after">
+									<a href="">
+										<div class="user_p_items01_b">
+											<h3>LC-LC 光纤跳线</h3>
+											<p>超高弯曲性能设计</p>
+											<span>￥32.00</span>
+										</div>
+										<div class="user_p_items01_p">
+											<img src="img/jd/jd_60.jpg" alt="" />
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="user_p_banner">
+					<img src="img/jd/jd_63.jpg" alt="" />
+				</div>
+				<div class="user_body_wrap user_p">
+					<div class="user_p_title user_after">
+						<a href="" class="user_p_title_main">铜缆综合布线</a>
+						<a href="" class="user_p_title_more">
+							更多 >
+						</a>
+					</div>
+					<div class="user_wrap_row user_after">
+						<div class="user_p_left_items">
+							<img src="img/jd/jd_66.jpg" alt="" />
+						</div>
+						<div class="user_p_right_items">
+							<div class="user_p_items_100">
+								<div class="user_p_items01 user_after">
+									<a href="">
+										<div class="user_p_items01_b">
+											<h3>28AWG细径网络跳线</h3>
+											<p>五彩网络，福禄克测试</p>
+											<span>￥17.00</span>
+										</div>
+										<div class="user_p_items01_p">
+											<img src="img/jd/jd_69.jpg" alt="" />
+										</div>
+									</a>
+								</div>
+							</div>
+							
+							<div class="user_p_items_50">
+								<div class="user_p_items02">
+									<a href="">
+										<img src="img/jd/jd_73.jpg" alt="" />
+										<h3>23AWG Cat6六类散装网线</h3>
+										<p>稳定输出，急速网络</p>
+										<span>￥1499.00</span>
+									</a>	
+								</div>
+							</div>
+							
+							<div class="user_p_items_50">
+								<div class="user_p_items02">
+									<a href="">
+										<img src="img/jd/jd_75.jpg" alt="" />
+										<h3>24AWG Cat5e超五类散装网线</h3>
+										<p>自定义长度，方便安装</p>
+										<span>￥900.00</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="user_p_banner">
+					<img src="img/jd/jd_80.jpg" alt="" />
+				</div>
+				<div class="user_body_wrap user_p">
+					<div class="user_p_title user_after">
+						<a href="" class="user_p_title_main">光纤综合布线系列</a>
+						<a href="" class="user_p_title_more">
+							更多 >
+						</a>
+					</div>
+					<div class="user_wrap_row user_after">
+						<div class="user_p_left_items">
+							<img src="img/jd/jd_83.jpg" alt="" />
+						</div>
+						<div class="user_p_right_items">
+							<div class="user_p_items_100">
+								<div class="user_p_items01 user_after">
+									<a href="">
+										<div class="user_p_items01_b">
+											<h3>FHD光纤配线箱</h3>
+											<p>更加顺畅的抽拉体验</p>
+											<span>￥1400.00</span>
+										</div>
+										<div class="user_p_items01_p">
+											<img src="img/jd/jd_86.jpg" alt="" />
+										</div>
+									</a>
+								</div>
+							</div>
+							
+							<div class="user_p_items_50">
+								<div class="user_p_items02">
+									<a href="">
+										<img src="img/jd/jd_90.jpg" alt="" />
+										<h3>FHD光纤配线盒</h3>
+										<p>灵活部署实力派</p>
+										<span>￥900.00</span>
+									</a>	
+								</div>
+							</div>
+							
+							<div class="user_p_items_50">
+								<div class="user_p_items02">
+									<a href="">
+										<img src="img/jd/jd_92.jpg" alt="" />
+										<h3>FHD光纤适配器面板</h3>
+										<p>双重加强设计</p>
+										<span>￥179.00</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="user_p_banner">
+					<img src="img/jd/jd_97.jpg" alt="" />
+				</div>
+				<div class="user_body_wrap user_p">
+					<div class="user_p_title user_after">
+						<a href="" class="user_p_title_main">光纤配件专区</a>
+						<a href="" class="user_p_title_more">
+							更多 >
+						</a>
+					</div>
+					<div class="user_wrap_row user_after">
+						<div class="user_p_left_items">
+							<img src="img/jd/jd_100.jpg" alt="" />
+						</div>
+						<div class="user_p_right_items">
+							<div class="user_p_items_100">
+								<div class="user_p_items01 user_after">
+									<a href="">
+										<div class="user_p_items01_b">
+											<h3>MTP/MPO 清洁笔</h3>
+											<p>端面清洁小帮手</p>
+											<span>￥330.00</span>
+										</div>
+										<div class="user_p_items01_p">
+											<img src="img/jd/jd_103.jpg" alt="" />
+										</div>
+									</a>
+								</div>
+							</div>
+							
+							<div class="user_p_items_100">
+								<div class="user_p_items01 user_after">
+									<a href="">
+										<div class="user_p_items01_b">
+											<h3>FOPM-102光功率计</h3>
+											<p>超高弯曲性能设计</p>
+											<span>￥385.00</span>
+										</div>
+										<div class="user_p_items01_p">
+											<img src="img/jd/jd_106.jpg" alt="" />
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="user_p_banner">
+					<img src="img/jd/jd_109.jpg" alt="" />
+				</div>
+				<div class="user_body_s_wrap user_p user_after">
+					<div class="user_p_left_adv">
+						<a href="">
+							<img src="img/jd/jd1_06.jpg" alt="" />
+							<h3>FS光模块 随心购</h3>
+							<p>搭建极速网络</p>
+							<span>点击购买 ></span>
+						</a>
+					</div>
+					<div class="user_p_left_adv">
+						<a href="">
+							<img src="img/jd/jd1_08.jpg" alt="" />
+							<h3>FHD & FHX系列</h3>
+							<p>超高密度布线</p>
+							<span>点击购买 ></span>
+						</a>
+					</div>
+					<div class="user_p_left_adv">
+						<a href="">
+							<img src="img/jd/jd1_10.jpg" alt="" />
+							<h3>视频中心</h3>
+							<p></p>
+							<span>了解更多 ></span>
+						</a>
+					</div>
+					<div class="user_p_left_adv">
+						<a href="">
+							<img src="img/jd/jd1_12.jpg" alt="" />
+							<h3>购物指南</h3>
+							<p></p>
+							<span>了解更多 ></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="user_body">
+				<h3 class="user_body_bot">
+					FS官方教学视频
+				</h3>
+				<p class="user_body_bot_p">
+					带你了解我们产品
+				</p>
+				<div class="user_body_s_wrap user_p user_after">
+					<div class="user_p_left_adv_v">
+						<a href="">
+							<img src="img/jd/jd1_19.jpg" alt="" />
+						</a>
+					</div>
+					<div class="user_p_left_adv_v">
+						<a href="">
+							<img src="img/jd/jd1_21.jpg" alt="" />
+						</a>
+					</div>
+					<div class="user_p_left_adv_v">
+						<a href="">
+							<img src="img/jd/jd1_25.jpg" alt="" />
+						</a>
+					</div>
+					<div class="user_p_left_adv_v">
+						<a href="">
+							<img src="img/jd/jd1_26.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+				<div class="user_bot_img">
+					<img src="img/jd/jd1_29.jpg" alt="" />
+				</div>
+				<div class="user_bot_img">
+					<img src="img/jd/jd1_30.jpg" alt="" />
+				</div>
+			</div>
+			
+			
+			
+		</div>
+		
+
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

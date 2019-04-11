@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body onclick="abc(event)">
+		a
+		<button >1234</button>
+		<!--这说明了一个问题，js里面有是有附送几个参数的 这个event参数 代表了当前事件的状态 如果用click方法去绑定 打印出来的就是一个鼠标事件-->
+	</body>
+	<script type="text/javascript">
+		var a = {
+			name:'xiaoming',
+			age:18,
+			tx:{
+				name:'xiaowang',
+				get:function(){
+					console.log(this);//this只是变量里面存着的是调用它的对象
+				}
+			},
+			getborn:function(){
+				console.log(this);
+			}
+		}
+		a.getborn();
+		a.tx.get();
+		function abc(event){//这个是形参
+			console.log(event);
+		}
+		$(document).on('click','body',function(event){//这个是实参  等价于直接在那个元素上写个onclick事件
+			console.log(event);
+		})
+	</script>
+</html>

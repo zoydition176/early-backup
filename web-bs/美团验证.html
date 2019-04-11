@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/validate.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<form action="" id="myf">
+			<ul>
+				<li>
+					<span>account</span>
+					<input type="text" name="" id="account" value="" />		
+					<span class="alert" id="acc_alert"></span>
+				</li>
+				<li>
+					<span>password</span>
+					<input type="password" name="" id="password" value="" />
+					<span class="alert"></span>
+				</li>
+				<li>
+					<span>fav</span>
+					<input type="text" name="" id="fav" value="" />
+					<span class="alert" id="fav_alert"></span>
+				</li>
+				<li>
+					<span>text</span>
+					<input type="text" name="" id="text" value="" />
+					<span class="alert"></span>
+				</li>
+				<li>
+					<span>sex</span>
+					<input type="radio" name="sex" id="male" value="male" />
+					<input type="radio" name="sex" id="female" value="female" />
+					<input type="radio" name="sex" id="secret" value="secret" />
+					<span class="alert"></span>
+				</li>
+				<li>
+					<input type="button" name="" id="submitButton" value="submit" />
+				</li>
+				<span id="errorset"></span>
+			</ul>
+		</form>
+	</body>
+	<script type="text/javascript">
+		(function(){
+			var easyValidate = function(){			
+				var mod = {
+					isMobile:function(mobile,message){
+						var regu = /^\d{11}$/;
+						var re = new RegExp(regu);
+						if (!re.test(mobile)) {
+							return message;
+						}else{
+							return false
+						}
+					},
+					isEmail:function(email,message){
+						var reg=/(^\s*)\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*(\s*$)/;
+					   	if(!reg.test(email)){
+					   		return message;
+					   	}else{
+							return false
+						}
+					}
+				};
+				this.strategies = mod;
+				this.Methods = [];
+			};
+			easyValidate.prototype.add = function(dom,rules,msg){
+				var arr = [];
+				var v = dom.value;
+				var t = this;
+				var r = rules.split(':');
+				this.Methods.push(function(){				
+//					var ar = r[0];
+					arr.push(v);
+					arr.push(msg);
+					return t.strategies[r].apply(dom,arr);
+				});
+
+			}
+			easyValidate.prototype.go = function(){
+				console.log(this.Methods);
+				for(i = 0;i < this.Methods.length;i++){
+					var a = this.Methods[i]();
+					if(a){
+						this.Methods = [];
+						return a;
+					}
+
+				}
+				return '全对';
+			}
+			
+			
+			
+			window.easyValidate = easyValidate;
+			
+		})();
+		
+		var myf = document.getElementById('myf');
+		var vali = document.getElementById('submitButton');
+		var e = document.getElementById('errorset');
+		var p = new easyValidate();
+		
+		
+		vali.addEventListener('click',function(){
+			p.add(myf.account,'isMobile','手机号错误');
+			p.add(myf.fav,'isEmail','邮箱号错误');
+			var k = p.go();
+			console.log(p);
+			e.innerHTML = k;
+			console.log(k);
+		});
+		
+		
+	</script>
+</html>

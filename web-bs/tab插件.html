@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.tab-current{
+				/*display: block;*/
+			}
+			#f01{
+				height: 380px;
+				background: #ABCDEF;
+			}
+			#f02{
+				height: 300px;
+				background: #83C44E;
+			}
+			#f03{
+				height: 500px;
+				background: #E9E9E9;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" id="pt"/>
+		<button id="ck">check</button>
+		<br>
+		<span id="res">
+			null
+		</span>
+		
+		<div id="tabtest">
+			<ul class="zTab-btn">
+				<li tab-toggle='f01'>
+					1234
+				</li>
+				<li tab-toggle='f02'>
+					5678
+				</li>
+				<li tab-toggle='f03'>
+					7777
+				</li>
+			</ul>
+			<div class="zTab-wrap">
+				<div tab-content='f01' class="tab-current" id="f01">
+					abcsdasd
+					<span>sadasd</span>
+				</div>
+				<div id="f02" style="display: none;" tab-content='f02'>
+					bbbbbbbbbbb
+					<li>ccccccccccc</li>
+				</div>
+				<div id="f03" style="display: none;" tab-content='f03'>
+					ttttttzzzzzz
+					<p>sadasd</p>
+					<a href="">342424</a>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+		<script type="text/javascript">
+			$('#ck').on('click',function(){
+				let oValue = $('#pt').val();
+				var re;
+				let reg = /^\,$/;
+				re = oValue.replace(/\,/g,'');
+				$('#res').html(re);	
+				
+			});
+			
+			
+			(function($){
+				
+				$.zTab = function(e,options){
+					var $this = this;
+						$this.obj = $(e);//实例化对象
+						$this.btn = $(e).find('.zTab-btn');
+						$this.warp = $(e).find('.zTab-wrap');
+					$.zTab.Defaults = {
+						spd:800,
+						isAnimate:false
+					}
+					var tbc = $.extend({},$.zTab.Defaults,options);
+					$this.btn.on('click','[tab-toggle]',function(){
+						var chooseTab = $(this);
+						var chooseVal = chooseTab.attr('tab-toggle');
+						var chooseElement = $this.warp.find('[tab-content='+ chooseVal +']');
+						var chooseHeight = $this.warp.find('[tab-content='+ chooseVal +']').height();
+						var currentElement = $this.warp.find('.tab-current');
+						var currentHeight = $this.warp.find('.tab-current').height();
+						
+						$this.warp.height(currentHeight);
+						currentElement.fadeOut(1000,function(){
+							$(this).removeClass('tab-current');
+							chooseTab.addClass('tab-current');
+						});
+						
+						
+						
+						
+//						chooseElement.addClass('zTab-active').siblings().remove('zTab-active');
+//						$this.warp.find('#'+chooseVal).fadeIn(1000,function(){
+//							
+//						});
+						console.log($this.warp.find('[tab-content='+ chooseVal +']'));
+						
+						
+						
+					})
+					
+					
+					
+					
+								
+				}
+				
+				$.fn.zTab = function(opt){
+					return this.each(function(){//为了防止填写类名
+						(new $.zTab(this,opt))
+					})
+					
+				}
+				
+				
+				
+			})(jQuery)
+			
+			
+			$(function(e){
+//				console.log($);
+				$('#tabtest').zTab();
+			})
+			
+			
+			var zdx = '{a:"asd",b:13,c:[1,2,"asdsad"]}';
+			var str = eval('('+zdx+')');
+			
+			
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			p{
+				line-height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<button scroll-target='abc'>test</button>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p id="abc">123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+		<p>123123</p>
+	</body>
+	<script type="text/javascript">
+		var a = document.querySelector('[scroll-target="abc"]');
+		console.log(a);
+		var fnc = function(e){
+			var s = document.getElementById(e);
+			console.log(s.offsetTop);
+		}
+		fnc('abc');
+		
+		var tem = (function(){
+			var kg = 0;
+			var sc = function(){
+				var c = function(){
+					return '1321321'
+				}
+			}
+			return function(){
+				if(!kg){
+					kg = new sc();
+				}
+				return kg;
+			}
+		})();
+		
+		
+		var kkk = tem();
+		console.log(kkk);
+		
+//		let timeTool = (function() {
+//		  let _instance = null;
+//		  
+//		  function init() {
+//		    let now = new Date();
+//		    this.name = '处理时间工具库',
+//		    this.getISODate = function() {
+//		      return now.toISOString();
+//		    }
+//		    this.getUTCDate = function() {
+//		      return now.toUTCString();
+//		    }
+//		  }
+//		  
+//		  return function() {
+//		    if(!_instance) {
+//		      _instance = new init();
+//		    }
+//		    return _instance;
+//		  }
+//		})();
+//		var ppp = timeTool();
+//		console.log(ppp)
+		
+	</script>
+	<script type="text/javascript">
+		/*
+		 totop  //返回顶部按钮
+		 fixedevery   // 左侧固定导航的每一项
+		 louceng  //模块的每一项
+		 header   //头部
+		 */
+		function floor(totop,fixedevery,louceng,header) {
+		    this.totop = totop;
+		    this.fixedevery = fixedevery;
+		    this.louceng = louceng;
+		    this.header = header;
+		}
+		floor.prototype = {
+		    init: function () {
+		        var that = this;
+		        that.start();
+		        this.totopClick();
+		        this.fixedeveryClick();
+		    },
+		    start: function () {
+		        var that = this;
+		        $(window).scroll(function(){
+		            var winH=$(window).height();
+		            var iTop = $(window).scrollTop();//鼠标滚动的距离
+		            if(iTop>$(that.header).height()){
+		                $(that.fixedevery).parent().fadeIn();
+		                $(that.totop).fadeIn();
+		                $(that.louceng).each(function(){
+		                    if(winH+iTop - $(this).offset().top>winH/2){
+		                        $(that.fixedevery).removeClass('active');
+		                        $(that.fixedevery).eq($(this).index()).addClass('active');
+		                    }
+		                })
+		            }else{
+		                $(that.fixedevery).parent().fadeOut();
+		                $(that.totop).fadeOut();
+		            }
+		        });
+		    },
+		    totopClick: function () {
+		        var that = this;
+		        $(that.totop).click(function(){
+		            $('body,html').animate({"scrollTop":0},500)
+		        })
+		    },
+		    fixedeveryClick: function () {
+		        var that = this;
+		        $(that.fixedevery).click(function(){
+		            var t = $(that.louceng).eq($(this).index()).offset().top;
+		            $('body,html').animate({"scrollTop":t},500);
+		            $(this).addClass('active').siblings().removeClass('active');
+		        });
+		    }
+		
+		}
+		
+		/*
+	     totop  //返回顶部按钮
+	     fixedevery   // 左侧固定导航的每一项
+	     louceng  //模块的每一项
+	     header   //头部
+	     */
+	    $(function(){
+	        var obj = new floor('.totop','.fixedmeau>li','.louceng_box>.louceng','.header_box');
+	        obj.init()
+	    })
+	</script>
+</html>

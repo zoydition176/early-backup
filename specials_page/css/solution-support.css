@@ -1,0 +1,633 @@
+
+body{
+	background-color: #f4f4f4;
+}
+.ss_main{
+	width:800px;
+	min-height: 710px;
+	border-radius: 6px;
+	background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(51,51,51,.1);
+    overflow: hidden;
+}
+.ss_main_left{
+	float: left;
+	width: 287px;
+	min-height: 710px;
+	background-color: #eef2fa;
+	background-image: url(http://www.fs.com/includes/templates/fiberstore/images/specials/solutions_support/1.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+.ss_main_left_top{
+	overflow: hidden;
+	text-align: center;
+	padding: 20px 0;
+	/*margin-bottom: 42px;*/
+}
+.ss_main_left_top h3{
+	font-size: 20px;
+	color: #666666;
+	font-weight: 400;
+}
+.ss_main_left_top_con{
+	height: 75px;
+	width: 50%;
+	float: left;
+	background-color: #e6eaf3;
+	cursor: pointer;
+}
+.ss_main_left_top_con.choose{
+	background-color: #eef2fa;
+}
+.ss_main_left_top_con_font{
+	padding-top: 20px;
+	text-align: center;
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.ss_main_left_top_con_font a{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	padding-top:20px;
+	box-sizing:border-box;
+}
+.ss_main_left_top_con_font .icon{
+	font-size: 22px;
+	color: #6a93cb;
+	margin-bottom: 5px;
+}
+.ss_main_left_top_con_font.sale .icon{
+	font-size: 20px;
+}
+.ss_main_left_top_con_font p{
+	font-size: 13px;
+	color: #0681d3;
+	text-align: center;
+}
+.ss_main_left_top_con.choose .ss_main_left_top_con_font .icon{
+	color: #666;
+}
+.ss_main_left_top_con.choose .ss_main_left_top_con_font p{
+	color: #555;
+}
+.ss_main_left_list li{
+	position: relative;
+	margin-bottom: 20px;
+	cursor: pointer;
+	padding:7px 0 7px 30px;
+	box-sizing:border-box;
+}
+.ss_main_left_list li.choose{
+	background-color:#f8fafd;
+}
+.ss_main_left_list_face{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 6px;
+	width:52px;
+	height:52px;
+	background-image:url(http://www.fs.com/includes/templates/fiberstore/images/specials/solutions_support/face.png);
+	background-repeat:no-repeat;
+}
+.ss_main_left_list_face.face01{
+	background-position:-4px -3px;
+}
+.ss_main_left_list_face.face02{
+	background-position:-4px -93px;
+}
+.ss_main_left_list_face.face03{
+	background-position:-4px -178px;
+}
+.ss_main_left_list_face.face04{
+	background-position:-4px -263px;
+}
+.ss_main_left_list_face.face05{
+	background-position:-4px -349px;
+}
+.ss_main_left_list_face.face06{
+	background-position:-4px -435px;
+}
+.ss_main_left_list_name{
+	display: inline-block;
+	vertical-align: middle;
+}
+.ss_main_left_list_name h3{
+	font-size: 16px;
+	font-weight: 400;
+	color: #666666;
+}
+.ss_main_left_list_name h2{
+	font-size: 14px;
+	color: #555;
+	font-weight: 600;
+	margin-bottom: 3px;
+}
+.ss_main_left_list_name p{
+	font-size: 13px;
+	color: #888;
+}
+.ss_main_left_list_right{
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	left: 5px;
+	top: 50%;
+	margin-top: -8px;
+	background-image: url(http://www.fs.com/includes/templates/fiberstore/images/specials/solutions_support/3.png);
+	background-position: -33px -5px;
+}
+.ss_main_left_list li.choose .ss_main_left_list_right{
+	background-position: -2px -5px;
+}
+.ss_main_right{
+	float: left;
+	width: 513px;
+	min-height: 710px;
+	max-height:715px;
+	overflow-y:auto;
+	box-sizing: border-box;
+	padding-bottom: 50px;
+	height: auto;
+}
+.ss_main_right_box{
+	padding: 0 46px;
+}
+.ss_main_right_logo{
+	padding-top: 40px;
+	margin-bottom: 15px;
+}
+.ss_main_right_logo a{
+	display: block;
+    width: 153px;
+    height: 40px;
+    background: url(http://www.feisu.com/includes/templates/fiberstore/images/header_LOGO.svg) 0% 50% no-repeat;
+    /*background-size: cover;*/
+    margin: 0 auto;
+}
+.ss_main_right_txt{
+	font-size: 13px;
+	color: #666;
+	text-align: center;
+}
+.ss_main_right_main{
+	margin-top: 20px;
+}
+.ss_main_right_main_input{
+	/*margin-bottom: 15px;*/
+}
+.ss_main_right_main_input.textarea{
+	/*margin-bottom: 8px;*/
+}
+.ss_main_right_main_ipt{
+	height: 36px;
+	width: 100%;
+	border: 1px solid #d4d4d4;
+	transition: all .3s;
+	text-indent: 10px;
+	font-size: 14px;
+	color: #333;
+	border-radius: 3px;
+	/*margin-bottom: 5px;*/
+	box-sizing: border-box;
+}
+.ss_main_right_main_input_prompt{
+	font-size: 14px;
+	line-height: 24px;
+	height: 24px;
+	color: #d63030;
+	clear: both;
+	/*display: none;*/
+	visibility: hidden;
+}
+.ss_main_right_main_input_prompt.active{
+	visibility: visible;
+}
+.ss_main_right_main_ipt:focus{
+	border: 1px solid rgba(51,51,51,0.5);
+	outline: none;
+}
+.ss_main_right_main_ipt::-webkit-input-placeholder ,textarea::-webkit-input-placeholder,.search_input::-webkit-input-placeholder{ /* WebKit browsers */
+    color:    #999;
+}
+/includes/templates/fiberstore/images/specials/company-network-solution/:-moz-placeholder ,textarea:-moz-placeholder,.search_input:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+    color:    #999;
+}
+.ss_main_right_main_ipt::-moz-placeholder ,textarea::-moz-placeholder,.search_input::-moz-placeholder{ /* Mozilla Firefox 19+ */
+    color:    #999;
+}
+.ss_main_right_main_ipt:-ms-input-placeholder ,textarea:-ms-input-placeholder,.search_input:-ms-input-placeholder{ /* Internet Explorer 10+ */
+    color:    #999;
+}
+.choose_country{
+	line-height: 36px;
+	margin-bottom: 15px;
+}
+.choose_country em{
+    background-image: url(http://www.fs.com/includes/templates/fiberstore/images/specials/solutions_support/country.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 15px;
+    top: 11px;
+}
+.searchCountry{
+	left: -1px;
+}
+.countryList li{
+	width: 100%;
+}
+.ss_main_right_main_cb{
+	overflow: hidden;
+	/*margin-bottom: 15px;*/
+}
+.ss_main_right_main_tit{
+	font-size: 14px;
+	color: #333333;
+	line-height: 14px;
+	font-weight: 400;
+	/*margin-bottom: 10px;*/
+	padding: 0;
+}
+.ss_main_right_main_cb a{
+	float: left;
+	padding: 6px 10px;
+	font-size: 13px;
+	color: #666;
+	border: 1px solid #d4d4d4;
+	border-radius: 3px;
+	margin-right: 10px;
+	margin-top: 8px;
+}
+.ss_main_right_main_cb a:hover{
+	text-decoration: none;
+}
+.ss_main_right_main_cb a.active{
+	border: 1px solid #0681d3;
+	color:#0681d3;
+}
+.ss_main_right_main_textarea{
+	color: #333;
+	border: 1px solid #d4d4d4;
+	border-radius: 3px;
+	height: 139px;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 5px 8px;
+	resize: none;
+	font-size: 12px;
+	text-indent:0;
+}
+.ss_main_right_main_textarea:focus{
+	border-color: rgba(51,51,51,0.5);
+}
+.ss_main_right_main_upload{
+	position: relative;
+	margin-bottom: 25px;
+	/*margin-top: 5px;*/
+	font-size:0;
+}
+.ss_main_right_main_upload_allbtn{
+	display: inline-block;
+}
+.ss_main_right_main_upload_btn{
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	vertical-align: middle;
+}
+.ss_main_right_main_upload input{
+	opacity: 0;
+	position: absolute;
+	left: -100px;
+	cursor: pointer;
+	top: 0;
+	font-size: 20px;
+	z-index: 1;
+}
+.ss_main_right_main_upload a{
+	display: inline-block;
+	position: relative;
+	width: 90px;
+	height: 28px;
+	font-size: 14px;
+	color: #0681d3;
+	line-height: 29px;
+	border-radius: 3px;
+	text-indent: 20px;
+}
+.ss_main_right_main_upload a span{
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background: url(http://www.fs.com/includes/templates/fiberstore/images/specials/solutions_support/3.png) no-repeat -61px -30px;
+	left: 0;
+	top: 50%;
+	margin-top: -7px;
+}
+
+.ss_main_right_main_upload a:hover{
+	text-decoration: none;
+}
+.ss_main_right_main_upload_prompt{
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+.ss_main_right_main_upload_prompt span{
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url(http://www.fs.com/includes/templates/fiberstore/images/specials/solutions_support/3.png) no-repeat -34px -31px;
+}
+.ss_main_right_main_upload_prompt_content{
+	position: absolute;
+	left: 25px;
+	top: -16px;
+	border: 1px solid #c9c9c9;
+	border-radius: 3px;
+	box-shadow: 0 0 10px 0 rgba(51,51,51,.1);
+	padding: 3px 10px;
+	background: #FFFFFF;
+	display: none;
+}
+.ss_main_right_main_upload_prompt_content_arrow{
+	position: absolute;
+	width: 7px;
+	height: 10px;
+	left: -7px;
+	top: 17px;
+	background: url(http://www.fs.com/includes/templates/fiberstore/images/specials/solutions_support/3.png) no-repeat -22px -20px;
+}
+.ss_main_right_main_upload_prompt_content p{
+	font-size: 13px;
+	color: #999;
+	white-space: pre;
+}
+.ss_main_right_main_upload_prompt:hover .ss_main_right_main_upload_prompt_content{
+	display: block;
+}
+.ss_main_right_main_submit{
+	display: block;
+	width: 100%;
+	height: 35px;
+	background-color: #0681d3;
+	color: #fff;
+	font-size: 16px;
+	transition: all .3s;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 35px;
+	border:none;
+	cursor:pointer;
+}
+.ss_main_right_main_submit:focus{
+	outline: none;
+}
+.ss_main_right_main_submit:hover{
+	text-decoration: none;
+	background-color: #1891e2;
+	color: #fff;
+	border:none;
+}
+.ss_main_right_main_upload_name{
+	/*margin-top: 10px;*/
+	display: none;
+}
+.ss_main_right_main_upload_name p{
+	display: inline-block;
+	max-width:193px;
+	font-size: 13px;
+	color: #555;
+	padding: 5px 30px 5px 10px;
+	border: 1px solid #aeaeae;
+	border-radius: 3px;
+	position: relative;
+	cursor: pointer;
+	margin-top: 10px;
+	box-sizing: border-box;
+	height: 30px;
+	margin-right: 10px;
+}
+.ss_main_right_main_upload_name p:nth-of-type(2n){
+	margin-right: 0;
+}
+.ss_main_right_main_upload_name p b{
+	font-weight:400;
+	margin-right:5px;
+}
+.ss_main_right_main_upload_name p em{
+	font-style: normal;
+}
+.ss_main_right_main_upload_name p span{
+	position: absolute;
+	right: 8px; 
+	top: 6px;
+	font-size: 14px;
+}
+.ss_main_right_main_upload_name p:hover{
+	border-color: #d63030;
+}
+.ss_main_right_main_upload_name p:hover span{
+	color: #d63030;
+}
+.solution_support_popup{
+	display: none;
+}
+.ui-widget-overlay {
+	background: #000;
+	opacity: .3;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 98;
+	display: block;
+}
+.solution_popup_main {
+	width: 470px;
+	height: 320px;
+	background-color: #fff;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -235px;
+	margin-left: -235px;
+	border-radius: 5px;
+	z-index: 99;
+}
+
+.solution_popup_main dl {
+	padding-top: 40px;
+	text-align: center;
+}
+
+.solution_popup_main dl dt {
+	width: 50px;
+	height: 50px;
+	background: url(http://www.fs.com/includes/templates/fiberstore/images/live_bg.png) no-repeat;
+	background-position: -289px -683px;
+	margin: 0 auto 20px;
+	
+}
+
+.solution_popup_main dl dd h2 {
+	font-size: 18px;
+	color: #555;
+	font-weight: 600;
+}
+
+.solution_popup_main dl dd p {
+	font-size: 13px;
+	color: #999;
+	margin-top: 15px;
+	line-height: 22px;
+}
+
+.solution_popup_main_close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(https://http://www.fs.com/includes/templates/fiberstore/images/menu_bg_01.gif) no-repeat -718px -211px #fff;
+}
+.solution_popup_main_btn{
+	margin-top: 30px;	
+	text-align: center;
+}
+.solution_popup_main_btn a{
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	color: #666;
+	padding: 8px 20px;
+	border: 1px solid #d4d4d4;
+	border-radius: 3px;
+	transition: all .3s;
+}
+.solution_popup_main_btn a:hover{
+	text-decoration: none;
+	background-color: #f4f4f4;
+}
+.solution_popup_main_btn a.solution_popup_main_btn_start{
+	padding: 8px 10px;
+	background-color: #0681d3;
+	border: 1px solid #0681d3;
+	color: #fff;
+	margin-right: 20px;
+}
+.solution_popup_main_btn a.solution_popup_main_btn_start:hover{
+	background-color: #1891e2;
+}
+
+.rubberBand {
+	animation-name: rubberBand;
+}
+
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+@keyframes rubberBand {
+	0% {
+		transform: scaleX(1)
+	}
+	30% {
+		transform: scale3d(1.25, .75, 1)
+	}
+	40% {
+		transform: scale3d(.75, 1.25, 1)
+	}
+	50% {
+		transform: scale3d(1.15, .85, 1)
+	}
+	65% {
+		transform: scale3d(.95, 1.05, 1)
+	}
+	75% {
+		transform: scale3d(1.05, .95, 1)
+	}
+	to {
+		transform: scaleX(1)
+	}
+}
+
+@media(max-width:960px){
+	.box{
+		width: auto;
+		padding: 0;
+	}
+}
+@media(max-width:800px){
+	.ss_main{
+		width: 100%;
+		margin: 0;
+	}
+	.ss_main_left{
+		min-height: 178px;
+		float: none;
+		width: 100%;
+	    background-image: url(http://www.fs.com/includes/templates/fiberstore/images/specials/solutions_support/4.png);
+	    background-repeat: no-repeat;
+	    background-position: left bottom;
+	}
+	.ss_main_right{
+		float: none;
+		width: 100%;
+	}
+	.ss_main_left_top{
+		height: 50px;
+		padding: 10px;
+		/*margin-bottom: 25px;*/
+	}
+	.ss_main_left_top_con_font{
+		padding-top: 15px;
+		text-align: center;
+	}
+	.ss_main_left_top_con_font span,.ss_main_left_top_con_font p{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.ss_main_left_top_con_font .icon{
+		margin-bottom: 0;
+		margin-right: 10px;
+	}
+	.ss_main_left_list{
+		padding: 0 0 0 10px;
+		overflow-x: auto;
+	}
+	.ss_main_left_list_right{
+		right: auto;
+		left: 33px;
+		margin-top: 9px;
+		background-position: -60px -5px;
+	}
+	.ss_main_left_list ul{
+		width: 1320px;
+		overflow: hidden;
+		height: 60px;
+	}
+	.ss_main_left_list li{
+		float: left;
+		margin-bottom: 0;
+		padding-right: 20px;
+	}
+	.ss_main_right_box{
+		padding: 0 10px;
+	}
+	.ss_main_right_logo{
+		padding-top: 20px;
+	}
+}

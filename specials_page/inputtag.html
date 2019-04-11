@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="aaa">
+			<input type="text" class="" name="tagsName"/>
+		</div>
+		
+		
+		<div class="bbb" style="background: #ccc;">
+			<input type="text" class="" name="tagsName"/>
+		</div>
+		
+		
+		<script>
+		(function ($) {
+			/*tInputTags类*/
+		    var Init_tInputTags = function (selector,options,regular) {
+		        this.el = selector;
+		        this.options = options;
+		        this.regular = regular;
+		        return this
+		    };
+		    /*监听方法*/
+		    Init_tInputTags.prototype.inputListen = function () {
+		    	var dom = this;
+		    	var patten;
+		        var $obj  = $(this.el);
+		        var $objInput = $obj.find('[name="tagsName"]');
+		        var reg = this.regular;
+		        switch (reg){
+		        	case 'email':
+		        		patten = /^[0-9A-Za-z][\w\.\-\+]+\@[\w\.\-\+]+\.[\w\.\-]+[A-Za-z]$/;
+		        		break;
+		        	default:
+		        		patten = /([\s\S]+)/;
+		        		break;
+		        }
+		        $objInput.off('blur').on('blur',function () {
+		            var info = $.trim($(this).val());
+		            if(info.length<=0){
+						return []
+		            }
+		            if(patten.test(info)){
+		            	dom.createrSpan(info)
+		            }
+		        })
+		    }
+		    /*生成标签方法*/
+		   	Init_tInputTags.prototype.createrSpan = function(text){
+		   		var $obj = $(this.el).find('[name="tagsName"]');
+		   		var tags = '<span>'+text+'</span>'; 
+		   		$obj.before(tags).val('');
+		   	}
+		   	/*初始化方法*/
+			Init_tInputTags.prototype.init = function(){
+		  		this.inputListen();
+			}
+			
+			/*对象自动初始化*/
+		   	window.Init_tInputTags = function(selector,options,regular){
+		   		var tInputTags = new Init_tInputTags(selector,options,regular);
+		   		return tInputTags.init();	   		
+		   	};
+		})(jQuery)
+		
+		
+		
+		var a = new Init_tInputTags('.aaa','','email');
+		var b = new Init_tInputTags('.bbb','','');
+		</script>
+	</body>
+</html>

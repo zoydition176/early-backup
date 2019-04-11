@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id='putter'/>
+		<br>
+		<div id="res"></div>
+		
+		
+	</body>
+	<script type="text/javascript">
+		function wbnq(n){
+			/*var a = [0,1];
+			var b = a.length;
+			var x;
+			if(n<=1){
+				return [0];
+			}else{
+				for(let i = 0;i < n - b;i++){
+					x = a[i] + a[i+1]
+					a.push(x)
+				}
+				return a;
+			}*/
+			var 
+				x = 0,
+				y = 1,
+				a = [0,1];
+			while(a.length<n){
+				[x,y] = [y,x+y];
+				a.push(y);
+				
+			}
+			return a;
+		}
+		function* gb(n){
+			var 
+				x = 0,
+				y = 1,
+				a = [0,1];
+				b = 0;
+			while(b<n){
+				yield y;
+				[x,y] = [y,x+y];
+				b++;
+				
+			}
+//			return
+		}
+		var ppp = {name:'zdx',age:'18',sex:'male'}
+		const putter = document.getElementById('putter');
+		const res = document.getElementById('res');
+		putter.oninput = function(){
+			let v = this.value || 0;
+			res.innerHTML = wbnq(v);
+		}
+		
+//		putter.addEventListener('onporpertychange oninput',function(){
+//			let v = this.value || 0;
+//			res.innerHTML = wbnq(v);
+//		});
+		function getExplore(){
+		    var Sys = {};
+		    var ua = navigator.userAgent.toLowerCase();
+		    var s;
+		    var res = {};
+		    console.log(ua);
+		    (s = ua.match(/rv:([\d.]+)\) like gecko/)) ? Sys.ie = s[1] :
+		        (s = ua.match(/msie ([\d\.]+)/)) ? Sys.ie = s[1] :
+		            (s = ua.match(/edge\/([\d\.]+)/)) ? Sys.edge = s[1] :
+		                (s = ua.match(/firefox\/([\d\.]+)/)) ? Sys.firefox = s[1] :
+		                    (s = ua.match(/(?:opera|opr).([\d\.]+)/)) ? Sys.opera = s[1] :
+		                        (s = ua.match(/chrome\/([\d\.]+)/)) ? Sys.chrome = s[1] :
+		                            (s = ua.match(/version\/([\d\.]+).*safari/)) ? Sys.safari = s[1] : 0;
+		    // 根据关系进行判断,返回浏览器名称+版本号
+		    if (Sys.ie) {
+		        res.name = 'IE';
+		        res.version = Sys.ie;
+		    }else if (Sys.edge) {
+		        res.name = 'EDGE';
+		        res.version = Sys.edge;
+		    }else if (Sys.firefox) {
+		        res.name = 'Firefox';
+		        res.version = Sys.firefox;
+		    }else if (Sys.chrome) {
+		        res.name = 'Chrome';
+		        res.version = Sys.chrome;
+		    }else if (Sys.opera) {
+		        res.name = 'Opera';
+		        res.version = Sys.opera;
+		    }else if (Sys.safari) {
+		        res.name = 'Safari';
+		        res.version = Sys.safari;
+		    }else{
+		        res.name = 'unknown';
+		        res.version = 0;
+		    }
+		    // console.log(res);
+		    return res;
+		}
+		var bro = new getExplore();
+	</script>
+</html>

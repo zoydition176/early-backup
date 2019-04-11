@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/validate.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<form action="" id="myf">
+			<ul>
+				<li>
+					<span>account</span>
+					<input type="text" name="" id="account" value="" />		
+					<span class="alert" id="acc_alert"></span>
+				</li>
+				<li>
+					<span>password</span>
+					<input type="password" name="" id="password" value="" />
+					<span class="alert"></span>
+				</li>
+				<li>
+					<span>fav</span>
+					<input type="text" name="" id="fav" value="" />
+					<span class="alert" id="fav_alert"></span>
+				</li>
+				<li>
+					<span>text</span>
+					<input type="text" name="" id="text" value="" />
+					<span class="alert"></span>
+				</li>
+				<li>
+					<span>sex</span>
+					<input type="radio" name="sex" id="male" value="male" />
+					<input type="radio" name="sex" id="female" value="female" />
+					<input type="radio" name="sex" id="secret" value="secret" />
+					<span class="alert"></span>
+				</li>
+				<li>
+					<input type="button" name="" id="submitButton" value="submit" />
+				</li>
+			</ul>
+		</form>
+	</body>
+	<script type="text/javascript">
+//		var zValidate = function(trgObj,rules){
+//			var methods = {
+//				isMobile:function(mobile,message){
+//					var regu = /^\d{11}$/;
+//					var re = new RegExp(regu);
+//					if (!re.test(mobile)) {
+//						$(this).next('.alert').html(message);
+//						return message;
+//					}				
+//				},
+//				isEmail:function(email,message){
+//					var reg=/^[0-9a-zA-Z_\-\.]{1}\**@\w+([-.]\w+)*\.\w+([-.]\w+)*(\s*$)/;
+//				   	if(!reg.test(email)){
+//				   		$(this).next('.alert').html(message);
+//				   		return message;
+//				   	}
+//				},
+//				notEmpty:function(v,message){
+//					if(!($.trim(v))){
+//						return message;
+//					}
+//				}
+//			};
+//			var t = this;
+//			var $b = $(trgObj);
+//			var vlist;
+//			t.vobj = $b;
+//			t.rules = rules;
+//			
+//			
+//			
+//			
+//			
+//		}
+		
+		var a = new zValidate({
+				account:{
+					isMobile:{
+						required:true,
+						errorA:'#acc_alert',
+						message:'请输入正确的手机号'					
+					},
+					notEmpty:{
+						required:true,
+						errorA:'#acc_alert',
+						message:'请填入内容'		
+					}	
+				},
+				fav:{
+					isEmail:{
+						required:true,
+						errorA:'#fav_alert',
+						message:'请输入正确的邮箱号'					
+					}
+				}
+			})
+		
+		
+		
+	</script>
+</html>

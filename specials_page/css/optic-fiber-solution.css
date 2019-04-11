@@ -1,0 +1,678 @@
+.ofs-brand{
+	overflow: hidden;
+	position: relative;
+	height: 900px;
+}
+.ofs-brand .ofs-brand-bg{
+	height: 900px;
+	/*background: url(http://www.feisu.com/includes/templates/fiberstore/images/specials/optic-fiber-solution/gxtx_02.jpg) no-repeat center;*/
+}
+.ofs-brand video{
+	display: block;
+	width: 100%;
+	height: 100%;
+    object-fit: cover;
+	vertical-align: middle;
+}
+.ofs-brand .ofs-brand-txt{
+	text-align: center;
+	color: #FFFFFF;
+	padding: 0;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.ofs-brand .ofs-brand-txt h3{
+	font-size: 48px;
+	font-weight: 400;
+	padding: 0 0 40px 0;
+	color: #FFFFFF;
+}
+.ofs-brand .ofs-brand-txt p{
+	font-size: 24px;
+	color: #FFFFFF;
+	padding: 0;
+}
+.ofs-bg{
+	background: #F6F6F6;
+}
+.ofs-box{
+	width: 1440px;
+	margin: 0 auto;
+}
+.ofs-title{
+	font-size: 24px;
+	color: #333333;
+	font-weight: 400;
+	text-align: center;
+	padding: 65px 10px 25px 10px;
+}
+.ofs-para{
+	font-size: 16px;
+	color: #666666;
+	text-align: center;
+	padding: 0 10px;
+	line-height: 26px;
+}
+.ofs-sp-show{
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+.ofs-sp-show-m{
+	display: none;
+}
+.ofs-wrapper:after,.ofs-sp-show-left li:after,.ofs-sp-show-right li:after,.ofs-sp-show-m-ul li:after,.ofs-sp-show-m-ul:after{
+	content: '';
+	display: block;
+	clear: both;
+	width: 0;
+	height: 0;
+}
+.ofs-sp-show-left{
+	width: 425px;
+	float: left;
+	padding-top: 35px;
+}
+.ofs-sp-show-left li{
+	margin-bottom: 30px;
+}
+.ofs-sp-show-left li a:hover{
+	text-decoration: none;
+}
+.ofs-sp-show-right{
+	width: 425px;
+	float: left;
+	padding-top: 35px;
+}
+.ofs-sp-show-right li{
+	margin-bottom: 30px;
+}
+.ofs-sp-show-right li a:hover{
+	text-decoration: none;
+}
+.ofs-sp-show-img{
+	float: left;
+	width: 150px;
+	display: block;
+	padding:0 24px;
+}
+.ofs-sp-show li img{
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.ofs-sp-show li:hover img{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.ofs-sp-show-text{
+	float: left;
+	width: 275px;
+	display: block;
+	padding-top: 10px;
+}
+.ofs-sp-show-text h3{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	height: 24px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #333333;
+}
+.ofs-sp-show-text p{
+	font-size: 14px;
+	height: 48px;
+	overflow: hidden;
+	line-height: 24px;
+	color: #666666;
+}
+.ofs-sp-show-img img{
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+.ofs-sp-show-center{
+	width: 590px;
+	float: left;
+	text-align: center;
+}
+.ofs-sp-show-center img{
+	max-width: 100%;
+	height: auto;
+}
+.ofs-sp-show-center-m{
+	text-align: center;
+}
+.ofs-sp-show-center-m img{
+	max-width: 100%;
+	height: auto;
+	padding-bottom: 20px;
+}
+.ofs-sp-show-m-ul li{
+	width: 50%;
+	float: left;
+	margin-bottom: 20px;
+}
+.ofs-bd{
+	padding-left: 100px;
+	height: 400px;
+}
+.ofs-bd h3{
+	color: #FFFFFF;
+	font-size: 30px;
+	font-weight: 400;
+	padding: 125px 0 45px;
+}
+.ofs-bd p{
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 24px;
+	padding-bottom: 20px;
+}
+.ofs-bd-01{
+	background: url(http://www.feisu.com/includes/templates/fiberstore/images/specials/optic-fiber-solution/gxtx_27.jpg) no-repeat center;
+}
+.ofs-bd-02{
+	background: url(http://www.feisu.com/includes/templates/fiberstore/images/specials/optic-fiber-solution/gxtx_41.jpg) no-repeat center;
+}
+.ofs-bd-03{
+	background: url(http://www.feisu.com/includes/templates/fiberstore/images/specials/optic-fiber-solution/gxtx_54.jpg) no-repeat center;
+}
+.ofs-list-ul{
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+.ofs-list-ul li{
+	float: left;
+	width: 33.3333%;
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+.ofs-list-item{
+	display: block;
+	background: #FFFFFF;
+	padding-bottom: 50px;
+	text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ofs-list-item:hover{
+	text-decoration: none;
+	box-shadow: 0 10px 20px #e5e5e5;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ofs-list-item img{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+.ofs-list-item dl{
+	width: 280px;
+	margin: 0 auto;
+}
+.ofs-list-item dl dt{
+	font-size: 18px;
+	color: #333333;
+	text-decoration: none;
+	text-align: center;
+	padding-bottom: 22px;
+}
+.ofs-list-item dl dd{
+	font-size: 14px;
+	color: #666666;
+	line-height: 24px;
+	height: 24px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.ofs-list-item dl dd span{
+	font-size: 16px;
+	color: #cdcdcd;
+	padding-right: 12px;
+}
+.ofs-video-item{
+	display: block;
+	text-decoration: none;
+	background: #FFFFFF;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.ofs-video-item:hover{
+	text-decoration: none;
+    box-shadow: 0 10px 20px #e5e5e5;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ofs-video-item:hover .ofs-st-btn{
+	background: #0681D3;
+	border-color: #0681D3;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ofs-video-box{
+	position: relative;
+}
+.ofs-video-box img{
+	width: 100%;
+	height: auto;
+}
+.ofs-st-btn{
+	display: block;
+	position: absolute;
+	bottom: 18px;
+	left: 26px;
+	width: 40px;
+	height: 26px;
+	border-radius: 20px;
+	border: 2px solid #FFFFFF;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ofs-st-btn:after{
+	content: '';
+	display: block;
+	position: absolute;
+    top: 5px;
+    left: 14px;
+	border-width: 6px 10px 6px 10px;
+	border-color: transparent transparent transparent #FFFFFF;
+	border-style: solid;
+}
+.ofs-video-item h3{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	height: 48px;
+	color: #333333;
+	padding:0 26px;
+	margin-top: 28px;
+	margin-bottom: 5px;
+}
+.ofs-video-detail{
+	padding: 0 26px 20px 26px;
+}
+.ofs-video-num{
+	float: left;
+	font-size: 14px;
+	color: #999999;
+}
+.ofs-video-num b{
+	color: #999999;
+	padding-left: 10px;
+	font-weight: 400;
+}
+.ofs-video-time{
+	float: right;
+	color: #666666;
+	font-size: 14px;
+}
+.ofs-video-time b{
+	color: #666;
+	padding-left: 10px;
+	font-weight: 400;
+}
+.ofs-box-sm{
+	width: 1040px;
+	margin: 0 auto;
+}
+.ofs-adv-ul{
+	padding-top: 40px;
+}
+.ofs-adv-ul li{
+	width: 33.333%;
+	float: left;
+	padding: 0 10px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.ofs-adv-ul-txt{
+	padding: 0 30px;
+	text-align: center;
+}
+.ofs-adv-ul-img{
+	background: #eef2f7;
+}
+.ofs-adv-ul-img img{
+	max-width: 100%;
+	height: auto;
+}
+.ofs-adv-ul-txt h3{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 30px 0px 10px 0px;
+}
+.ofs-adv-ul-txt p{
+	font-size: 14px;
+    /*padding: 0 28px;*/
+    color: #999999;
+    line-height: 24px;
+}
+.ofs-adv-link{
+	clear: both;
+	text-align: center;
+	padding-top: 20px;
+}
+.ofs-adv-link a{
+	font-size: 14px;
+	color: #0681D3;
+	text-decoration: none;
+}
+.ofs-footer{
+	border-top: 1px solid #DEDEDE;
+	margin-top: 60px;
+}
+.ofs-footer h2{
+	font-size: 28px;
+	text-align: center;
+	color: #333333;
+	font-weight: 400;
+	padding: 60px 10px 40px 10px;
+}
+.ofs-footer-ul li{
+	float: left;
+	width: 33.333%;
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+.ofs-footer-ul-item{
+    background: #F6F6F6;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+.ofs-footer-ul-item span{
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 50px auto 30px;
+    background: url(http://www.feisu.com/includes/templates/fiberstore/images/specials/sfp10g/solution-contact-icon.png) no-repeat 0px 0px;
+}
+.ofs-footer-ul-item h3{
+    font-weight: 400;
+    color: #333333;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+.ofs-footer-ul-item p{
+	font-size: 14px;
+    color: #666666;
+    line-height: 24px;
+    height: 24px;
+    margin-bottom: 18px;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ofs-footer-ul-item a{
+    color: #0681D3;
+    font-size: 14px;
+}
+.ofs-footer-ul  li:nth-of-type(2) .ofs-footer-ul-item  span {
+    background-position: 0 -130px;
+}
+.ofs-footer-ul  li:nth-of-type(3) .ofs-footer-ul-item  span {
+    background-position: 0 -260px;
+}
+@media (max-width:1440px){
+	.ofs-box{
+		width: 1200px;
+	}
+	.ofs-sp-show-left,.ofs-sp-show-right{
+		width: 365px;
+	}
+	.ofs-sp-show-center{
+		width: 470px;
+	}
+	.ofs-sp-show-img{
+		padding: 0 10px;
+		width: 140px;
+	}
+	.ofs-sp-show-text{
+		width: 225px;
+	}
+}
+@media (max-width:1240px){
+	.ofs-box{
+		width: 960px;
+	}
+	.ofs-box-sm{
+		width: 960px;
+	}
+	.ofs-sp-show-left,.ofs-sp-show-right{
+		width: 295px;
+		padding-top: 0;
+	}
+	.ofs-sp-show-center{
+		width: 370px;
+	}
+	.ofs-sp-show-img{
+		padding: 0 10px;
+		width: 120px;
+	}
+	.ofs-sp-show-text{
+		width: 175px;
+	}
+	.ofs-sp-show-right li,.ofs-sp-show-left li{
+		margin-bottom: 10px;
+	}
+	.ofs-sp-show-text h3 {
+	    font-size: 15px;
+	    font-weight: 400;
+	    line-height: 24px;
+	    color: #333333;
+	}
+	.ofs-bd {
+	    padding-left: 40px;
+	    height: 400px;
+	}
+	.ofs-title {
+	    font-size: 24px;
+	    color: #333333;
+	    font-weight: 400;
+	    text-align: center;
+	    padding: 30px 10px 15px 10px;
+	}
+	.ofs-para {
+	    font-size: 14px;
+	}
+}
+@media (max-width:960px){
+	.ofs-box{
+		width: 100%;
+	}
+	.ofs-wrapper,.ofs-adv-ul{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.ofs-box-sm {
+	    width: 100%;
+	}
+	.ofs-sp-show{
+		display: none;
+	}
+	.ofs-sp-show-m{
+		display: block;
+	}
+	.ofs-list-ul li {
+	    float: left;
+	    width: 50%;
+	    padding: 0 10px;
+	    margin-bottom: 20px;
+	}
+	.ofs-sp-show-img {
+	    padding: 0 10px;
+	    width: 30%;
+	}
+	.ofs-sp-show-text {
+	    width: 70%;
+	    padding-right: 20px;
+	}
+	.ofs-bd h3 {
+	    color: #FFFFFF;
+	    font-size: 24px;
+	    font-weight: 400;
+	    padding: 80px 0 30px;
+	}
+	.ofs-bd p {
+	    color: #FFFFFF;
+	    font-size: 16px;
+	    line-height: 24px;
+	    padding-bottom: 10px;
+	}
+	.ofs-brand .ofs-brand-bg{
+		height: auto;
+	}
+	.ofs-brand {
+	    overflow: hidden;
+	    position: relative;
+	    height: auto;
+	}
+	.ofs-brand .ofs-brand-txt h3 {
+	    font-size: 34px;
+	    font-weight: 400;
+	    padding: 0px 0 20px 0;
+	    color: #FFFFFF;
+	}
+	.ofs-brand .ofs-brand-txt p {
+	    font-size: 18px;
+	    color: #FFFFFF;
+	    padding: 0 10px;
+	}
+}
+@media (max-width:768px){
+	.ofs-sp-show-img {
+	    padding: 0 10px;
+	    width: 40%;
+	}
+	.ofs-sp-show-text {
+	    width: 60%;
+	    padding-right: 20px;
+	}
+	.ofs-list-item dl {
+	    width: 100%;
+	    padding: 0 10px;
+	    margin: 0 auto;
+	}
+	.ofs-video-item h3 {
+	    font-weight: 400;
+	    font-size: 14px;
+	    line-height: 24px;
+	    height: 48px;
+	    color: #333333;
+	    padding: 0 26px;
+	    margin-top: 10px;
+	    margin-bottom: 5px;
+	}
+	.ofs-adv-ul li {
+	    width: 50%;
+	    float: left;
+	    padding: 0 10px;
+	    margin-bottom: 20px;
+	    text-align: center;
+	}
+	.ofs-footer-ul li {
+	    float: left;
+	    width: 50%;
+	    padding: 0 10px;
+	    margin-bottom: 20px;
+	}
+	.ofs-bd {
+	    padding-left: 40px;
+	    height: 290px;
+	}
+}
+@media (max-width:580px){
+	.ofs-list-ul li{
+		width: 100%;
+	}
+	.ofs-adv-ul li {
+	    width: 100%;
+	    float: left;
+	    padding: 0 10px;
+	    margin-bottom: 20px;
+	    text-align: center;
+	}
+	.ofs-adv-ul-txt h3 {
+	    font-size: 16px;
+	    line-height: 24px;
+	    font-weight: 400;
+	    padding: 14px 0px 5px 0px;
+	}
+	.ofs-footer {
+	    border-top: 1px solid #DEDEDE;
+	    margin-top: 30px;
+	}
+	.ofs-adv-link {
+	    padding-top: 0;
+	}
+	.ofs-footer-ul li {
+	    float: left;
+	    width: 100%;
+	    padding: 0 10px;
+	    margin-bottom: 20px;
+	}
+	.ofs-bd {
+	    padding-left: 20px;
+	    padding-right: 20px;
+	    height: 290px;
+	}
+	.ofs-brand .ofs-brand-txt h3 {
+	    font-size: 26px;
+	    font-weight: 400;
+	    padding: 0px 10px 20px 10px;
+	    color: #FFFFFF;
+	}
+	.ofs-brand .ofs-brand-txt p {
+	    font-size: 16px;
+	    color: #FFFFFF;
+	    padding: 0 10px;
+	}
+	.ofs-bd h3 {
+	    color: #FFFFFF;
+	    font-size: 24px;
+	    font-weight: 400;
+	    padding: 50px 0 30px;
+	}
+}
+@media (max-width:480px){
+	.ofs-sp-show-m-ul li {
+	    width: 100%;
+	    float: left;
+	    margin-bottom: 20px;
+	}
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>roll</title>
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zRoll.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body{
+				padding: 80px 0;
+			}
+			#scrollwrap{
+				margin: 0 auto;
+				width: 300px;
+				height: 540px;
+				overflow: hidden;		
+				background: #eaeaea;	
+			}
+			li{
+				list-style: none;
+				margin-bottom: 20px;
+			}
+			li img{
+				max-width: 100%;
+				height: auto;
+			}
+			.zRollwrap.rolling{
+				position: relative;
+				left: 0;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="scrollwrap">
+			<ul class="zRollwrap">
+				<li class="zRollist">
+					<img src="img/data_center_cabling_04.jpg"/>
+				</li>
+				<li class="zRollist">
+					<img src="img/data_center_cabling_05.jpg"/>
+				</li>
+				<li class="zRollist">
+					<img src="img/data_center_cabling_06.jpg"/>
+				</li>
+				<li class="zRollist"> 
+					<img src="img/data_center_cabling_07.jpg"/>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="scrollwrap2">
+			<ul class="zRollwrap">
+				<li class="zRollist">
+					<img src="img/data_center_cabling_04.jpg"/>
+				</li>
+				<li class="zRollist">
+					<img src="img/data_center_cabling_05.jpg"/>
+				</li>
+				<li class="zRollist">
+					<img src="img/data_center_cabling_06.jpg"/>
+				</li>
+				<li class="zRollist"> 
+					<img src="img/data_center_cabling_07.jpg"/>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		
+		
+		var a = new zRoll('#scrollwrap',2500)
+		
+		var b = new zRollc('#scrollwrap2',{
+			items:3,
+			moveitem:1,
+			spacing:10,
+			speed:2500
+		})
+	</script>
+</html>

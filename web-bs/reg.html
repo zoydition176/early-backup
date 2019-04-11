@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式验证</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <style>
+        li{
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="">
+        <h3 class="text-primary">
+            正则表达式
+            <small class="text-secondary">简介</small>
+        </h3>
+    </div>
+    <p>
+        正则表达式(Regular Expression)是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为"元字符"）。
+        正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。
+    </p>
+    <p>
+        为什么使用正则表达式？
+        典型的搜索和替换操作要求您提供与预期的搜索结果匹配的确切文本。虽然这种技术对于对静态文本执行简单搜索和替换任务可能已经足够了，但它缺乏灵活性，若采用这种方法搜索动态文本，即使不是不可能，至少也会变得很困难。
+        通过使用正则表达式，可以：
+        测试字符串内的模式。
+        例如，可以测试输入字符串，以查看字符串内是否出现电话号码模式或信用卡号码模式。这称为数据验证。
+        替换文本。
+        可以使用正则表达式来识别文档中的特定文本，完全删除该文本或者用其他文本替换它。
+        基于模式匹配从字符串中提取子字符串。
+        可以查找文档内或输入域内特定的文本。
+        例如，您可能需要搜索整个网站，删除过时的材料，以及替换某些 HTML 格式标记。
+        在这种情况下，可以使用正则表达式来确定在每个文件中是否出现该材料或该 HTML 格式标记。
+        此过程将受影响的文件列表缩小到包含需要删除或更改的材料的那些文件。
+        然后可以使用正则表达式来删除过时的材料。最后，可以使用正则表达式来搜索和替换标记。
+        正则表达式可以做的很复杂
+    </p>
+    <input type="text" id="test01" placeholder="正则">
+    <input type="text" id="test02" placeholder="文本">
+    <button id="checkreg">test</button>
+    <button id="matchreg">match</button>
+    <button id="replacereg">replace to null</button>
+    <span>
+        匹配结果:
+        <b id="test_result">
+            none
+        </b>
+    </span>
+    <script type="text/javascript">
+        $(function () {
+            $('#checkreg').on('click',function () {
+                var zz = $('#test01').val();
+                var wb = $('#test02').val();
+                var reg = eval(zz);
+                res = reg.test(wb);
+                $('#test_result').html((res+''));
+                console.log(res);
+            })
+            $('#matchreg').on('click',function () {
+                var zz = $('#test01').val();
+                var wb = $('#test02').val();
+                var reg = eval(zz);
+                res = wb.match(reg);
+                $('#test_result').html((res+''));
+                console.log(res);
+            })
+            $('#replacereg').on('click',function(){
+            	var zz = $('#test01').val();
+                var wb = $('#test02').val();
+                var reg = eval(zz);
+                res = wb.replace(reg,'');
+                $('#test_result').html((res+''));
+                console.log(res);
+            })
+        })
+    </script>
+    <ul>
+        <li>
+            元字符介绍1:
+            <h3>
+                '\'
+            </h3>
+            <p class="text-primary">
+                作用：将下一个字符标记为一个特殊字符、或一个原义字符、或一个 向后引用、或一个八进制转义符。
+                例如，'n' 匹配字符 "n"。'\n' 匹配一个换行符。序列 '\\' 匹配 "\" 而 "\(" 则匹配 "("。
+            </p>
+            例子  /\./  /\$/
+        </li>
+
+        <li>
+            元字符介绍2:
+            <h3>
+                 '^'
+            </h3>
+            <p class="text-primary">
+                作用：匹配输入字符串的开始位置。在特殊情况下还有其他匹配的意义。
+            </p>
+            例子  /^abc/
+        </li>
+
+        <li>
+            元字符介绍3:
+            <h3>
+                '$'
+            </h3>
+            <p class="text-primary">
+                作用：匹配输入字符串的结束位置。如果设置了RegExp 对象的 Multiline 属性，$ 也匹配 '\n' 或 '\r' 之前的位置。
+            </p>
+            例子  /abc$/
+        </li>
+
+        <li>
+            元字符介绍4:
+            <h3>
+                 '*'
+            </h3>
+            <p class="text-primary">
+                作用：匹配前面的子表达式零次或多次。例如，zo* 能匹配 "z" 以及 "zoo"。* 等价于{0,}。
+            </p>
+            例子  /^abcd*$/
+        </li>
+
+        <li>
+            元字符介绍5:
+            <h3>
+                 '+'
+            </h3>
+            <p class="text-primary">
+                作用：匹配前面的子表达式一次或多次。例如，'zo+' 能匹配 "zo" 以及 "zoo"，但不能匹配 "z"。+ 等价于 {1,}。
+            </p>
+            例子  /^abcd+$/
+        </li>
+
+        <li>
+            元字符介绍6:
+            <h3>
+                '?'
+            </h3>
+            <p class="text-primary">
+                作用：匹配前面的子表达式零次或一次。例如，"do(es)?" 可以匹配 "do" 或 "does" 。? 等价于 {0,1}。
+            </p>
+            例子  /^abcd?$/
+        </li>
+
+        <li>
+            元字符介绍7:
+            <h3>
+                '[\*\?\+{n,m}]?'
+            </h3>
+            <p class="text-primary">
+                作用：当该字符紧跟在任何一个其他限制符 (*, +, ?, {n}, {n,}, {n,m}) 后面时，匹配模式是非贪婪的。
+                非贪婪模式尽可能少的匹配所搜索的字符串，而默认的贪婪模式则尽可能多的匹配所搜索的字符串。
+                例如，对于字符串 "oooo"，'o+?' 将匹配单个 "o"，而 'o+' 将匹配所有 'o'。
+            </p>
+            例子  /h\w*l/  helloworld
+        </li>
+
+        <li>
+            元字符介绍8:
+            <h3>
+                '.'
+            </h3>
+            <p class="text-primary">
+                作用：匹配除换行符（\n、\r）之外的任何单个字符。要匹配包括 '\n' 在内的任何字符，请使用像"(.|\n)"的模式。
+            </p>
+            例子  /./
+        </li>
+
+        <li>
+            元字符介绍9:
+            <h3>
+                '(pattern)'
+            </h3>
+            <p class="text-primary">
+                作用：匹配 pattern 并获取这一匹配。所获取的匹配可以从产生的 Matches 集合得到，
+                在VBScript 中使用 SubMatches 集合，在JScript 中则使用 $0…$9 属性。
+                要匹配圆括号字符，请使用 '\(' 或 '\)'。理解为正则表达式中的表达式，子正则。()中间可以写上正则表达式。
+                这个时候()里面就是单独的一个表达式了，可以和()外面的东西结合起来，做更加复杂的正则表达式。
+            </p>
+            例子  /(tom|peter|jerry)\.zhou/  /(tom)\.zhou/
+        </li>
+
+        <li>
+            元字符介绍10:
+            <h3>
+                'a|b'
+            </h3>
+            <p class="text-primary">
+                作用：匹配 a 或 b。例如，'z|food' 能匹配 "z" 或 "food"。'(z|f)ood' 则匹配 "zood" 或 "food"。
+            </p>
+        </li>
+
+        <li>
+            元字符介绍11:
+            <h3>
+                '[abc]'
+            </h3>
+            <p class="text-primary">
+                作用：字符集合。匹配所包含的任意一个字符。例如， '[abc]' 可以匹配 "plain" 中的 'a'。
+            </p>
+        </li>
+
+        <li>
+            元字符介绍12:
+            <h3>
+                '[^xyz]'
+            </h3>
+            <p class="text-primary">
+                作用：负值字符集合。匹配未包含的任意字符。例如， '[^abc]' 可以匹配 "plain" 中的'p'、'l'、'i'、'n'。
+            </p>
+        </li>
+
+        <li>
+            元字符介绍13:
+            <h3>
+                '[a-z]'
+            </h3>
+            <p class="text-primary">
+                作用：字符范围。匹配指定范围内的任意字符。例如，'[a-z]' 可以匹配 'a' 到 'z' 范围内的任意小写字母字符。
+            </p>
+        </li>
+
+        <li>
+            元字符介绍14:
+            <h3>
+                '\b  \B  \d  \n  \w  .......'
+            </h3>
+            <p class="text-primary">
+                作用：\b匹配一个单词边界，也就是指单词和空格间的位置。例如， 'er\b' 可以匹配"never" 中的 'er'，但不能匹配 "verb" 中的 'er'。<br/>
+                \B匹配非单词边界。'er\B' 能匹配 "verb" 中的 'er'，但不能匹配 "never" 中的 'er'。<br/>
+                \d匹配一个数字字符。等价于 [0-9]。<br/>
+                \n匹配一个换行符。等价于 \x0a 和 \cJ。<br/>
+                \w匹配字母、数字、下划线。等价于'[A-Za-z0-9_]'。<br/>
+                等等...
+            </p>
+        </li>
+
+        <li>
+            <h3>
+                (正向|反向)(否定|肯定)预查等等。。
+            </h3>
+            <p class="text-primary">
+
+            </p>
+        </li>
+    </ul>
+
+    <h1>
+        实例
+    </h1>
+    <p>判断电话号码：</p>
+    <!--/^(1(3|4|5|8){1})\d{9}$/-->
+
+    <p>判断邮箱：</p>
+    <!--/^[A-Za-z0-9]+([-_.][A-Za-z0-9]+)*@([A-Za-z0-9]+[-.])+[A-Za-z]{2,4}$/-->
+    qq邮箱
+    <!--/^\d{8,10}\@qq\.com$/-->
+
+    <p>返回文本特定段落TITHE+number</p>
+    <p>
+        <!--/TITHE[1-9][0-9]{0,1}/-->
+        abcdsadasdasdnkllnklasdlkansdlknasasdasdasTITHE10asdasdasd
+    </p>
+
+    <p>捕捉url链接中的域地址部分www.feisu.com</p>
+    <p>
+        http://www.feisu.com/dasdasd.html
+        <!--/(\w{1,}:\/\/)([^/:])/-->
+        <!--/\/\/([^/:]+)/-->
+    </p>
+
+    <p>题目</p>
+    <p>
+        返回字符串里面的url
+        'url:www.baidu.com'
+        取出一个html标签里面的值
+
+    </p>
+
+
+
+    <div id="test">
+
+    </div>
+	
+	
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    var reg = /hello?world[1-9]{1,}/;//+号代表匹配前面一格字符的多次或者一次 但是必须出现 *号代表前面一格字符可以随便出现（也可以不出现） ？号代表前面的一个字符只能出现一次或者0次
+//但是  这整个字符串 一般情况下 是用来匹配的  就是说
+    // 正则表达式里面的字符串  都是有所作用的  特殊符号配合着字符串  组合成正则表达式  字符串匹配死的东西    特殊符号则定义了字符串的规则和逻辑
+//    就好比这个helloworld字符串  这个字符串里面的字符普通情况下  就是用来单独匹配helloworld字符串  当我们需要去用单独的一个表达式去匹配更多类似或者有关系的字符串和数据的时候
+//    元字符和各种其他运算符 就必不可少了
+//    注意：在js正则中/这个符号是用来开始正则的  \这个 是用来转义的
+//    正则表达式 可以理解为一个 有多种形态的多态字符串 字符串本身包含着判断 所以 存在多种状态 通过match()方法将正则表达式作为参数匹配字符串，返回的是 正则表达式匹配的结果 也就是查询的结果
+
+    var a = reg.test('helloworld123');
+    var reg1 = /h.*l/;//贪婪匹配  总是尽可能多的匹配的数据
+    var reg2 = /h.*?l/;//非贪婪匹配  尽可能少的匹配数据  在贪婪匹配的   限 定 符  后面加一个问号 可以转化成非贪婪匹配
+    var b = reg1.test('helloworld123');
+//    这个test方法 就是用正则去测试数据 返回布尔值 当字符串中 存在匹配的元素的时候 就会返回真值
+    console.log(a + "+" + b);
+//    特殊字符介绍   $ ( ) * + . [ ? \ ^ { |
+
+//    限定字符和贪婪的匹配
+//    限定字符有几种  + * ?  {n,m}  用来限定正则表达式组件出现的次数
+
+
+//    定位符
+    var reg3 = /^helloworld$/;//^ 和 $ 用来匹配字符串在文本中出现的位置  reg3匹配了一个只符合单行字符串helloworld的文本  ^代表正则表达式^的前面是没得其他的东西的
+    //$代表  正则表达式中$的后面 是没有东西的  有了这两个东西 意思就是 这个正则 是用来匹配的一个单行的整个的文本
+    var c = reg3.test('123helloworld456');
+    var reg4 = /^你好世界$/;//正则表达式并不能匹配中文
+    var d = reg.test('你好世界');
+    console.log(c+'+'+d);
+</script>
+
+</body>
+</html>

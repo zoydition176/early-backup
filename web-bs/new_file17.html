@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<input type="text" id="ipt"/>
+				<a id="btn">sub</a>
+			</div>
+			<p id="error">
+				
+			</p>
+		</div>
+		
+		
+		<div>
+		    2.加入防抖后的输入：
+		    <input type="text" name="debounce" id="debounce">
+		</div>
+		
+		
+		
+	</body>
+	<script type="text/javascript">
+		$('#ipt').on('keyup',function(){
+			var $t = $(this),
+				$v = $t.val();
+			var d = Emaildebounce(domCheck,500)
+			d($v);		
+		})
+		function domCheck(value){
+			var errorbox = $('#error');
+			var errortext = '<span style="color:#d63030">email no good</span>';
+			var suctext = '<span style="color:#666666">email is right</span>'; 
+			var patten = /^[0-9A-Za-z][\w\.\-\+]+\@[\w\.\-\+]+\.[\w\.\-]+[A-Za-z]$/;
+			
+			if(!patten.test(value)){
+				errorbox.html(errortext);
+			}else{
+				errorbox.html(suctext);
+			}
+		}
+		function Emaildebounce(fn,delay){
+			return function(data){
+				clearTimeout(fn.timmer);
+				fn.timmer = setTimeout(function(){
+					fn(data)
+				},delay)
+			}	
+		}
+		$('#btn').on('click',function(){
+			console.log('ssss')
+		})
+		$('#btn').attr('disabled',true);
+		window.onload = function () {
+            //模拟ajax请求
+	        function ajax(content) {
+	            console.log('ajax request ' + content)
+	        }
+	        function debounce(fun, delay) {
+	        	console.log(111)
+	            return function (args) {
+	                //获取函数的作用域和变量
+	                let that = this
+	                let _args = args
+	                console.log(this)
+	                //每次事件被触发，都会清除当前的timeer，然后重写设置超时调用
+	                clearTimeout(fun.id)
+	                fun.id = setTimeout(function () {
+	                    fun.call(that, _args)
+	                    console.log(that)
+	                }, delay)
+	            }
+	        }
+	        var inputDebounce = document.getElementById('debounce')
+	        var debounceAjax = debounce(ajax, 500)
+	        inputDebounce.addEventListener('keyup', function (e) {
+	            debounceAjax(e.target.value)
+	        })
+        }
+		
+	</script>
+	<script type="text/javascript">
+		var a = {
+			aaa:'1',
+			bbb:'2',
+			ccc:'3'
+		};
+		var b;
+		for(i in a){
+			console.log(a[i])
+		}
+		
+		
+		
+	</script>
+</html>

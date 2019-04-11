@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <title>news</title>
+	    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	    <link href="https://www.fs.com/includes/templates/fiberstore/css/sweetalert2.min.css" media="all" type="text/css" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" media="all" href="css/iconfont.css">
+	    <link rel="stylesheet" type="text/css" media="all" href="https://www.fs.com/includes/templates/fiberstore/css/public.css?v=1539922680">
+	    <link rel="stylesheet" href="https://www.fs.com/includes/templates/fiberstore/css/swiper-3.4.0.min.css?v=1533961150">
+	    <link rel="stylesheet" href="https://www.fs.com/includes/templates/fiberstore/css/policy_window.css?v=1539316012">
+	    <link rel="stylesheet" type="text/css" media="all" href="https://www.fs.com/includes/templates/fiberstore/css/fs_allCss.css">
+	    <link rel="stylesheet" href="https://www.fs.com/includes/templates/fiberstore/css/media.css">
+	    <script type="text/javascript" src="https://www.fs.com/includes/templates/fiberstore/jscript/cdn_js/jquery-1.8.2.min.js"></script>
+	    <script type="text/javascript" src="https://www.fs.com/includes/templates/fiberstore/jscript/cdn_js/js_cdn.js"></script>
+	    <script src="https://www.fs.com/includes/templates/fiberstore/jscript/header.js?v=1539051774"></script>
+	    <!--英文站三个收费字体覆盖-->
+	    <style>
+	        @font-face {
+	            font-family: 'Open Sans';
+	            font-style: normal;
+	            font-weight: 400;
+	            src: url(css/opensans.woff);
+	            src: local('Open Sans'),local('OpenSans'),url(css/opensans.woff) format('woff')
+	        }
+	
+	        @font-face {
+	            font-family: 'Open Sans';
+	            font-style: normal;
+	            font-weight: 300;
+	            src: local('Open Sans Light'),local('OpenSans-Light'),url(css/opensans-light-webfont.woff) format('woff');
+	        }
+	
+	        @font-face {
+	            font-family: 'Open Sans';
+	            font-style: normal;
+	            font-weight: 600;
+	            src: local('opensans semibold webfont'),local('opensans-semibold-webfont'),url(css/opensans-semibold-webfont.woff) format('woff');
+	        }
+	    </style>
+	</head>
+	<body>
+		<style type="text/css">
+			.delete-address-window{
+				width: 480px;	    
+			    left: 50%;
+			    top: 50%;
+			    display: block;
+			    vertical-align: middle;
+			    text-align: left;
+			    margin: 0;
+			    transform: none;
+			    transform: translate(-50%,-50%);
+			}
+			.new-popup-content{
+				padding: 0 40px;
+			    box-sizing: border-box;
+			    padding-bottom: 40px;
+			    border-top: 1px solid #EEE;
+			    border-bottom: 1px solid transparent;
+			}
+			.new-popup-text{
+				font-size: 14px;
+			    color: #333333;
+			    line-height: 18px;
+			    font-weight: 400;
+			    padding-bottom: 16px;
+			    padding-top: 20px;
+			}
+			.new-popup-cancel{
+			    font-size: 14px;
+			    background: #fff;
+			    border-radius: 2px;
+			    cursor: pointer;
+			    display: inline-block;
+			    text-align: center;
+			    vertical-align: middle;
+			    font-weight: 400;
+			    border: 2px solid #dddddd;
+			    transition: all .3s;
+			    min-width: 150px;
+			    border-radius: 2px;
+		        height: 38px;
+				line-height: 34px;
+    			color: #333;
+			    min-width: auto;
+			    padding: 0 12px;
+			    box-sizing: border-box;
+			    margin-left: 6px;
+			}
+			.new-popup-cancel:hover{
+				border: 2px solid #6f6f6f;
+			    background: #F4F4F4;
+			    color: #333333;
+			    text-decoration: none;
+			}
+			.new-popup-confirm{
+				font-size: 14px;
+			    border-radius: 2px;
+			    cursor: pointer;
+			    display: inline-block;
+			    text-align: center;
+			    vertical-align: middle;
+			    font-weight: 400;
+			    height: 38px;
+			    line-height: 34px;
+			    min-width: auto;
+			    padding: 0 12px;    
+			    box-sizing: border-box;
+			    min-width: 150px;
+			    border-radius: 2px;
+			    margin-left: 6px;
+			    background: #c91f24;
+			    border: 2px solid #c91f24;
+			    color: #FFF;
+			    min-width: auto;
+			    transition: all .3s;
+			}
+			.new-popup-confirm:hover {
+			    text-decoration: none;
+			    background: #b00f14;
+			    border: 2px solid #b00f14;
+			}
+			.new-popup-btn-group{
+				text-align: right;
+			}
+			.new-popup-btn{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			
+			
+			.public_bg_wap.background{position:absolute;width:100%;height:100%;z-index:10;top:0;left:0}
+			.public_bg_wap.background .bg_color{position:absolute;width:100%;height:100%;background:#fff;z-index:2;opacity:.5}
+			.public_bg_wap.background #loader_order_alone{background:0 0;z-index:5;position:absolute;left:50%;top:50%;width:80px;height:80px;margin-left:-40px;margin-top:-40px}
+			.public_bg_wap.background #loader_order_alone .path{animation:dash 1.5s ease-in-out infinite,shopping_color 6s ease-in-out infinite}
+			#bg_loading{background:#fff}
+			@keyframes shopping_color{0%,100%{stroke:#bbb}
+			40%{stroke:#bbb}
+			66%{stroke:#bbb}
+			80%,90%{stroke:#bbb}
+			}
+			
+		</style>
+		<button onclick="confirm_del_window(3,1,this,305450)">123123123</button>
+		<div class="new_popup" id="delete_address_confirm">
+		    <div class="new_popup_bg"></div>
+		    <div class="new_popup_main delete-address-window">
+		        <h2 class="new_popup_tit">
+		            <strong>Delete this address?</strong>
+		            <span class="icon iconfont" onclick="">&#xf092;</span>
+		        </h2>
+		        <div class="new-popup-content">
+		            <p class="new-popup-text">
+		            	Deleting this shipping address will not delete any pending orders being shipped to this address.
+		            </p>
+		            <div class="new-popup-btn-group">
+		            	<a class="new-popup-cancel" onclick="" href="javascript:;">Cancel</a>
+		            	<div class="new-popup-btn">
+		            		<input type="button" value="Delete" id="" class="new-popup-confirm" data-id="" onclick="">
+		            	</div>            		
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		
+		<script type="text/javascript">
+			function confirm_del_window(type, shipping_type, obj, id){
+				var k = obj;
+				var btn = '<input type="button" value="Delete" id="" class="new-popup-confirm" data-id="" onclick="changeAddress('+type+','+shipping_type+',this,'+id+')">';
+				$('#delete_address_confirm').show().find('.new-popup-btn').html(btn);
+			}
+			
+			function changeAddress(type, shipping_type, obj, id){
+				console.log(type+','+shipping_type+','+obj+','+id);
+				console.log(obj)
+			}
+			// 局部加载动画方法
+			function commonLoading(dom,isOuter,isLoad) {
+			    var loadDom = $(dom);
+			    var dStyle = 'commonload';
+			    var html = '<div class="spinWrap public_bg_wap background"><div class="bg_color"></div><div id="loader_order_alone" class="loader_order"><svg class="circular" viewBox="25 25 50 50"><circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle></svg></div></div>';
+			    switch(isLoad){
+			        case 'on':
+			            if(!isOuter){
+			                loadDom.addClass(dStyle);
+			            }
+			            loadDom.append(html);
+			            loadDom.find("#loader_order_alone").show();
+			            break;
+			        case 'off':
+			            loadDom.removeClass(dStyle);
+			            loadDom.find(".spinWrap.public_bg_wap.background").remove();
+			            break;
+			        default:
+			            return false
+			    }
+			}
+		</script>
+		
+		
+		
+		
+		
+	</body>
+</html>

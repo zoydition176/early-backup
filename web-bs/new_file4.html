@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="password" id="abc" placeholder="asdsa" class="j-kk"/>
+		<input type="password" placeholder="asdsa" class="j-kk"/>
+		<input type="password" placeholder="asdsa" class="j-kk" name="asd"/>
+		<input type="text" name="" id="" value="" placeholder="116156156"/>
+		<button id="def">dadasdasd</button>
+		
+		
+		<input type="text" id="kkk"/>
+		<button id="rep">123</button>
+	</body>
+	<script type="text/javascript">
+//		document.getElementsByClassName('j-kk').addEventListener('click',function(){
+//			var a = document.getElementById('abc');
+//			if(a.type == 'password'){
+//				a.type = 'text'
+//			}else{
+//				a.type = 'password'
+//			}
+//		})
+
+var b = document.getElementsByClassName('j-kk');
+console.log(b);
+for(i=0;i<b.length;i++){
+	b[i].addEventListener('click',function(){
+		var a = this;
+		if(this.type == 'password'){
+			a.type = 'text'
+		}else{
+			a.type = 'password'
+		}
+	})
+}
+
+
+
+
+
+var x=document.getElementsByTagName("input");
+x[0].addEventListener('focus',function(){
+	getElements(event);
+});
+		function getElements(e)
+		  {
+			  var x=document.getElementsByTagName("input");
+			  console.log(event);
+		  }
+		  window.onload=function(){
+		  	var k = document.getElementById('kkk');
+		  	document.getElementById('rep').addEventListener('click',function(){
+		  		var kv = k.value;
+		  		var kvr;
+		  		if(/&&/.test(kv)){
+		  			kv = kv.replace(/&&/,'&');
+		  		}
+		  		if(/&amp;&amp;/.test(kv)){
+		  			kv = kv.replace(/&amp;&amp;/,'&amp;');
+		  		}
+		  		if(/&amp;/.test(kv)){
+		  			kv = kv.replace(/&amp;/,'&');
+		  		}
+		  		
+		  		console.log(kv);
+		  	})
+		  }
+	</script>
+</html>

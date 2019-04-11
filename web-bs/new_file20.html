@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="bshare-custom">
+			<a title="分享到QQ空间" class="bshare-qzone"></a>
+			<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+			<a title="分享到人人网" class="bshare-renren"></a>
+			<a title="分享到腾讯微博" class="bshare-qqmb"></a>
+			<a title="分享到网易微博" class="bshare-neteasemb"></a>
+			<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+			<span class="BSHARE_COUNT bshare-share-count">0</span>
+		</div>
+		<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+		<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+		
+		
+	</body>
+	<script type="text/javascript">
+		function te(e){
+			var a = e.split('|');
+			var k = [];
+			for(var i=0;i<a.length;i++){
+				var p = a[i].split(':');
+				var d = {};
+				d.id = p[0];
+				d.num = p[1];
+				k.push(d);
+			}
+		}
+		
+		
+		function te2(e){
+			var pid = e.match(/\d{5,}/g);
+			var num = e.match(/\:\d{1,}/g);
+		}
+		
+		
+	</script>
+</html>

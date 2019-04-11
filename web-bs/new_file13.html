@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jq321.js" type="text/javascript" charset="utf-8"></script>
+		<script src="node_modules/vue/dist/vue.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/strct.js" type="text/javascript" charset="utf-8"></script>-->
+	</head>
+	<body>
+		<div class="" id="box">
+			<div>
+				<span v-text='text'></span>
+				<input type="text" name="" id="jjjj" value="" v-model='text'/>
+			</div>
+			<input type="text" id="okl"/>
+			
+			
+				
+				
+			<listsss v-bind:myc='text'>
+				
+			<listsss>
+				
+			
+		</div>
+		
+		<div class="login-check active">
+			<label for="">
+				<input type="checkbox" class="pc" name="cookietime" id="cookietime_LbYFN" tabindex="1" value="2592000" checked="checked">自动登录
+			</label>
+			
+		</div>
+		<input type="hidden" id="hhh"/>
+		
+	</body>
+	<script type="text/javascript">
+		var m = new Vue({
+			data:{
+				text:'templates'
+			},
+			components:{
+				listsss:{
+					data:function(){
+						return {
+							masg:'12321asdsa'
+						}
+					},
+					props:['myc'],
+					template:'<a> {{myc}} </a>',
+				}
+			}
+			
+		}).$mount('#box');
+		
+		var p = $('#box');
+		var k = {ag:123,look:'sadsa'}
+		for(x in k){
+			console.log(k[x])
+		}
+		
+		
+		jQuery('.login-check').on('click',function(e){
+			var a = jQuery(this);
+			e.preventDefault();
+			console.log(e);
+		    if(jQuery('.login-check').hasClass('active')){
+		        jQuery('.login-check').removeClass('active');
+		        jQuery('.login-check').find('input[type="checkbox"]').attr('checked',false)
+		    }else{
+		        jQuery('.login-check').addClass('active');
+		        jQuery('.login-check').find('input[type="checkbox"]').attr('checked',true)
+		    }  
+		});
+		$('#jjjj').focus();
+		$('#hhh').focus();
+	</script>
+</html>

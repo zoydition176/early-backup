@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var jdemail = /(^\s*)\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*(\s*$)/;
+		/**
+		 * 检查邮箱格式
+		 * @param email
+		 * @returns {Boolean}
+		 */
+		function check_email(email){  
+		   if(email){
+		   var myReg=/(^\s*)\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*(\s*$)/;
+		   if(!myReg.test(email)){return false;}
+		   return true;
+		   }
+		   return false;
+		}
+		function check_email_new(email){  
+		   if(email){
+			   var reg=/^[0-9a-zA-Z_\-\.]{1}\**@\w+([-.]\w+)*\.\w+([-.]\w+)*(\s*$)/;
+			   if(!reg.test(email) && !check_email(email)){
+				   return false;
+			   }
+		   		return true;
+		   }
+		   return false;
+		}
+	</script>
+</html>

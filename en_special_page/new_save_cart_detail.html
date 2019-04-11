@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <title>new save cart</title>
+	    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	    <link href="https://www.fs.com/includes/templates/fiberstore/css/sweetalert2.min.css" media="all" type="text/css" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" media="all" href="css/iconfont.css">
+	    <link rel="stylesheet" type="text/css" media="all" href="https://www.fs.com/includes/templates/fiberstore/css/public.css?v=1539922680">
+	    <link rel="stylesheet" href="https://www.fs.com/includes/templates/fiberstore/css/swiper-3.4.0.min.css?v=1533961150">
+	    <script type="text/javascript" src="https://www.fs.com/includes/templates/fiberstore/jscript/cdn_js/jquery-1.8.2.min.js"></script>
+	    <script type="text/javascript" src="https://www.fs.com/includes/templates/fiberstore/jscript/cdn_js/js_cdn.js"></script>
+	    <link rel="stylesheet" href="https://www.fs.com/includes/templates/fiberstore/css/policy_window.css?v=1539316012">
+	    <link rel="stylesheet" type="text/css" media="all" href="https://www.fs.com/includes/templates/fiberstore/css/fs_allCss.css">
+	    <link rel="stylesheet" href="https://www.fs.com/includes/templates/fiberstore/css/media.css">
+	    <script src="https://www.fs.com/includes/templates/fiberstore/jscript/header.js?v=1539051774"></script>
+	    <!--英文站三个收费字体覆盖-->
+	    <style>
+	        @font-face {
+	            font-family: 'Open Sans';
+	            font-style: normal;
+	            font-weight: 400;
+	            src: url(css/opensans.woff);
+	            src: local('Open Sans'),local('OpenSans'),url(css/opensans.woff) format('woff')
+	        }
+	
+	        @font-face {
+	            font-family: 'Open Sans';
+	            font-style: normal;
+	            font-weight: 300;
+	            src: local('Open Sans Light'),local('OpenSans-Light'),url(css/opensans-light-webfont.woff) format('woff');
+	        }
+	
+	        @font-face {
+	            font-family: 'Open Sans';
+	            font-style: normal;
+	            font-weight: 600;
+	            src: local('opensans semibold webfont'),local('opensans-semibold-webfont'),url(css/opensans-semibold-webfont.woff) format('woff');
+	        }
+	    </style>
+	</head>
+	<body>
+		<link rel="stylesheet" href="css/new-shopcart.css" />
+		
+		
+		<div class="box">
+			<div class="menu_02 breadcrumb-container">
+				<dl class="breadcrumb" id="site-breadcrumb">  
+					<dt itemscope="" itemtype="https://data-vocabulary.org/Breadcrumb">
+						<meta itemprop="title" content="Home"><a itemprop="url" href="http://localhost.fs.us/"><span>Home</span><i></i></a>
+					</dt>
+					<dd class="my_dashboard" itemscope="" itemtype="https://data-vocabulary.org/Breadcrumb" style="display: block;">
+						<a itemprop="url" href="http://localhost.fs.us/index.php?main_page=shopping_cart"><span itemprop="title">Cart</span></a>
+					</dd>
+					<dd class="last_no" style="display: block;"><a href="http://localhost.fs.us/index.php?main_page=saved_items" itemprop="url">
+						<span itemprop="title">Saved Carts</span></a>
+					</dd>
+					<div class="ccc"></div>
+				</dl>
+			</div>
+			<div class="content">
+							
+				<style type="text/css">
+					.box{
+						background: #f7f8fa;
+					}
+					.breadcrumb-container{
+						width: 1420px;
+						margin: 0 auto;
+					}
+					.menu_02 dl dt:before{
+						display: none;
+					}
+					.new-save-cart-detail{
+						background: #ffffff;
+						overflow: hidden;
+					}
+					.new-save-cart-detail *{
+						box-sizing: border-box;
+					}
+					
+					
+					.new-save-cart-wrap{
+						padding: 0 20px;
+					}
+					.save-cart-th{
+						float: left;
+						display: table;
+						padding: 16px 0;
+					}
+					.new-save-cart-wrap-tit{
+						overflow: hidden;
+						color: #666;
+						border-bottom: 1px solid #eee;
+						font-size: 16px;
+						padding: 0 40px;
+					}
+					.save-cart-th.lg{
+						width: 576px;
+					}
+					.save-cart-th.sm{
+						width: 172px;
+					}
+					.save-cart-th.xm{
+						width: 96px;
+					}
+					.save-cart-detail-pl-img{
+						width: 120px;
+						float: left;
+					}
+					.save-cart-detail-pl-img img{
+						max-width: 100%;
+						height:auto;
+					}
+					.save-cart-detail-pl-txt{
+						width: 456px;
+						float: left;
+						padding:6px 0 6px 20px;
+					}
+					.save-cart-detail-pl-txt .save-cart-m-qty{
+						display: none;
+						color: #333333;
+						font-size: 16px;
+					}
+					.save-cart-td{
+						min-height: 152px;
+					}
+					.save-cart-detail-pl-txt .cartAttribsList ul li {
+						line-height: 20px;
+						font-size: 13px;
+					}
+					.save-cart-detail-pl-txt .shopping_details_operation {
+						margin-top: 8px;
+					}
+					.save-cart-detail-pl-txt .shopping_details_operation a{
+						color: #0681D3;
+					}
+					.save-cart-detail-pl-txt .shopping_cart_sku {
+						padding-top: 12px;
+						color: #555;
+						font-size: 13px;
+					}
+					.save-cart-detail-link{
+						display: block;
+						padding-bottom: 0px;
+					}
+					.cart_basket_btn{
+						margin-bottom: 0;
+					}
+					.new-save-cart-wrap .shopping_cart_pro_con{
+						border-top: 1px solid transparent;
+						border-bottom: 1px solid #EEEEEE;
+						padding: 0 20px;
+					}
+					.new-save-cart-wrap .shopping_cart_pro_con:last-child{
+						border-bottom: 1px solid transparent;
+					}
+					.save-cart-price{
+						font-size: 16px;
+						color: #333333;
+					}
+					.save-cart-detail-pl-txt .cartAttribsList{
+						padding-top: 10px;
+					}
+					.save-cart-btn-del{
+						position: relative;
+						line-height: 38px;
+						height: 38px;
+						border:2px solid #cccccc;
+						font-size: 14px;
+						color: #666666;
+						background: transparent;
+						border-radius: 3px;
+						text-decoration: none;
+						display: block;
+						margin-top: 10px;
+						margin-bottom: 6px;
+						text-align: center;
+						-webkit-transition: all 0.3s ease;
+						-moz-transition: all 0.3s ease;
+						transition: all 0.3s ease;
+					}
+					.save-cart-btn-del:hover{
+						text-decoration: none;
+						border-color: #6f6f6f;
+						-webkit-transition: all 0.3s ease;
+						-moz-transition: all 0.3s ease;
+						transition: all 0.3s ease;
+					}
+					.save-cart-right-summary{
+						color: #666666;
+						font-size: 16px;
+						text-align: center;
+					}
+					.save-cart-title{
+						color: #5a5a5a;
+						font-size: 14px;
+					}
+					.save-cart-head{
+						padding-top: 18px;
+						padding-bottom: 20px;
+						vertical-align: middle;
+					}
+					.save-cart-head .save-cart-name{
+						font-size: 26px;
+						color: #333333;
+						font-weight: 400;
+					}
+					.save-cart-head .save-cart-qty{
+						font-size: 18px;
+						color: #999999;
+						padding-left: 15px;
+						padding-right: 10px;
+					}
+					.save-cart-head .save-cart-head-btn{
+						display: inline-block;
+					}
+					.save-cart-head .save-cart-head-icon{
+						font-size: 14px;
+						color: #333333;
+						display: inline-block;
+						padding-left: 20px;
+					}
+					.save-cart-head .save-cart-head-icon:hover{
+						text-decoration: none;
+					}
+					.save-cart-head .save-cart-head-icon:hover span{
+						text-decoration: underline;
+					}
+					/*删除确认框*/
+					.confirm-window{
+						width: 480px;
+						left: 50%;
+						top: 50%;
+						display: block;
+						vertical-align: middle;
+						text-align: left;
+						margin: 0;
+						transform: translate(-50%,-50%);
+					}
+					.new-popup-content{
+						padding: 0 40px;
+						box-sizing: border-box;
+						padding-bottom: 40px;
+						border-top: 1px solid #EEE;
+						border-bottom: 1px solid transparent;
+					}
+					.new-popup-text{
+						font-size: 14px;
+						color: #333333;
+						line-height: 18px;
+						font-weight: 400;
+						padding-bottom: 16px;
+						padding-top: 20px;
+					}
+					.new-popup-cancel{
+						font-size: 14px;
+						background: #fff;
+						border-radius: 2px;
+						cursor: pointer;
+						display: inline-block;
+						text-align: center;
+						vertical-align: middle;
+						font-weight: 400;
+						border: 2px solid #dddddd;
+						transition: all .3s;
+						height: 38px;
+						line-height: 34px;
+						color: #333;
+						min-width: auto;
+						padding: 0 12px;
+						box-sizing: border-box;
+						margin-left: 6px;
+					}
+					.new-popup-cancel:hover{
+						border: 2px solid #6f6f6f;
+						background: #F4F4F4;
+						color: #333333;
+						text-decoration: none;
+					}
+					.new-popup-confirm{
+						font-size: 14px;
+						border-radius: 2px;
+						cursor: pointer;
+						display: inline-block;
+						text-align: center;
+						vertical-align: middle;
+						font-weight: 400;
+						height: 38px;
+						line-height: 34px;
+						padding: 0 12px;
+						box-sizing: border-box;
+						margin-left: 6px;
+						background: #c91f24;
+						border: 2px solid #c91f24;
+						color: #FFF;
+						min-width: auto;
+						transition: all .3s;
+					}
+					.new-popup-confirm:hover {
+						text-decoration: none;
+						background: #b00f14;
+						border: 2px solid #b00f14;
+					}
+					.new-popup-btn-group{
+						text-align: right;
+					}
+					.new-popup-btn{
+						display: inline-block;
+						vertical-align: middle;
+					}
+					.public_bg_wap.background{position:absolute;width:100%;height:100%;z-index:10;top:0;left:0}
+					.public_bg_wap.background .bg_color{position:absolute;width:100%;height:100%;background:#fff;z-index:2;opacity:.5}
+					.public_bg_wap.background #loader_order_alone{background:0 0;z-index:5;position:absolute;left:50%;top:50%;width:80px;height:80px;margin-left:-40px;margin-top:-40px}
+					.public_bg_wap.background #loader_order_alone .path{animation:dash 1.5s ease-in-out infinite,shopping_color 6s ease-in-out infinite}
+					#bg_loading{background:#fff}
+					@keyframes shopping_color{0%,100%{stroke:#bbb}
+						40%{stroke:#bbb}
+						66%{stroke:#bbb}
+						80%,90%{stroke:#bbb}
+					}
+					/*删除确认框 end*/
+					@media (max-width: 1440px) {
+						.save-cart-th.lg {
+							width: 432px;
+						}
+						.save-cart-th.sm{
+							width: 144px;
+						}
+						.save-cart-detail-pl-txt{
+							width: 312px;
+						}
+						.breadcrumb-container{
+							width: 1200px;
+						}
+						.new_cart{
+							padding-left: 0;
+							padding-right: 0;
+						}
+					}
+					@media (max-width: 1220px) {
+						.breadcrumb-container{
+							width: 960px;
+						}
+						.new-save-cart-wrap-tit{
+							padding: 0 20px;
+						}
+						.new-save-cart-wrap .shopping_cart_pro_con{
+							padding: 0;
+						}
+						.save-cart-th.lg {
+							width: 312px;
+						}
+						.save-cart-th.sm {
+							width: 104px;
+						}
+						.save-cart-detail-pl-img {
+							width: 80px;
+							float: left;
+						}
+						.save-cart-detail-pl-txt {
+							width: 232px;
+						}
+						.save-cart-td {
+							min-height: 112px;
+						}
+						.save-cart-price {
+							font-size: 14px;
+						}
+					}
+					@media (max-width: 960px) {
+						.breadcrumb-container{
+							width: 100%;
+							padding: 0;
+						}
+						.new-save-cart-container .shopcart-right-bar {
+							width: 100%;
+							display: block;
+						}
+						.new-save-cart-container{
+							padding: 0 15px;
+						}
+						.new-save-cart-wrap-tit{
+							display: none;
+						}
+						.save-cart-th.lg {
+							width: 100%;
+							position: relative;
+							padding-left: 80px;
+						}
+						.save-cart-detail-pl-img{
+							position: absolute;
+							top: 16px;
+							left: 0;
+						}
+						.save-cart-th.sm{
+							display: none;
+						}
+						.save-cart-detail-pl-txt .save-cart-m-qty{
+							display: block;
+							padding-top: 10px;
+						}
+						.save-cart-detail-pl-txt{
+							width: auto;
+						}
+						.new-save-cart-wrap {
+							padding: 0 15px;
+						}
+						.new-save-cart-container .shopcart-right-content{
+							margin-top: 20px;
+						}
+						.save-cart-head .save-cart-head-btn{
+							display: block;
+							padding-top: 10px;
+						}
+						.save-cart-head .save-cart-head-icon{
+							padding-left: 0;
+							padding-right: 15px;
+						}
+						.new_cart .cart_con_top{
+							padding: 0;
+						}
+						.save-cart-head .save-cart-name{
+							vertical-align: sub;
+						}
+					}
+
+				</style>
+				<div class="new-shopcart-container new-save-cart-container new_cart">
+					<div class="new-shopcart-wrap after">
+						<div class="cart_con_top">
+							<div class="save-cart-head">
+								<b class="save-cart-name">01/23/2019</b>
+								<span class="save-cart-qty">(4 Items)</span>
+								<div class="save-cart-head-btn">
+									<a class="save-cart-head-icon" href="">
+										<em class="icon iconfont">&#xf045;</em>
+										<span>Email</span>
+									</a>
+									<a class="save-cart-head-icon" href="">
+										<em class="icon iconfont">&#xf100;</em>
+										<span>Print</span>
+									</a>
+									<a class="save-cart-head-icon" href="">
+										<em class="icon iconfont">&#xf217;</em>
+										<span>Quote</span>
+									</a>
+								</div>
+
+							</div>
+						</div>
+						<div class="shopcart-left-content">
+							<div class="new-save-cart-detail">
+								<div class="new_checkout_details">
+									<div class="new-save-cart-wrap-tit">
+						                <div class="save-cart-th lg save-cart-title"><b>Your item</b></div>
+						                <div class="save-cart-th sm text_center save-cart-title"><b>Quantity</b></div>
+						                <div class="save-cart-th sm text_right save-cart-title"><b>Total</b></div>
+						            </div>
+						            <div class="new-save-cart-wrap">
+										<div class="shopping_cart_pro_con save_to_cart">
+											<div class="save-cart-th lg">
+												<div class="save-cart-detail-pl-img">
+													<a href="https://www.fs.com/products/70410.html">
+														<img src="https://img-en.fs.com/images/products/180x180/70410.main.jpg" alt="Fs 70410.main.jpg" title="" width="180" height="180" border="0">
+													</a>
+												</div>
+												<div class="save-cart-detail-pl-txt">
+													<a href="https://www.fs.com/products/70410.html" class="save-cart-detail-link">Customized Dual Fiber CWDM Mux Demux</a>
+													<input type="hidden" name="id[70410:644ee29b198b6a85599fc74daf9cf26d][47]" value="5122">
+													<input type="hidden" name="id[70410:644ee29b198b6a85599fc74daf9cf26d][38]" value="6456">
+													<input type="hidden" name="id[70410:644ee29b198b6a85599fc74daf9cf26d][3]" value="5141">
+													<input type="hidden" name="id[70410:644ee29b198b6a85599fc74daf9cf26d][46]" value="6993">
+													<input type="hidden" name="id[70410:644ee29b198b6a85599fc74daf9cf26d][78_chk5146]" value="5146">
+													<div class="cartAttribsList">
+														<ul>
+															<li>Wavelength&nbsp;-&nbsp;1470-1610nm</li>
+															<li>Channels&nbsp;-&nbsp;8CH</li>
+															<li>Connector&nbsp;-&nbsp;LC/APC</li>
+															<li>Housing&nbsp;-&nbsp;FUD Plug-in Module</li>
+															<li>Special Service&nbsp;-&nbsp;1310nm Port</li>
+														</ul>
+													</div>
+													<div class="shopping_cart_sku">
+					                        	<span class="product_sku">
+					                        		#<span>70410</span>
+					                        	</span> - <span class="products_in_stock"></span>
+														<span class="products_in_stock pro_details">
+													Customized, <em> </em>  Ship on  Mon. Mar. 25
+					                            </span>
+														<div class="track_orders_wenhao">
+															<div class="question_bg"></div>
+															<div class="question_text_01 leftjt">
+																<div class="arrow"></div>
+																<div class="popover-content">
+																	We are always devoted to offering the fastest delivery with multi-warehouse system. Learn more about our
+																	<a href="https://www.fs.com/shipping_delivery.html">shipping policy</a>.
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="shopping_details_operation">
+														<a href="javascript:;" class="shopping_cp_cell_save saved_cart_to_save" value="70410:644ee29b198b6a85599fc74daf9cf26d">Move to cart</a>
+														<span class="shopping_cp_line line_blue">|</span>
+														<a class="shopping_cp_cell_remove cart_details" name="products[]" value="70410:644ee29b198b6a85599fc74daf9cf26d" href="javascript:;">Remove</a>
+													</div>
+													<div class="save-cart-m-qty">
+														<span>1</span>
+														*
+														<span>CA$&nbsp;477.44</span>
+													</div>
+												</div>
+											</div>
+											<div class="save-cart-th sm save-cart-td text_center">
+												<div class="shopping_cp_cell">
+													<div class="cart_basket_btn">
+														1
+													</div>
+													<div class="ccc"></div>
+													<div style="display: none">
+														<a id="update" href="javascript:void(0);" onclick="javascript: $('#cart_form').submit();">FIBERSTORE_CART_ACTUALIZAR</a>
+													</div>
+												</div>
+											</div>
+											<div class="save-cart-th sm save-cart-td text_right">
+												<div class="shopping_cp_cell shopping_price_html save-cart-price">CA$&nbsp;477.44</div>
+											</div>
+											<input type="hidden" class="shopping_price" value="477.44">
+											<input type="hidden" class="shopping_weight" value="1.5">
+										</div>
+										<div class="shopping_cart_pro_con save_to_cart">
+											<div class="save-cart-th lg">
+												<div class="save-cart-detail-pl-img">
+													<a href="https://www.fs.com/products/70410.html">
+														<img src="https://img-en.fs.com/images/products/180x180/70410.main.jpg" alt="Fs 70410.main.jpg" title="" width="180" height="180" border="0">
+													</a>
+												</div>
+
+												<div class="save-cart-detail-pl-txt">
+													<a href="https://www.fs.com/products/70410.html" class="save-cart-detail-link">Customized Dual Fiber CWDM Mux Demux</a>
+													<div class="shopping_cart_sku">
+														<span class="product_sku">
+															#<span>70410</span>
+														</span> -
+														<span class="products_in_stock"></span>
+														<span class="products_in_stock pro_details">
+															Customized, <em> </em>  Ship on  Mon. Mar. 25
+														</span>
+														<div class="track_orders_wenhao">
+															<div class="question_bg"></div>
+															<div class="question_text_01 leftjt">
+																<div class="arrow"></div>
+																<div class="popover-content">
+																	We are always devoted to offering the fastest delivery with multi-warehouse system. Learn more about our
+																	<a href="https://www.fs.com/shipping_delivery.html">shipping policy</a>.
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="shopping_details_operation">
+														<a href="javascript:;" class="shopping_cp_cell_save saved_cart_to_save" value="70410:644ee29b198b6a85599fc74daf9cf26d">Move to cart</a>
+														<span class="shopping_cp_line line_blue">|</span>
+														<a class="shopping_cp_cell_remove cart_details" name="products[]" value="70410:644ee29b198b6a85599fc74daf9cf26d" href="javascript:;">Remove</a>
+													</div>
+													<div class="save-cart-m-qty">
+														<span>1</span>
+														*
+														<span>CA$&nbsp;477.44</span>
+													</div>
+												</div>
+											</div>
+											<div class="save-cart-th sm save-cart-td text_center">
+												<div class="shopping_cp_cell">
+													<div class="cart_basket_btn">
+														1
+													</div>
+													<div class="ccc"></div>
+													<div style="display: none">
+														<a id="update" href="javascript:void(0);" onclick="javascript: $('#cart_form').submit();">FIBERSTORE_CART_ACTUALIZAR</a>
+													</div>
+												</div>
+											</div>
+											<div class="save-cart-th sm save-cart-td text_right">
+												<div class="shopping_cp_cell shopping_price_html save-cart-price">CA$&nbsp;477.44</div>
+											</div>
+											<input type="hidden" class="shopping_price" value="477.44">
+											<input type="hidden" class="shopping_weight" value="1.5">
+										</div>
+										<div class="shopping_cart_pro_con save_to_cart">
+											<div class="save-cart-th lg">
+												<div class="save-cart-detail-pl-img">
+													<a href="https://www.fs.com/products/70410.html">
+														<img src="https://img-en.fs.com/images/products/180x180/70410.main.jpg" alt="Fs 70410.main.jpg" title="" width="180" height="180" border="0">
+													</a>
+												</div>
+
+												<div class="save-cart-detail-pl-txt">
+													<a href="https://www.fs.com/products/70410.html" class="save-cart-detail-link">Customized Dual Fiber CWDM Mux Demux</a>
+													<div class="shopping_cart_sku">
+														<span class="product_sku">
+															#<span>70410</span>
+														</span> -
+														<span class="products_in_stock"></span>
+														<span class="products_in_stock pro_details">
+															Customized, <em> </em>  Ship on  Mon. Mar. 25
+														</span>
+														<div class="track_orders_wenhao">
+															<div class="question_bg"></div>
+															<div class="question_text_01 leftjt">
+																<div class="arrow"></div>
+																<div class="popover-content">
+																	We are always devoted to offering the fastest delivery with multi-warehouse system. Learn more about our
+																	<a href="https://www.fs.com/shipping_delivery.html">shipping policy</a>.
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="shopping_details_operation">
+														<a href="javascript:;" class="shopping_cp_cell_save saved_cart_to_save" value="70410:644ee29b198b6a85599fc74daf9cf26d">Move to cart</a>
+														<span class="shopping_cp_line line_blue">|</span>
+														<a class="shopping_cp_cell_remove cart_details" name="products[]" value="70410:644ee29b198b6a85599fc74daf9cf26d" href="javascript:;">Remove</a>
+													</div>
+													<div class="save-cart-m-qty">
+														<span>1</span>
+														*
+														<span>CA$&nbsp;477.44</span>
+													</div>
+												</div>
+											</div>
+											<div class="save-cart-th sm save-cart-td text_center">
+												<div class="shopping_cp_cell">
+													<div class="cart_basket_btn">
+														1
+													</div>
+													<div class="ccc"></div>
+													<div style="display: none">
+														<a id="update" href="javascript:void(0);" onclick="javascript: $('#cart_form').submit();">FIBERSTORE_CART_ACTUALIZAR</a>
+													</div>
+												</div>
+											</div>
+											<div class="save-cart-th sm save-cart-td text_right">
+												<div class="shopping_cp_cell shopping_price_html save-cart-price">CA$&nbsp;477.44</div>
+											</div>
+											<input type="hidden" class="shopping_price" value="477.44">
+											<input type="hidden" class="shopping_weight" value="1.5">
+										</div>
+										<div class="shopping_cart_pro_con save_to_cart">
+											<div class="save-cart-th lg">
+												<div class="save-cart-detail-pl-img">
+													<a href="https://www.fs.com/products/70410.html">
+														<img src="https://img-en.fs.com/images/products/180x180/70410.main.jpg" alt="Fs 70410.main.jpg" title="" width="180" height="180" border="0">
+													</a>
+												</div>
+
+												<div class="save-cart-detail-pl-txt">
+													<a href="https://www.fs.com/products/70410.html" class="save-cart-detail-link">Customized Dual Fiber CWDM Mux Demux</a>
+													<div class="shopping_cart_sku">
+														<span class="product_sku">
+															#<span>70410</span>
+														</span> -
+														<span class="products_in_stock"></span>
+														<span class="products_in_stock pro_details">
+															Customized, <em> </em>  Ship on  Mon. Mar. 25
+														</span>
+														<div class="track_orders_wenhao">
+															<div class="question_bg"></div>
+															<div class="question_text_01 leftjt">
+																<div class="arrow"></div>
+																<div class="popover-content">
+																	We are always devoted to offering the fastest delivery with multi-warehouse system. Learn more about our
+																	<a href="https://www.fs.com/shipping_delivery.html">shipping policy</a>.
+																</div>
+															</div>
+														</div>
+														<div class="save-cart-m-qty">
+															<span>1</span>
+															*
+															<span>CA$&nbsp;477.44</span>
+														</div>
+													</div>
+													<div class="shopping_details_operation">
+														<a href="javascript:;" class="shopping_cp_cell_save saved_cart_to_save" value="70410:644ee29b198b6a85599fc74daf9cf26d">Move to cart</a>
+														<span class="shopping_cp_line line_blue">|</span>
+														<a class="shopping_cp_cell_remove cart_details" name="products[]" value="70410:644ee29b198b6a85599fc74daf9cf26d" href="javascript:;">Remove</a>
+													</div>
+												</div>
+											</div>
+											<div class="save-cart-th sm save-cart-td text_center">
+												<div class="shopping_cp_cell">
+													<div class="cart_basket_btn">
+														1
+													</div>
+													<div class="ccc"></div>
+													<div style="display: none">
+														<a id="update" href="javascript:void(0);" onclick="javascript: $('#cart_form').submit();">FIBERSTORE_CART_ACTUALIZAR</a>
+													</div>
+												</div>
+											</div>
+											<div class="save-cart-th sm save-cart-td text_right">
+												<div class="shopping_cp_cell shopping_price_html save-cart-price">CA$&nbsp;477.44</div>
+											</div>
+											<input type="hidden" class="shopping_price" value="477.44">
+											<input type="hidden" class="shopping_weight" value="1.5">
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="shopcart-right-content">
+							<div class="shopcart-right-bar" id="SaveCartRightBar">
+								<div class="shopcart-right-bar-content">
+									<ul class="shopcart-right-bar-ul" id="cart_total">
+										<li class="shopcart-right-bar-list after">
+											<div class="save-cart-right-summary">
+												Summary (4 Items)
+											</div>
+										</li>
+									</ul>
+									<div class="cart-total-price after" id="cart_total_info">
+										Total:
+										<span>
+											CA$&nbsp;&nbsp;<em class="total_js_s">1,203.53</em>
+									   </span>
+									</div>
+									<p class="cart_p05">( Shipping and taxes not included )</p>
+									<a href="javascript:void(0)" class="cart-btn-lg" id="view_all">
+										Move All to Cart
+									</a>
+
+									<a href="javascript:void(0)" class="save-cart-btn-del" id="deleteConfirm">
+										Delete
+									</a>
+
+									<div class="shopping_cart_methodsicon">
+										<ul>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="shopcart-right-bar-foot after">
+									<div class="cart_flo_r">
+										<div class="checkout_google">
+											<a href="https://www.google.com/shopping/ratings/account/metrics?q=fs.com&amp;c=US&amp;v=2" target="_blank">
+												<div class="google_right">
+													<img src="https://www.fs.com/includes/templates/fiberstore/images/google_score.png" alt="Fs google_score.png">
+												</div>
+												<div class="google_star">
+													<div class="google_star_top">
+                                                    <span>
+                                                        <img src="https://www.fs.com/includes/templates/fiberstore/images/google_star.png" alt="Fs google_star.png">
+                                                    </span>
+														<b>4.8</b>
+													</div>
+													<div class="google_star_bottom">
+														based on 600+reviews
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer"></div>
+
+
+		<div class="new_popup" id="deleteSaveCart">
+			<div class="new_popup_bg"></div>
+			<div class="new_popup_main confirm-window">
+				<h2 class="new_popup_tit">
+					<strong>Delete Saved Cart?</strong>
+					<span class="icon iconfont" onclick="hide_del_window()">&#xf092;</span>
+				</h2>
+				<div class="new-popup-content">
+					<p class="new-popup-text">
+						Are you sure to delete '01/23/2019'?
+					</p>
+					<div class="new-popup-btn-group">
+						<a class="new-popup-cancel" onclick="hide_del_window()" href="javascript:;">Cancel</a>
+						<div class="new-popup-btn">
+							<input type="button" value="Delete" id="" class="new-popup-confirm button_del_pcl" data-id="" onclick="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+            function commonRefresh(isLoad){
+                var _html = '';
+                var all = $('body');
+                _html += '<div class="spinWrap list_fsLoading" id="new_common_loading"><div class="bg_color" style="z-index:19999999;"></div><div id="loader_order_alone" class="loader_order" style="z-index:29999999;"> <svg class="circular" viewBox="25 25 50 50"><circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle></svg></div></div>';
+                switch (isLoad){
+                    case 'on':
+                        all.append(_html);
+                        $('.list_fsLoading').show();
+                        $('body,html').animate({scrollTop: 0},10);
+                        break
+                    case 'off':
+                        all.remove();
+                        all.find('.spinWrap').remove();
+                }
+            }
+            function hide_del_window(){
+                $('#deleteSaveCart').hide().find('.new-popup-btn').html();
+            }
+            $('#deleteConfirm').on('click',function () {
+                $('#deleteSaveCart').show();
+            });
+            function rightBarFixed() { // 右侧滑动效果
+                var ele = $('#SaveCartRightBar'),
+                    windowWidth = $(window).width(),
+                    init = 0;
+                if(ele.length > 0 && windowWidth > 960){
+                    var eleHeight = ele.outerHeight(true);
+                    var eleTop = ele.offset().top;
+                    $(window).off('scroll').on('scroll',function () {
+                        var currentTop = $(this).scrollTop();
+                        var carouselDom = $('.shopcart-carousel-container');
+                        var endele = carouselDom.length === 0 ? $('.footer') : carouselDom;
+                        var bottomTop = endele.offset().top;
+                        if($('.shopcart-left-content').outerHeight(true) > $('.shopcart-right-content').outerHeight(true)){
+                            if(currentTop > eleTop && currentTop < bottomTop - eleHeight){
+                                ele.addClass('tofixed').removeClass('endfixed')
+                            }else if(currentTop >= bottomTop - eleHeight){
+                                ele.addClass('endfixed').removeClass('tofixed')
+                            }else{
+                                ele.removeClass('tofixed').removeClass('endfixed')
+                            }
+                        }else{
+                            ele.removeClass('tofixed').removeClass('endfixed')
+                        }
+                    })
+                }else{
+                    return false
+                }
+            }
+            $(function () {
+                rightBarFixed();
+            });
+
+		</script>
+
+		
+	</body>
+</html>

@@ -1,0 +1,164 @@
+.zt_backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .3);
+	width: 100%;
+	height: 100%;
+	z-index: 998
+}
+
+.zt_popup {
+	width: 550px;
+	height: auto;
+	position: fixed;
+	top: 50%;
+	border-radius: 3px;
+	left: 50%;
+	z-index: 99999;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	display: none;
+	background-color: #fff
+}
+
+.zt_popup h3 {
+	background: #F5F5F5;
+	color: #666;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 400;
+	padding: 15px 20px
+}
+
+.zt_popup>h3 span {
+	float: right;
+	height: 30px;
+	width: 30px;
+	display: block;
+	background: url(../img/shopcart_delete.png) no-repeat 1px 3px;
+	cursor: pointer
+}
+
+.zt_popup>h3 span:hover {
+	background: url(../img/shopcart_delete.png) no-repeat -52px 3px
+}
+
+.zt_popup_body {
+	padding: 20px 60px 44px
+}
+
+.zt_popup_content {
+	text-align: center;
+	font-size: 14px;
+	color: #999;
+	line-height: 22px;
+	padding-top: 10px
+}
+
+.zt_popup_row {
+	margin-right: -10px;
+	margin-left: -10px;
+	box-sizing: border-box
+}
+
+.zt_popup_row:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	width: 0
+}
+
+.cancel_item {
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 10px
+}
+
+.cancel_item .cancel_item_1 {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 10px;
+	line-height: 24px;
+	box-sizing: border-box;
+	font-size: 14px;
+	text-align: center;
+	color: #666;
+	cursor: pointer;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease
+}
+
+.cancel_item .cancel_item_1:hover {
+	border: 1px solid rgba(51, 51, 51, .5);
+	color: #666
+}
+
+.zt_popup_btnset {
+	margin-top: 20px;
+	text-align: center;
+	box-sizing: border-box
+}
+
+.zt_popup_btnset:after {
+	content: '';
+	display: block;
+	clear: both;
+	width: 0;
+	height: 0
+}
+
+.zt_popup_btnset>span a.zt_01 {
+	cursor: pointer;
+	text-decoration: none;
+	width: 148px;
+	border-radius: 3px;
+	text-align: center;
+	height: 40px;
+	box-sizing: border-box;
+	display: inline-block;
+	color: #fff;
+	font-size: 16px;
+	margin: 0 10px;
+	line-height: 40px;
+	background: #d63030;
+	border: 1px #d63030 solid;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease
+}
+
+.zt_popup_btnset>span a.zt_01:hover {
+	background: #c61017
+}
+
+.zt_popup_btnset>span a.zt_02 {
+	cursor: pointer;
+	width: 148px;
+	border: 1px #dedede solid;
+	border-radius: 3px;
+	text-decoration: none;
+	text-align: center;
+	box-sizing: border-box;
+	height: 40px;
+	font-size: 16px;
+	display: inline-block;
+	color: #666;
+	margin: 0 10px;
+	line-height: 40px;
+	background: #fff;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease
+}
+
+.zt_popup_btnset>span a.zt_02:hover {
+	border-color: rgba(51, 51, 51, .5)
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ortab.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			*{margin:0;padding:0}
+body{font:12px Georgia, serif}
+html{overflow-y:scroll}
+a{text-decoration:none}
+a:focus{outline:0}
+#page-wrap{width:440px;margin:20px auto}
+h1{font:bold 40px Sans-Serif;margin:0 0 20px 0}
+
+/* Generic Utility */
+.hide{position:absolute;top:-9999px;left:-9999px}
+
+/* Specific to example one */
+
+#example-one{background:#eee;padding:10px;margin:0 0 20px 0;-moz-box-shadow:0 0 5px #666;-webkit-box-shadow:0 0 5px #666}
+
+#example-one .nav{overflow:hidden;margin:0 0 10px 0}
+#example-one .nav li{width:97px;float:left;margin:0 10px 0 0}
+#example-one .nav li.last{margin-right:0}
+#example-one .nav li a{display:block;padding:5px;background:#959290;color:white;font-size:10px;text-align:center;border:0}
+#example-one .nav li a:hover{background-color:#111}
+
+#example-one ul{list-style:none}
+#example-one ul li a{display:block;border-bottom:1px solid #666;padding:4px;color:#666}
+#example-one ul li a:hover{background:#fe4902;color:white}
+#example-one ul li:last-child a{border:none}
+
+#example-one ul li.nav-one a.current, #example-one ul#featured li a:hover{background-color:#0575f4;color:white}
+#example-one ul li.nav-two a.current, #example-one ul#core li a:hover{background-color:#d30000;color:white}
+#example-one ul li.nav-three a.current, #example-one ul#jquerytuts li a:hover{background-color:#8d01b0;color:white}
+#example-one ul li.nav-four a.current, #example-one ul#classics li a:hover{background-color:#FE4902;color:white}
+
+/* Specific to example two */
+
+#example-two .list-wrap{background:#eee;padding:10px;margin:0 0 15px 0}
+
+#example-two ul{list-style:none}
+#example-two ul li a{display:block;border-bottom:1px solid #666;padding:4px;color:#666}
+#example-two ul li a:hover{background:#333;color:white}
+#example-two ul li:last-child a{border:none}
+
+#example-two .nav{overflow:hidden}
+#example-two .nav li{width:97px;float:left;margin:0 10px 0 0}
+#example-two .nav li.last{margin-right:0}
+#example-two .nav li a{display:block;padding:5px;background:#666;color:white;font-size:10px;text-align:center;border:0}
+
+#example-two li a.current,#example-two li a.current:hover{background-color:#eee !important;color:black}
+#example-two .nav li a:hover, #example-two .nav li a:focus{background:#999}
+		</style>
+	</head>
+	<body>
+		<div id="page-wrap">
+
+	<!-- BEGIN Organic Tabs (Example One) -->
+
+	<div id="example-one">
+
+		<ul class="nav">
+
+			<li class="nav-one"><a href="#featured" class="current">Featured</a></li>
+
+			<li class="nav-two"><a href="#core" class="">Core</a></li>
+
+			<li class="nav-three"><a href="#jquerytuts" class="">jQuery</a></li>
+
+			<li class="nav-four last"><a href="#classics" class="">Classics</a></li>
+
+		</ul>
+
+		<div class="list-wrap" style="height: 167px;">
+
+			<ul id="featured" style="display: block;">
+
+				<li><a href="http://www.jq22.com/" target="_blank">Full Page Background Images</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Designing for WordPress</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Build Your Own Social Home!</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Absolute Positioning Inside Relative Positioning</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">IE CSS Bugs That'll Get You Every Time</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">404 Best Practices</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Date Display with Sprites</a></li>
+
+			</ul>
+
+			<ul id="core" class="hide" style="position: relative; top: 0px; left: 0px; display: none;">
+
+				<li><a href="http://www.jq22.com/" target="_blank">The VERY Basics of HTML &amp; CSS</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Classes and IDs</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">The CSS Box Model</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">All About Floats</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">CSS Overflow Property</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">CSS Font Size - (px - em - % - pt - keyword)</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">CSS Transparency / Opacity</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">CSS Sprites</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">CSS Image Replacement</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">CSS Vertial Align</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">The CSS Overflow Property</a></li>
+
+			</ul>
+
+			<ul id="jquerytuts" class="hide" style="position: relative; top: 0px; left: 0px; display: none;">
+
+				<li><a href="http://www.jq22.com/" target="_blank">Anything Slider jQuery Plugin</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Moving Boxes</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Simple jQuery Dropdowns</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Featured Content Slider</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Start/Stop Slider</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Banner Code Displayer Thing</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Highlight Certain Number of Characters</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Auto-Moving Parallax Background</a></li>
+
+			</ul>
+
+			<ul id="classics" class="hide" style="position: relative; top: 0px; left: 0px; display: none;">
+
+				<li><a href="http://www.jq22.com/" target="_blank">Top Designers CSS Wishlist</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">What Beautiful HTML Code Looks Like</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Easily Password Protect a Website or Subdirectory</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">IE-Only Stylesheets</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">eCommerce Considerations</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">PHP: Build Your First CMS</a></li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+	<!-- END Organic Tabs (Example One) -->
+
+	<!-- BEGIN Organic Tabs (Example One) -->
+
+	<div id="example-two">
+
+		
+
+		<ul class="nav">
+
+			<li class="nav-one"><a href="#featured2" class="">Featured</a></li>
+
+			<li class="nav-two"><a href="#core2" class="">Core</a></li>
+
+			<li class="nav-three"><a href="#jquerytuts2" class="">jQuery</a></li>
+
+			<li class="nav-four last"><a href="#classics2" class="current">Classics</a></li>
+
+		</ul>
+
+		
+
+		<div class="list-wrap" style="height: 143px;">
+
+			<ul id="featured2" style="display: none;">
+
+				<li><a href="http://www.jq22.com/">Full Page Background Images</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Designing for WordPress</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Build Your Own Social Home!</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Absolute Positioning Inside Relative Positioning</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">IE CSS Bugs That'll Get You Every Time</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">404 Best Practices</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Date Display with Sprites</a></li>
+
+			</ul>
+
+			<ul id="core2" class="hide" style="position: relative; top: 0px; left: 0px; display: none;">
+
+				<li><a href="http://www.jq22.com/" target="_blank">The VERY Basics of HTML &amp; CSS</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Classes and IDs</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">The CSS Box Model</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">All About Floats</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">CSS Overflow Property</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">CSS Font Size - (px - em - % - pt - keyword)</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">CSS Transparency / Opacity</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">CSS Sprites</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">CSS Image Replacement</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">CSS Vertial Align</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">The CSS Overflow Property</a></li>
+
+			</ul>
+
+			<ul id="jquerytuts2" class="hide" style="position: relative; top: 0px; left: 0px; display: none;">
+
+				<li><a href="http://www.jq22.com/" target="_blank">Anything Slider jQuery Plugin</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Moving Boxes</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Simple jQuery Dropdowns</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Featured Content Slider</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Start/Stop Slider</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Banner Code Displayer Thing</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Highlight Certain Number of Characters</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Auto-Moving Parallax Background</a></li>
+
+			</ul>
+
+			<ul id="classics2" class="hide" style="position: relative; top: 0px; left: 0px;">
+
+				<li><a href="http://www.jq22.com/" target="_blank">Top Designers CSS Wishlist</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">What Beautiful HTML Code Looks Like</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">Easily Password Protect a Website or Subdirectory</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">IE-Only Stylesheets</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">eCommerce Considerations</a></li>
+
+				<li><a href="http://www.jq22.com/" target="_blank">PHP: Build Your First CMS</a></li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+	<!-- END Organic Tabs (Example Two) -->
+
+</div>
+
+<script type="text/javascript">
+	$(function() {
+
+		// 调用插件
+	
+		$("#example-one").organicTabs();
+	
+		$("#example-two").organicTabs({
+	
+			"speed": 100,
+	
+		});
+	
+	});
+</script>
+		
+		
+		
+	</body>
+	
+</html>

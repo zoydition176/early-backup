@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/fs_allCss.css"/>
+		<link rel="stylesheet" type="text/css" href="css/special_default.css"/>
+		<link rel="stylesheet" href="css/customized-product.css" />
+		<script src="js/jquery1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vf.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/customized-product.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="s-box cp-box" id="cpApp" v-cloak>
+			<div class="s-md-brand cp-header c-gxtx">
+				<div class="s-ab-bg"></div>
+				<div class="s-brand-txt">
+	                <h3>
+	                   	 定制您的专属光纤跳线
+	                </h3>
+	                <p>
+                		●&nbsp;定制产品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●&nbsp;获取报价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●&nbsp;
+                		下采购单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●&nbsp;顺丰发货&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●&nbsp;客户签收
+	                </p>
+	            </div> 
+			</div>
+			<div class="cp-m-banner">
+				<img src="img/oem-product-center/m-banner-tx.jpg" alt="" />
+				<div class="m-head-text">
+					<h3>
+	                   	 定制您的专属光纤跳线
+	                </h3>
+	                <p>
+                		●&nbsp;定制产品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●&nbsp;获取报价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●&nbsp;
+                		下采购单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●&nbsp;顺丰发货&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;●&nbsp;客户签收
+	                </p>
+				</div>
+			</div>
+			<div class="cp-body">
+				<ul class="cp-items">
+					<li class="cp-items-list" v-for="(item,index) in productItem" @click='toggletb(index)' v-bind:class="{active:index===showtab}">
+						{{item}}
+					</li>
+				</ul>
+				<div class="cp-filter-box">
+					<div class="cp-filter" v-show="showtab===0">
+						<ul>
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">接线类型</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										卡勾设计
+									</span>
+									<span class="cp-filter-it">
+										无尾套
+									</span>
+									<span class="cp-filter-it">
+										可伸缩网线
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">屏蔽类型</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										非屏蔽(UTP)
+									</span>
+									<span class="cp-filter-it">
+										屏蔽(FTP)
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">外皮材质</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										PVC/OFNR
+									</span>
+								</div>
+							</li>
+							
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">接头/极性</div>
+								<div class="cp-filter-v">				
+									<select class="cp-filter-select">
+										<option value="LC双工接头--标准型1">LC双工接头--标准型1</option>
+										<option value="LC双工接头--标准型2">LC双工接头--标准型2</option>
+										<!--<span>LC双工接头--标准型</span>
+										<em></em>
+										<ul class="cp-filter-unit-list">
+											<li>
+												LC双工接头--标准型1
+											</li>
+											<li>
+												LC双工接头--标准型2
+											</li>
+										</ul>-->
+									</select>
+									
+									<span class="cp-filter-error">
+										请填写网线长度
+									</span>
+								</div>
+							</li>
+							
+							
+							<li class="cp-filter-list-num">
+								<div class="cp-filter-ln">数量</div>
+								<div class="cp-filter-v">
+									<div class="FS_product_num_default cp-filter-bottom">
+	                                    <input type="text" value="1" class="cp-count" name="cart_quantity" maxlength = "4"  min="1">
+	                                </div>
+									<a class="cp-submit-btn cp-filter-bottom" onclick="subcheck(this)">提交</a>
+									<span class="cp-filter-error">
+										请填写正确的数量
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="cp-filter" v-show="showtab===1">
+						<ul>						
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">网线颜色</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-color blue choose">
+										<em></em>
+										<b>蓝色</b>
+									</span>
+									<span class="cp-filter-color red">
+										<em></em>
+										<b>红色</b>
+									</span>
+									<span class="cp-filter-color yellow">
+										<em></em>
+										<b>黄色</b>
+									</span>
+									<span class="cp-filter-color green">
+										<em></em>
+										<b>绿色</b>
+									</span>
+									<span class="cp-filter-color gray">
+										<em></em>
+										<b>灰色</b>
+									</span>
+									<span class="cp-filter-color black">
+										<em></em>
+										<b>黑色</b>
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">包装类型</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										飞速(FS)包装
+									</span>
+									<span class="cp-filter-it">
+										中性包装
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list-num">
+								<div class="cp-filter-ln">数量</div>
+								<div class="cp-filter-v">
+									<div class="FS_product_num_default cp-filter-bottom">
+	                                    <input type="text" value="1" class="cp-count" name="cart_quantity" maxlength = "4"  min="1">
+	                                </div>
+									<a class="cp-submit-btn cp-filter-bottom" onclick="subcheck(this)">提交</a>
+									<span class="cp-filter-error">
+										请填写正确的数量
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="cp-filter" v-show="showtab===2">
+						<ul>						
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">网线颜色</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-color blue choose">
+										<em></em>
+										<b>蓝色</b>
+									</span>
+									<span class="cp-filter-color red">
+										<em></em>
+										<b>红色</b>
+									</span>
+									<span class="cp-filter-color yellow">
+										<em></em>
+										<b>黄色</b>
+									</span>
+									<span class="cp-filter-color green">
+										<em></em>
+										<b>绿色</b>
+									</span>
+									<span class="cp-filter-color gray">
+										<em></em>
+										<b>灰色</b>
+									</span>
+									<span class="cp-filter-color black">
+										<em></em>
+										<b>黑色</b>
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">包装类型</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										飞速(FS)包装
+									</span>
+									<span class="cp-filter-it">
+										中性包装
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list-num">
+								<div class="cp-filter-ln">数量</div>
+								<div class="cp-filter-v">
+									<div class="FS_product_num_default cp-filter-bottom">
+	                                    <input type="text" value="1" class="cp-count" name="cart_quantity" maxlength = "4"  min="1">
+	                                </div>
+									<a class="cp-submit-btn cp-filter-bottom" onclick="subcheck(this)">提交</a>
+									<span class="cp-filter-error">
+										请填写正确的数量
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="cp-filter" v-show="showtab===3">
+						<ul>						
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">网线颜色</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-color blue choose">
+										<em></em>
+										<b>蓝色</b>
+									</span>
+									<span class="cp-filter-color red">
+										<em></em>
+										<b>红色</b>
+									</span>
+									<span class="cp-filter-color yellow">
+										<em></em>
+										<b>黄色</b>
+									</span>
+									<span class="cp-filter-color green">
+										<em></em>
+										<b>绿色</b>
+									</span>
+									<span class="cp-filter-color gray">
+										<em></em>
+										<b>灰色</b>
+									</span>
+									<span class="cp-filter-color black">
+										<em></em>
+										<b>黑色</b>
+									</span>
+								</div>
+							</li>
+														
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">包装类型</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										飞速(FS)包装
+									</span>
+									<span class="cp-filter-it">
+										中性包装
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list-num">
+								<div class="cp-filter-ln">数量</div>
+								<div class="cp-filter-v">
+									<div class="FS_product_num_default cp-filter-bottom">
+	                                    <input type="text" value="1" class="cp-count" name="cart_quantity" maxlength = "4"  min="1">
+	                                </div>
+									<a class="cp-submit-btn cp-filter-bottom" onclick="subcheck(this)">提交</a>
+									<span class="cp-filter-error">
+										请填写正确的数量
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="cp-filter" v-show="showtab===4">
+						<ul>						
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">网线颜色</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-color blue choose">
+										<em></em>
+										<b>蓝色</b>
+									</span>
+									<span class="cp-filter-color red">
+										<em></em>
+										<b>红色</b>
+									</span>
+									<span class="cp-filter-color yellow">
+										<em></em>
+										<b>黄色</b>
+									</span>
+									<span class="cp-filter-color green">
+										<em></em>
+										<b>绿色</b>
+									</span>
+									<span class="cp-filter-color gray">
+										<em></em>
+										<b>灰色</b>
+									</span>
+									<span class="cp-filter-color black">
+										<em></em>
+										<b>黑色</b>
+									</span>
+								</div>
+							</li>
+							
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">包装类型</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										飞速(FS)包装
+									</span>
+									<span class="cp-filter-it">
+										中性包装
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list-num">
+								<div class="cp-filter-ln">数量</div>
+								<div class="cp-filter-v">
+									<div class="FS_product_num_default cp-filter-bottom">
+	                                    <input type="text" value="1" class="cp-count" name="cart_quantity" maxlength = "4"  min="1">
+	                                </div>
+									<a class="cp-submit-btn cp-filter-bottom" onclick="subcheck(this)">提交</a>
+									<span class="cp-filter-error">
+										请填写正确的数量
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					
+				</div>
+				
+				
+				<div class="cp-footer">
+					<div class="cp-tx cp-footer-list">
+						<h3>光纤跳线测试流程</h3>
+						<p>
+							飞速(FS)注重每条光纤跳线的性能价值。每条跳线都经过专业的设计和完善的检测流程来确保其性能优良。<br>
+							在测试中心，无论是专业的测试人员，还是先进的检测设备，每一个细节我们都严格把关，力求为客户提供最优质的光纤跳线。
+						</p>
+						<ul class="cp-footer-row">
+							<li>
+								<div class="cp-footer-img-box">
+									<img src="img/oem-product-center/gxtx/test-assured-program_pic01.png" alt="" />
+								</div>
+								<h5>先进的测试设备</h3>
+								<p>测试流程包括：端面测试，3D干涉仪测试，单模IL和RL测试，多模IL和RL测试。</p>
+							</li>
+							<li>
+								<div class="cp-footer-img-box">
+									<img src="img/oem-product-center/gxtx/test-assured-program_pic02.png" alt="" />
+								</div>
+								<h5>严格的质量控制</h3>
+								<p>我们测试并记录跳线的数据，筛选不合格的产品，以确保提供100%的高品质产品。</p>
+							</li>
+							<li>
+								<div class="cp-footer-img-box">
+									<img src="img/oem-product-center/gxtx/test-assured-program_pic03.png" alt="" />
+								</div>
+								<h5>完善的测试流程</h3>
+								<p>每条光纤跳线都会经过清洁流程，以确保端面免受污染，保证优良的产品性能。</p>
+							</li>
+						</ul>
+						<p>
+							<a href="">了解更多</a>
+						</p>
+					</div>
+				</div>
+				
+
+				
+			</div>
+			
+			<div class="cp-modal" id="cpModal">
+				<div class="cp-modal-head">
+					请确认定制信息
+					<span></span>
+				</div>
+				<div class="cp-modal-body">
+					<ul class="cp-modal-info">
+						<li v-for="i in modalist">
+							<span class="cp-modal-info-name">
+								{{i.t}}
+							</span>
+							<em class="cp-modal-info-v">
+								{{i.value}}
+							</em>
+						</li>
+					</ul>
+					<div class="cp-modal-form">
+						<div class="cp-modal-area">
+							<h3>其他定制要求</h3>
+							<textarea name="" rows="" cols=""></textarea>
+							<div class="cp-modal-error"></div>
+						</div>
+						<ul class="cp-modal-grp">
+							<li class="cp-modal-list">
+								<h3>
+									名称<b>*</b>
+								</h3>
+								<div class="cp-modal-input">
+									<input type="text" name="" id="clientName"/>
+									<div class="cp-modal-error"></div>
+								</div>
+							</li>
+							<li class="cp-modal-list">
+								<h3>
+									电话<b>*</b>
+								</h3>
+								<div class="cp-modal-input">
+									<input type="text" name="" id="clientTel"/>
+									<div class="cp-modal-error"></div>
+								</div>
+							</li>
+							<li class="cp-modal-list">
+								<h3>
+									公司<b>*</b>
+								</h3>
+								<div class="cp-modal-input">
+									<input type="text" name="" id="clientCompany"/>
+									<div class="cp-modal-error"></div>
+								</div>
+							</li>
+							<li class="cp-modal-list">
+								<h3>
+									邮箱<b>*</b>
+								</h3>
+								<div class="cp-modal-input">
+									<input type="text" name="" id="clientMail"/>
+									<div class="cp-modal-error"></div>
+								</div>
+							</li>
+						</ul>
+						<div class="cp-modal-btn">
+							<button class="cp-modal-sub" onclick="submodal()">确认提交</button>
+						</div>
+					</div>
+					
+				</div>
+				
+				
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el:'#cpApp',
+			data:{
+				productItem:['LC 一管双芯光纤跳线','MTP/MPO 高密度光纤跳线','电信级常规光纤跳线','多纤主干电缆','FTTH系列尾纤'],
+				lengthUnit:[
+					{name:'米',key:0},
+					{name:'千米',key:1}
+				],
+				modalist:[],
+				showtab:0,
+				showunit:0
+			},
+			methods:{//只有切换的方法 不影响数据
+				toggletb:function(s){
+					this.showtab = s;
+					$('.cp-filter-unit>span').html('米');
+				},
+				showUnit:function(){
+					if(!this.showunit){
+						this.showunit = 1;
+					}else{
+						this.showunit = 0;
+					}
+				}
+			}
+		});
+		
+		
+		
+		
+		
+		
+	</script>
+</html>
+

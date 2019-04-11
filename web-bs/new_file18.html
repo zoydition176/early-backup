@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#tips{
+				height: 30px;
+				line-height: 30px;
+				/*background: #f6f6f6;*/
+			}
+		</style>
+	</head>
+	<body>
+		<div id="tips"></div>
+		<ul>
+			<li>111111</li>
+			<li>222222</li>
+			<li>333333</li>
+			<li>444444</li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+		var a = document.querySelectorAll('ul li');
+		var o = document.getElementById('tips');
+		
+		
+//		setTimeout(function(){
+//			o.innerHTML = '';
+//			o.style.background = '#999999'
+//		},2000);
+		var de = function(e){
+			o.innerHTML = '';
+			o.style.background = '#999999'
+			console.log(e)
+		}
+
+		var def = function(t){
+			return function(arg){
+				var that = this;
+				var t_ary = arg;
+				clearTimeout(t.timmer);
+				t.timmer = setTimeout(function(){
+					t.call(that,t_ary)
+				},2000);
+			}
+		}
+		var zx = def(de);
+		for(let i=0;i<a.length;i++){
+			a[i].addEventListener('click',function(){
+				var b = this.innerHTML;
+				o.innerHTML = b;
+				o.style.background = '#f6f6f6';
+//				zx();
+				debounceSeTimer(de(b),2000)
+			})
+			
+			
+		}
+		
+		
+		
+		
+		var debounceSeTimer = function (f,time,arg) {
+			var deBounceForFuc =function(func,delay) {
+			    return function(valueArr){
+			        var funArea = this,
+			            args = valueArr;
+			        clearTimeout(func.timmer);
+			        func.timmer = setTimeout(function () {
+			            func.call(funArea,args)
+			        },delay)
+			    }
+			};
+		    var obj = deBounceForFuc(f,time);
+		    return obj(arg)
+		};
+	
+		
+		
+		
+		
+	</script>
+</html>

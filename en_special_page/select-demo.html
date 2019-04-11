@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>otn</title>
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://www.fs.com/includes/templates/fiberstore/css/sweetalert2.min.css" media="all" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="css/iconfont.css">
+    <link rel="stylesheet" type="text/css" media="all" href="https://www.fs.com/includes/templates/fiberstore/css/public.css?v=1539922680">
+    <link rel="stylesheet" href="https://www.fs.com/includes/templates/fiberstore/css/swiper-3.4.0.min.css?v=1533961150">
+    <script type="text/javascript" src="https://www.fs.com/includes/templates/fiberstore/jscript/cdn_js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="https://www.fs.com/includes/templates/fiberstore/jscript/cdn_js/js_cdn.js"></script>
+    <link rel="stylesheet" href="https://www.fs.com/includes/templates/fiberstore/css/policy_window.css?v=1539316012">
+    <link rel="stylesheet" type="text/css" media="all" href="https://www.fs.com/includes/templates/fiberstore/css/fs_allCss.css">
+    <link rel="stylesheet" href="https://www.fs.com/includes/templates/fiberstore/css/media.css">
+    <script src="https://www.fs.com/includes/templates/fiberstore/jscript/header.js?v=1539051774"></script>
+    <!--英文站三个收费字体覆盖-->
+    <style>
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: url(css/opensans.woff);
+            src: local('Open Sans'),local('OpenSans'),url(css/opensans.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Open Sans Light'),local('OpenSans-Light'),url(css/opensans-light-webfont.woff) format('woff');
+        }
+
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            src: local('opensans semibold webfont'),local('opensans-semibold-webfont'),url(css/opensans-semibold-webfont.woff) format('woff');
+        }
+    </style>
+</head>
+<body>
+    <!--样式已经上传到线上checkout.css里-->
+    <style>
+        .address-select{
+            position: relative;
+        }
+        .address-select-box{
+            position: relative;
+        }
+        .select-arrow{
+            position: absolute;
+            top: 16px;
+            right: 5px;
+            font-size: 12px;
+            /*transform: translateY(-50%);*/
+            transition: transform 0.3s ease;
+        }
+        .address-select-box{
+            border: 1px solid #ddd;
+            border-radius: 2px;
+            width: 100%;
+            padding: 6px 10px 8px 10px;
+            box-sizing: border-box;
+            color: #333;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 14px;
+            /*margin-bottom: 20px;*/
+            cursor: pointer;
+        }
+        .address-select-box.active{
+            border-color: #aaa;
+        }
+        .address-select-box.active .select-arrow{
+            transform: rotate(180deg);
+            transition: transform 0.3s ease;
+        }
+        .address-select-box:hover{
+            border-color: #aaa;
+        }
+        .address-select-title{
+            font-size: 13px;
+            color: #666666;
+            line-height: 20px;
+        }
+        .address-select-con{
+            font-size: 14px;
+            line-height: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /*white-space: nowrap;*/
+        }
+        .address-select-slide{
+            display: none;
+            height: 300px;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background: #FFF;
+            z-index: 4;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            overflow-y: auto;
+            border-top: 0;
+            /*margin-top: -1px;*/
+        }
+        .address-select-slide.slideOn{
+            border-color: #aaaaaa;
+        }
+        .address-select-ul li{
+            font-size: 13px;
+            padding: 4px 10px;
+            color: #666;
+            line-height: 20px;
+            cursor: pointer;
+            overflow: hidden;
+            /*text-overflow: ellipsis;*/
+            transition: all .3s;
+        }
+        .address-select-ul li:hover{
+            text-decoration: underline;
+        }
+    </style>
+    <div class="box">
+        <div class="content">
+            <div class="" style="width: 700px;">
+
+                <div class="address-select">
+                    <div class="address-select-box">
+                        <p class="address-select-title">
+                            Billing Address
+                        </p>
+                        <div class="address-select-con" data-address-value="">
+                            <span>qqqqqqqqqqqqq, dasdasd, dsadasdasd BC 12213, Canada</span>
+                        </div>
+                        <div class="icon iconfont select-arrow">&#xf087;</div>
+                    </div>
+
+                    <div class="address-select-slide">
+                        <ul class="address-select-ul">
+                            <li data-address-list="111">asdasd, asdasd, Albany NY 12201, United States</li>
+                            <li data-address-list="2">实打实打算, 大撒大撒, dsadasdasd BC 12213, Canada</li>
+                            <li data-address-list="3">qqqqqqqqqqqqq, dasdasd, dsadasdasd BC 12213, Canada</li>
+                            <li data-address-list="4">wwwwww, dasdasd, dsadasdasd BC 12213, Canada</li>
+                            <li data-address-list="5">eeeeeeeeeeeeeeeeeeeeeeeeee, dasdasd, dsadasdasd BC 12213, Canada</li>
+                            <li data-address-list="6">实打实打算, 大撒大撒, dsadasdasd BC 12213, Canada</li>
+                            <li data-address-list="7">qqqqqqqqqqqqq, dasdasd, dsadasdasd BC 12213, Canada</li>
+                            <li data-address-list="8">eeeeeeeeeeeeeeeeeeeeeeeeee, dasdasd, dsadasdasd BC 12213, Canada</li>
+                            <li data-address-list="9">实打实打算, 大撒大撒, dsadasdasd BC 12213, Canada</li>
+                            <li data-address-list="10">qqqqqqqqqqqqq, dasdasd, dsadasdasd BC 12213, Canada</li>
+                            <li data-address-list="11">wwwwww, dasdasd, dsadasdasd BC 12213, Canada</li>
+                            <li data-address-list="12">eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee, dasdasd, dsadasdasd BC 12213, Canada</li>
+                            <li data-address-list="13">wwwwww, dasdasd, dsadasdasd BC 12213, Canada</li>
+                            <li data-address-list="14">eeeeeeeeeeeeeeeeeeeeeeeeee, dasdasd, dsadasdasd BC 12213, Canada</li>
+                            <li data-address-list="15">eeeeeeeeeeeeeeeeeeeeeeeeee, dasdasd, dsadasdasd BC 12213, Canada</li>
+                            <li data-address-list="16">实打实打算, 大撒大撒, dsadasdasd BC 12213, Canada</li>
+                            <li data-address-list="17">qqqqqqqqqqqqq, dasdasd, dsadasdasd BC 12213, Canada</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            
+            
+        </div>
+    </div>
+
+    <script>
+        $(document).on('click','.address-select-box',function () {
+            var isActive = $(this).hasClass('active');
+            isActive ? $(this).removeClass('active').siblings('.address-select-slide').slideUp().removeClass('slideOn') : $(this).addClass('active').siblings('.address-select-slide').addClass('slideOn').slideDown()
+        })
+        $(document).on('click','.address-select-ul li',function () {
+            var $t = $(this),
+                address_text = $t.html(),
+                address_val = $t.attr('data-address-list');
+            $t.parents('.address-select').find('.address-select-con').attr('data-address-value',address_val).children('span').html(address_text);
+            $t.parents('.address-select').find('.address-select-box').removeClass('active').siblings('.address-select-slide').slideUp().removeClass('slideOn');
+        })
+        $(document).on('click',function (e) {
+            var $target = $(e.target);
+            if($target.closest('.address-select').length === 0){
+                $('.address-select-box').removeClass('active').siblings('.address-select-slide').slideUp().removeClass('slideOn');
+            }
+        })
+    </script>
+</body>
+</html>

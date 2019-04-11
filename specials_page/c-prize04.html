@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/fs_allCss.css"/>
+		<link rel="stylesheet" type="text/css" href="css/special_default.css"/>
+		<link rel="stylesheet" href="css/customized-product.css" />
+		<script src="js/jquery1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vf.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/customized-product.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="s-box cp-box" id="cpApp" v-cloak>
+			<div class="s-md-brand cp-header c-gmk">
+				<div class="s-ab-bg"></div>
+				<div class="s-brand-txt">
+	                <h3>
+	                   	 定制您的专属光模块
+	                </h3>
+	                <p>
+                		全面&专业的光模块供应商，提供一站式OEM定制服务
+	                </p>
+	            </div> 
+			</div>
+			<div class="cp-m-banner">
+				<img src="img/oem-product-center/m-banner-gmk.jpg" alt="" />
+			</div>
+			<div class="cp-body cp-fiber-module-body">
+				<ul class="cp-items">
+					<li class="cp-items-list" v-for="(item,index) in productItem" @click='toggletb(index)' v-bind:class="{active:index===showtab}">
+						{{item}}
+					</li>
+				</ul>
+				<div class="cp-filter-box">
+					<div class="cp-filter" v-show="showtab===0">
+						<div class="cp-list-left">
+							<dl>
+								<dt>Form Factor</dt>
+								<dd class="active">
+									SFP
+								</dd>
+								<dd>
+									SFP+
+								</dd>
+								<dd>
+									XFP
+								</dd>
+								<dd>
+									QSFP+
+								</dd>
+								<dd>
+									QSFP28
+								</dd>
+								<dd>
+									CFP2/CFP4
+								</dd>
+								<dd>
+									CFP
+								</dd>
+								<dd>
+									GBIC
+								</dd>
+								<dd>
+									XENPAK
+								</dd>
+								<dd>
+									X2
+								</dd>
+							</dl>
+						</div>
+						<ul class="cp-list-right">
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">接线类型</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										卡勾设计
+									</span>
+									<span class="cp-filter-it">
+										无尾套
+									</span>
+									<span class="cp-filter-it">
+										可伸缩网线
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">屏蔽类型</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										非屏蔽(UTP)
+									</span>
+									<span class="cp-filter-it">
+										屏蔽(FTP)
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">外皮材质</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										PVC/OFNR
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">波长</div>
+								<div class="cp-filter-v">				
+									<select class="cp-filter-select">
+										<option value="1120nm">1120nm</option>
+										<option value="1120nm">1120nm</option>
+										<option value="1133320nm">1133320nm</option>
+									</select>
+									
+									<span class="cp-filter-error">
+										请填写波长
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">兼容品牌</div>
+								<div class="cp-filter-v">					
+									<select class="cp-filter-unit">
+										<!--<span>中性</span>
+										<em></em>
+										<ul class="cp-filter-unit-list">
+											<li>
+												中性
+											</li>
+											<li>
+												极性
+											</li>
+										</ul>-->
+										<option value="中性">中性</option>
+										<option value="极性">极性</option>
+									</select>
+									
+									<input type="text" name="brand" id="" value="" class="cp-filter-brand"/>
+									
+									<span class="cp-filter-error">
+										请填写兼容品牌
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">网线长度</div>
+								<div class="cp-filter-v">
+									<input type="text" name="material" id="" value="" class="cp-filter-length"/>
+									
+									<select class="cp-filter-unit">
+										<option value="米">米</option>
+										<option value="千米">千米</option>
+										<!--<span>米</span>
+										<em></em>
+										<ul class="cp-filter-unit-list">
+											<li>
+												米
+											</li>
+											<li>
+												千米
+											</li>
+										</ul>-->
+									</select>
+									
+									<span class="cp-filter-error">
+										请填写网线长度
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">包装类型</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										飞速(FS)包装
+									</span>
+									<span class="cp-filter-it">
+										中性包装
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list-num">
+								<div class="cp-filter-ln">数量</div>
+								<div class="cp-filter-v">
+									<div class="FS_product_num_default cp-filter-bottom">
+	                                    <input type="text" value="1" class="cp-count" name="cart_quantity" maxlength = "4"  min="1">
+	                                </div>
+									<a class="cp-submit-btn cp-filter-bottom" onclick="subcheck(this)">提交</a>
+									<span class="cp-filter-error">
+										请填写正确的数量
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="cp-filter" v-show="showtab===1">
+						<div class="cp-list-left">
+							<dl>
+								<dt>Cable Types</dt>
+								<dd class="active">
+									10G DAC
+								</dd>
+								<dd>
+									10G AOC
+								</dd>
+								<dd>
+									25G DAC
+								</dd>
+								<dd>
+									40G DAC
+								</dd>
+								<dd>
+									40G AOC
+								</dd>
+								<dd>
+									100G DAC
+								</dd>
+								<dd>
+									100G AOC
+								</dd>
+								<dd>
+									120G AOC
+								</dd>
+							</dl>
+						</div>
+						<ul class="cp-list-right">
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">接线类型</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										卡勾设计
+									</span>
+									<span class="cp-filter-it">
+										无尾套
+									</span>
+									<span class="cp-filter-it">
+										可伸缩网线
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">屏蔽类型</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										非屏蔽(UTP)
+									</span>
+									<span class="cp-filter-it">
+										屏蔽(FTP)
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">外皮材质</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										PVC/OFNR
+									</span>
+									<span class="cp-filter-it">
+										LSZH
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">包装类型</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										飞速(FS)包装
+									</span>
+									<span class="cp-filter-it">
+										中性包装
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list-num">
+								<div class="cp-filter-ln">数量</div>
+								<div class="cp-filter-v">
+									<div class="FS_product_num_default cp-filter-bottom">
+	                                    <input type="text" value="1" class="cp-count" name="cart_quantity" maxlength = "4"  min="1">
+	                                </div>
+									<a class="cp-submit-btn cp-filter-bottom" onclick="subcheck(this)">提交</a>
+									<span class="cp-filter-error">
+										请填写正确的数量
+									</span>
+								</div>
+							</li>
+						</ul>
+						
+
+					</div>
+					
+					
+					
+				</div>
+				
+				
+				<div class="cp-footer">
+					<div class="cp-tx">
+						<h3>光模块&高速线缆测试系统</h3>
+						<p>
+							飞速(FS)致力于为客户提供高品质和高性能的产品，请放心选购
+						</p>
+						<div class="c-gmk-footer">
+							<div class="c-gmk-img">
+								<img src="img/oem-product-center/fiber-module/mk_05.jpg" alt="" />
+							</div>
+							<div class="c-gmk-text">
+								<p>
+									飞速(FS)真正做到了解每个光学器件的兼容性和互操作性，我们提供的每个光模块都通过编程和真机诊断测试来确保其性能和兼容性。 
+									在我们的测试中心，我们关心每一个细节——从人员到设备，经过专业培训的员工，先进的测试设备和全面的原创品牌的开关，
+									以确保我们的客户获得品质卓越光学。
+								</p>
+								<a href="">了解更多</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+				
+			</div>
+			
+			<div class="cp-modal" id="cpModal">
+				<div class="cp-modal-head">
+					请确认定制信息
+					<span></span>
+				</div>
+				<div class="cp-modal-body">
+					<ul class="cp-modal-info">
+						<li v-for="i in modalist">
+							<span class="cp-modal-info-name">
+								{{i.t}}
+							</span>
+							<em class="cp-modal-info-v">
+								{{i.value}}
+							</em>
+						</li>
+					</ul>
+					<div class="cp-modal-form">
+						<div class="cp-modal-area">
+							<h3>其他定制要求</h3>
+							<textarea name="" rows="" cols=""></textarea>
+							<div class="cp-modal-error"></div>
+						</div>
+						<ul class="cp-modal-grp">
+							<li class="cp-modal-list">
+								<h3>
+									名称<b>*</b>
+								</h3>
+								<div class="cp-modal-input">
+									<input type="text" name="" id="clientName"/>
+									<div class="cp-modal-error"></div>
+								</div>
+							</li>
+							<li class="cp-modal-list">
+								<h3>
+									电话<b>*</b>
+								</h3>
+								<div class="cp-modal-input">
+									<input type="text" name="" id="clientTel"/>
+									<div class="cp-modal-error"></div>
+								</div>
+							</li>
+							<li class="cp-modal-list">
+								<h3>
+									公司<b>*</b>
+								</h3>
+								<div class="cp-modal-input">
+									<input type="text" name="" id="clientCompany"/>
+									<div class="cp-modal-error"></div>
+								</div>
+							</li>
+							<li class="cp-modal-list">
+								<h3>
+									邮箱<b>*</b>
+								</h3>
+								<div class="cp-modal-input">
+									<input type="text" name="" id="clientMail"/>
+									<div class="cp-modal-error"></div>
+								</div>
+							</li>
+						</ul>
+						<div class="cp-modal-btn">
+							<button class="cp-modal-sub" onclick="submodal()">确认提交</button>
+						</div>
+					</div>
+					
+				</div>
+				
+				
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el:'#cpApp',
+			data:{
+				productItem:['光模块','DAC高速线缆 & AOC有源光缆'],
+				lengthUnit:[
+					{name:'米',key:0},
+					{name:'千米',key:1}
+				],
+				modalist:[],
+				showtab:0,
+				showunit:0
+			},
+			methods:{//只有切换的方法 不影响数据
+				toggletb:function(s){
+					this.showtab = s;
+					$('.cp-filter-unit>span').html('米');
+				},
+				showUnit:function(){
+					if(!this.showunit){
+						this.showunit = 1;
+					}else{
+						this.showunit = 0;
+					}
+				}
+			}
+		});
+		
+		
+		
+		
+		
+		
+	</script>
+</html>
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div>
+			<img src="img/jd_02.jpg" alt="" />
+			<img src="img/jd_02.jpg" alt="" />
+			<img src="img/jd_02.jpg" alt="" />
+			<img src="img/jd_02.jpg" alt="" />
+			<img src="img/jd_02.jpg" alt="" />
+			<img src="dasdasd.jpg" alt="" />
+		</div>
+		<!--<a href="027-87579156"></a>-->
+		
+		<button id="test">test</button>
+		
+		<div class="lll">
+			123123
+		</div>
+		<span id="lol">213123123</span>
+		
+		
+		<input data-type="aaa" id="aaa" value="aaa"/>
+		
+		
+		
+		
+		
+		
+		
+		<div id="test"></div>
+	</body>
+	<script type="text/javascript">
+//		var a = ['张三','李四','王五'];
+//		var c = '';
+//		var b = document.getElementById('test');
+//		for(i=0;i<a.length;i++){
+//			c = c + (i+1) +'.'+ a[i] + '<br>';
+//		}
+//		b.innerHTML = c;
+		
+		var obj = document.getElementById('lol');
+		var str = '';
+		for(x in obj){
+			str = str + x + ':' + obj[x] + '\n'
+		}
+		
+		var te = document.getElementById('aaa')
+		var obj = {};
+		var initValue = 'hello';
+		Object.defineProperty(te,"data-type",{
+		    get:function (){
+		        //当获取值的时候触发的函数
+		        return initValue;    
+		    },
+		    set:function (value){
+		        //当设置值的时候触发的函数,设置的新值通过参数value拿到
+		        initValue = value;
+		    }
+		});
+		//获取值
+		console.log( obj.newKey );  //hello
+		
+		//设置值
+		obj.newKey = 'change value';
+		
+		console.log( obj.newKey ); //change value
+		
+		
+		
+		
+	</script>
+	<script type="text/javascript">
+		function fillpictureAlt(){
+			var imgobj = document.getElementsByTagName('img');
+			for(i=0;i<imgobj.length;i++){
+				var imgsrc = imgobj[i].src || '/';
+				var num = imgsrc.lastIndexOf('/');
+				if(imgobj[i].alt.length<=0){
+					imgobj[i].alt ='Fs_'+imgsrc.substring(num+1);
+				}
+			}
+		}
+		(function(){
+			var imgobj = document.getElementsByTagName('img');
+			for(i=0;i<imgobj.length;i++){
+				var imgsrc = imgobj[i].src || '/';
+				var num = imgsrc.lastIndexOf('/');
+				if(imgobj[i].alt.length<=0){
+					imgobj[i].alt ='Fs_'+imgsrc.substring(num+1);
+				}
+			}
+		})()
+	</script>
+</html>

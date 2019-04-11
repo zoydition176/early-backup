@@ -1,0 +1,2782 @@
+/*原有登录注册页面样式*/
+
+img{
+    display: block;
+    vertical-align: middle;
+}
+/*input:-webkit-autofill {*/
+    /*-webkit-box-shadow: 0 0 0px 1000px white inset;*/
+    /*box-shadow: 0 0 0px 1000px white inset;*/
+/*}*/
+.progress_bar_two {
+    float: right;
+    background: url(/includes/templates/fiberstore/images/jingdu_03.png) no-repeat;
+    height: 40px;
+    width: 380px;
+    line-height: 40px;
+    margin-right: 60px;
+}
+.progress_bar_two li:nth-child(1) {
+    margin-left: -1px;
+}
+.progress_bar_two li:nth-child(2) {
+    float: left;
+    margin-top: 26px;
+    margin-left: 73px;
+}
+.progress_bar li{
+    float: left;
+    margin-top: 26px;
+}
+.progress_bar_two li:nth-child(3) {
+    margin-left: 69px;
+}
+.progress_bar_two li:nth-child(4) {
+    margin-left: 79px;
+}
+.progress_bar {
+    float: right;
+    background: url(/includes/templates/fiberstore/images/jingdu_02.png) no-repeat;
+    height: 40px;
+    width: 380px;
+    line-height: 40px;
+    margin-right: 60px;
+}
+.progress_bar li:nth-child(1) {
+    margin-left: -1px;
+}
+
+.progress_bar_two li{
+    float: left;
+    margin-top: 26px;
+}
+.progress_bar li:nth-child(2) {
+    margin-left: 73px;
+}
+.progress_bar li:nth-child(3) {
+    margin-left: 69px;
+}
+.progress_bar li:nth-child(4) {
+    margin-left: 79px;
+}
+.progress_bar_three {
+    float: right;
+    background: url(/includes/templates/fiberstore/images/jingdu_04.png) no-repeat;
+    height: 40px;
+    width: 380px;
+    line-height: 40px;
+    margin-right: 60px;
+}
+
+.progress_bar_three li{
+    float: left;
+    margin-top: 26px;
+}
+.progress_bar_three li {
+    float: left;
+    margin-top: 20px;
+}
+.progress_bar_three li:nth-child(2) {
+    margin-left: 73px;
+}
+.progress_bar_three li:nth-child(3) {
+    margin-left: 69px;
+}
+.progress_bar_three li:nth-child(4) {
+    margin-left: 79px;
+}
+.yanzhengma1{
+    width: 50%;
+    display: inline-block;
+    float: right;
+}
+.yanzhengma1 p {
+    font-size: 14px;
+    color: #666;
+    padding-bottom: 5px;
+}
+.yanzhengma1 img{
+    margin: 0 auto;
+}
+.yanzhengma2{
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+}
+.yanzhengma2 p{
+    font-size: 14px;
+    color: #666;
+    padding-bottom: 5px;
+}
+.yanzhengma2 input{
+    width: 100%;
+}
+.register_main_personal>#regist_form>.kong>#explain{margin-top: 4px;}
+.regist_use{
+    color: #0681d3;
+}
+.register_top{
+    height: 100px;
+    padding-left: 100px;
+}
+.register_top a{
+    float: left;
+    margin-top: 15px;
+}
+.register_top_welcome{
+    float: left;
+    font-size: 24px;
+    color: #666;
+    font-weight: 400;
+    border-left: 1px solid #eee;
+    padding-left: 14px;
+    height: 30px;
+    margin-top: 32px;
+    line-height: 30px;
+}
+.register_center{
+    height: auto;
+}
+.register_bg{
+    position: absolute;
+    width: 100%;
+    height: 838px;
+    left: 0;
+    background-color: #f4f4f4;
+}
+.register_body{
+    width: 860px;
+    height: auto;
+    margin: 0 auto;
+    /* transform: translateY(30px); */
+    background-color: #fff;
+}
+.register_main{
+    width: 368px;
+    margin: 0 auto;
+}
+.register_main_tit{
+    padding-top: 60px;
+    border-bottom: 2px solid #eee;
+    height: 41px;
+    margin-bottom: 40px;
+}
+.register_main_tit h2{
+    font-size: 20px;
+    color: #666666;
+    font-weight: 400;
+    float: left;
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    /* padding-left: 38px; */
+    padding-bottom: 16px;
+    border-bottom: 2px solid #eee;
+    cursor: pointer;
+    line-height: 25px;
+}
+.register_personal{
+    /* padding-right: 41px; */
+}
+.register_personal span{
+    /* float: left; */
+    /* width: 21px; */
+    /* height: 25px; */
+    /* margin-right: 5px; */
+    /* background: url(includes/templates/fiberstore/images/register_icon_login.png) -5px -137px no-repeat; */
+}
+.register_enterprise{
+    /* padding-right: 33px; */
+}
+.register_enterprise span{
+    /* float: left; */
+    /* width: 26px; */
+    /* height: 25px; */
+    /* margin-right: 5px; */
+    /* background: url(includes/templates/fiberstore/images/register_icon_login.png) -5px -187px no-repeat; */
+}
+.register_main_personal{
+    width: 100%;
+    display: block;
+}
+.register_main_enterprise{
+    width: 100%;
+}
+/*.register_main_form_input{*/
+    /*width: 366px;*/
+    /*height: 48px;*/
+    /*border: 1px solid #dedede;*/
+    /*font-size: 14px;*/
+    /*line-height: 48px;*/
+    /*border-radius: 3px;*/
+    /*text-indent: 15px;*/
+    /*color: #666;*/
+    /*margin-bottom: 14px;*/
+/*}*/
+.register_main_form_input::-webkit-input-placeholder{
+    color: #999;
+}
+.register_main_form_input:-moz-placeholder{
+    color: #999;
+}
+.register_main_form_input:-ms-input-placeholder{
+    color: #999;
+}
+.register_main_form_input_ps::-webkit-input-placeholder{
+    color: #999;
+}
+.register_main_form_input_ps:-moz-placeholder{
+    color: #999;
+}
+.register_main_form_input_ps:-ms-input-placeholder{
+    color: #999;
+}
+/*.register_main_form_input:focus {*/
+    /*border: 1px solid rgba(51, 51, 51, 0.5);*/
+    /*border-color: rgba(51, 51, 51, 0.5);*/
+    /*outline: 0 none;*/
+/*}*/
+.register_main_form_code{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.register_main_form_input.code{
+    width: 100%;
+    /* margin-right: 6px; */
+    float: left;
+    padding: 0;
+
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    /*border-right: 0;*/
+    /*border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;*/
+}
+.register_main_form_getcode{
+    /*height: 50px;
+    width: 127px;
+    border: 1px solid #e0e0e0;
+    color: #d63030;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 3px;*/
+}
+.register_main_form_getcode:hover{
+    /*color: #fff;
+    background-color: #d63030;*/
+}
+.register_main_form_agreement{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+.register_main_form_agreement input{
+    float: left;
+    margin-right: 6px;
+    margin-top: 3px;
+}
+.register_main_form_agreement p{
+    font-size: 12px;
+    color: #666;
+    float: left;
+    width: 290px;
+}
+.register_main_form_agreement a{
+    color: #333;
+    text-decoration: none;
+}
+.register_main_form_agreement a:hover{
+    color: #0681d3;
+    text-decoration: underline;
+}
+/*.register_main_rightnow{*/
+    /*width: 100%;*/
+    /*height: 50px;*/
+    /*background-color: #d63030;*/
+    /*color: #fff;*/
+    /*font-size: 16px;*/
+    /*line-height: 50px;*/
+    /*text-align: center;*/
+    /*border-radius: 3px;*/
+    /*border: 1px solid #d63030;*/
+    /*cursor: pointer;*/
+    /*margin-top: 20px;*/
+    /*transition: all 0.3s ease;*/
+    /*-webkit-transition: all 0.3s ease;*/
+    /*-moz-transition: all 0.3s ease;*/
+    /*-ms-transition: all 0.3s ease;*/
+/*}*/
+/*.register_main_rightnow:hover{*/
+    /*background: #c61017;*/
+/*}*/
+
+.register_main_gologin{
+    font-size: 14px;
+    color: #666;
+    margin-top: 40px;
+    text-align: center;
+    padding-bottom: 75px;
+}
+.register_main_gologin a{
+    color: #666;
+    text-decoration: none;
+}
+.register_main_gologin a:hover{
+    color: #d63030;
+    /*text-decoration: underline;*/
+}
+.register_bottom{
+    padding-top: 30px;
+}
+.register_bottom p{
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+.register_bottom p a{
+    color: #333;
+    text-decoration: none;
+}
+.register_bottom p a:hover{
+    color: #d63030;
+    text-decoration: underline;
+}
+.register_bottom_good{
+    width: 287px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+.register_bottom_good img{
+    float: left;
+}
+.tips_box{
+    /*margin-bottom: 15px;*/
+    color: #d63030;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    height: 24px;
+    line-height: 24px;
+}
+.tips_box label.error{
+    clear: both;
+    display: block;
+    line-height: 24px;
+    color: #D63030;
+    padding-top: 0px;
+    /*margin-bottom: 15px;*/
+    background: url(/includes/templates/fiberstore/images/login_alert_icon.png) no-repeat 0px 5px;
+    text-indent: 20px;
+}
+.fs_checkbox.active{
+    margin-top: 1px;
+    border: 1px solid rgb(214, 48, 48);
+    background-position: 0px 0px;
+}
+.valibox{
+    position: relative;
+}
+.fs_show_psw span.active{
+    background-position: 5px 19px;
+}
+.register_select{
+    color: #999;
+    width:368px;
+    text-indent: 15px;
+    background: url(/includes/templates/fiberstore/images/bg2016.png) no-repeat 160px -464px #fff;
+}
+/******************登录样式***************************/
+.login_center{
+    /*height: 575px;*/
+    background: url(/includes/templates/fiberstore/images/login_banner_02_1.jpg) center 0px;
+}
+.login_center:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+.login_bg{
+    position: absolute;
+    padding-top: 22px;
+    width: 100%;
+    height: 575px;
+    background: url(includes/templates/fiberstore/images/login_banner_02.jpg) no-repeat;
+    left: 0;
+    z-index: -2;
+}
+.login_center_left{
+    float: left;
+    width: 476px;
+    margin-left: 100px;
+}
+.login_center_left_main{
+    padding: 197px 0 0 240px;
+    width: 281px;
+    text-align: center;
+}
+.login_center_left_main_tit{
+    font-size: 26px;
+    color: #5993ea;
+}
+.login_center_left_main_url{
+    font-size: 16px;
+    margin: 12px 0;
+    color: #5993ea;
+    font-size: 500;
+    padding: 6px 0;
+    border-top: 1px solid #5993ea;
+    border-bottom: 1px solid #5993ea;
+}
+.login_center_left_main_introduce{
+    font-size: 18px;
+    color: #5993ea;
+    font-weight: lighter;
+    line-height: 24px;
+}
+.login_center_right{
+    float: right;
+    margin-right: 100px;
+    padding: 40px 0 35px;
+}
+/*.login_center_right_main{*/
+    /*background-color: #fff;*/
+    /*padding: 0 32px;*/
+    /*width: 336px;*/
+    /*height: 520px;*/
+/*}*/
+.login_center_right_main_tit{
+    font-size: 20px;
+    color: #666666;
+    font-weight: 400;
+    padding-top: 30px;
+    margin-bottom: 28px;
+}
+/*.login_center_right_main .register_main_form_input{*/
+    /*width: 100%;*/
+/*}*/
+.login_center_right_main_password{
+    overflow: hidden;
+    margin-bottom: 24px;
+    margin-top: 20px;
+}
+.login_center_right_main_password>.aaa{margin-top: 0;}
+.login_center_right_main_password input{
+    margin-top: 4px;
+    margin-right: 4px;
+}
+.login_center_right_main_password p{
+    margin-right: 16px;
+}
+.login_center_right_main_password input{
+    float: left;
+}
+.login_center_right_main_password p{
+    float: left;
+}
+.login_center_right_main_password a{
+    float: right;
+    font-size: 13px;
+    color: #999;
+    text-decoration: none;
+}
+.login_center_right_main_password a:hover{
+    color: #d63030;
+}
+.login-box{
+    margin: 0 auto;
+    width: 1200px;
+}
+.login-box:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.login-box .login-tourist-btn{
+    display: none;
+}
+.FiberStore_login_bg {
+    position: absolute;
+    /*padding-top: 22px;*/
+    width: 100%;
+    height: 582px;
+    background: url(/includes/templates/fiberstore/images/login_banner_02_1.jpg) no-repeat center;
+    left: 0;
+    z-index: -2;
+}
+
+
+
+.register_main_register{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    color: #999;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    margin-top: 14px;
+    text-decoration: none;
+}
+.register_main_register:hover{
+    background-color: #e0e0e0;
+}
+/*.login_center_right_other{*/
+    /*text-align: center;*/
+    /*margin-top:20px;*/
+    /*overflow: hidden;*/
+
+/*}*/
+/*.login_center_right_other span{*/
+    /*float: left;*/
+    /*width: 122px;*/
+    /*height: 1px;*/
+    /*background-color: #eee;*/
+    /*margin-top: 10px;*/
+/*}*/
+/*.login_center_right_other p{*/
+    /*float: left;*/
+    /*font-size: 14px;*/
+    /*color: #999;*/
+    /*margin: 0 4px;*/
+/*}*/
+/*.login_icon{*/
+    /*width: 100%;*/
+    /*margin-top: 30px;*/
+    /*margin-bottom: 30px;*/
+/*}*/
+/*.login_center_right_other a{*/
+    /*display: inline-block;*/
+    /*width: 33px;*/
+    /*height: 33px;*/
+    /*border-radius: 50px;*/
+    /*text-align: center;*/
+    /*background-color: #979797;*/
+    /*position: relative;*/
+    /*cursor: pointer;*/
+    /*margin: 0 15px;*/
+    /*!*margin-right: 38px;*!*/
+/*}*/
+/*.login_center_right_other a em{*/
+    /*position: absolute;*/
+    /*width: 33px;*/
+    /*height: 33px;*/
+    /*left: 0;*/
+/*}*/
+/*safebox-button{
+	display: none;
+}*/
+/*.login_qq em{*/
+    /*background: url(/includes/templates/fiberstore/images/register_icon_login.png);*/
+    /*background-position-x: 98.5px;*/
+    /*background-position-y: 0px;*/
+/*}*/
+/*.login_wb em{*/
+    /*background: url(/includes/templates/fiberstore/images/register_icon_login.png);*/
+    /*background-position-x: 32px;*/
+    /*background-position-y: -32px;*/
+/*}*/
+/*.login_zfb em{*/
+    /*background: url(/includes/templates/fiberstore/images/register_icon_login.png);*/
+    /*background-position-x: 163.5px;*/
+    /*background-position-y: -63px;*/
+/*}*/
+/*.login_wx em{*/
+    /*background: url(/includes/templates/fiberstore/images/register_icon_login.png);*/
+    /*background-position-x: 0.5px;*/
+    /*background-position-y: -96px;*/
+/*}*/
+/*.login_qq:hover{*/
+    /*background-color: #0288d1;*/
+/*}*/
+/*.login_wb:hover{*/
+    /*background-color: #d32f2f;*/
+/*}*/
+/*.login_zfb:hover{*/
+    /*background-color: #0ae;*/
+/*}*/
+/*.login_wx:hover{*/
+    /*background: #51c213;*/
+/*}*/
+.register_main_tishi{
+    font-size: 12px;
+    padding-top: 24px;
+}
+.fs-wechat-regist{
+    padding-top: 45px;
+}
+.fs-wechat-regist li{
+    position: relative;
+}
+/*新样式*/
+
+/*新样式结束*/
+
+
+
+
+
+/*原有登录注册页面样式结束*/
+/*企业注册页面样式开始*/
+.register_center_ps{
+    background: #f4f4f4;
+    /*margin-bottom:50px;*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.register_main_tit_ps{
+    padding-top: 40px;
+    border-bottom: 2px solid #eee;
+    height: 41px;
+    text-align: center;
+    /* margin-bottom: 20px; */
+    width: 370px;
+    margin: 0 auto 30px auto;
+
+}
+.register_main_tit_ps a{
+    width: 50%;
+    float: left;
+    text-align: center;
+    display: inline-block;
+}
+.register_main_tit_ps h2{
+    font-size: 20px;
+    color: #666666;
+    font-weight: 400;
+    /* float: left; */
+    width: 100%;
+    text-align: center;
+    /* padding-left: 38px; */
+    padding-bottom: 16px;
+    border-bottom: 2px solid #eee;
+    cursor: pointer;
+    line-height: 25px;
+}
+
+.register_personal_ps{
+    padding-right: 41px;
+}
+.register_main_ps{
+    width: 368px;
+    margin: 30px auto 0px auto;
+}
+.register_main_enterprise_ps{
+    width: 100%;
+
+}
+.register_main_form_input_ps{
+    width: 366px;
+    height: 48px;
+    border: 1px solid #dedede;
+    font-size: 14px;
+    color: #666;
+    line-height: 48px;
+    border-radius: 3px;
+    text-indent: 15px;
+    transition: border .2s linear 0s, box-shadow .2s linear 0s;
+    margin-bottom: 24px;
+
+}
+.register_main_form_input_ps:focus{
+    border: 1px solid rgba(51, 51, 51, 0.5);
+    /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px rgba(0, 0, 0, 0.2); */
+    border-color: rgba(51, 51, 51, 0.5);
+    outline: 0 none;
+}
+/*企业注册页面样式结束*/
+
+/*支付成功样式*/
+.Fis_backdrop{
+    display: none;
+    background: #000000;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+}
+.fs_paycomfirm{
+    width: 500px;
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #FFFFFF;
+    border-radius: 3px;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    z-index: 999;
+    padding-bottom: 60px;
+}
+.fs_paycomfirm_error{
+    width: 500px;
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #FFFFFF;
+    border-radius: 3px;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    z-index: 999;
+    padding-bottom: 60px;
+}
+.fs_paycomfirm_error h3{
+    background: #F5F5F5;
+    color: #666666;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    padding: 15px 20px;
+}
+.fs_paycomfirm_error h3 span{
+    float: right;
+    /*margin-top: 10px;
+    margin-right: 5px;*/
+    height: 30px;
+    width: 30px;
+    display: block;
+    background: url(/includes/templates/fiberstore/images/shopcart_delete.png) no-repeat 1px 3px;
+    cursor: pointer;
+}
+.fs_paycomfirm_error h3 span:hover{
+    background: url(/includes/templates/fiberstore/images/shopcart_delete.png) no-repeat -52px 3px;
+}
+.fs_paycomfirm_error h3:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+
+
+
+
+
+.fs_paycomfirm h3{
+    background: #F5F5F5;
+    color: #666666;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    padding: 15px 20px;
+}
+.fs_paycomfirm h3 span{
+    float: right;
+    /*margin-top: 10px;
+    margin-right: 5px;*/
+    height: 30px;
+    width: 30px;
+    display: block;
+    background: url(/includes/templates/fiberstore/images/shopcart_delete.png) no-repeat 1px 3px;
+    cursor: pointer;
+}
+.fs_paycomfirm h3 span:hover{
+    background: url(/includes/templates/fiberstore/images/shopcart_delete.png) no-repeat -52px 3px;
+}
+.fs_paycomfirm h3:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+.fs_paycomfirm_body p{
+    color: #999999;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 30px;
+}
+.fs_paycomfirm_btn{
+    text-align: center;
+}
+.fs_paycomfirm_btn button{
+    background: #FFFFFF;
+    border-radius: 3px;
+    outline: none;
+    box-sizing: border-box;
+    width: 150px;
+    height: 42px;
+    line-height: 40px;
+    text-align: center;
+    /* padding: 10px; */
+    margin: 0 10px;
+    padding: 0;
+    cursor: pointer;
+}
+.fs_paycomfirm_btn_2{
+    color: #4e8b01;
+    font-size: 16px;
+    border: 1px solid #4e8b01;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+.fs_paycomfirm_btn_2:hover{
+    background: #4e8b01;
+    color: #fff;
+}
+.fs_paycomfirm_btn_1{
+    color: #666666;
+    font-size: 16px;
+    border: 1px solid #999;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+.fs_paycomfirm_btn_1:hover{
+    background: #999;
+    color: #fff;
+}
+
+.fs_paycomfirm_btn_3{
+    color: #23ac38;
+    font-size: 16px;
+    border: 1px solid #23ac38;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+.fs_paycomfirm_btn_3:hover{
+    background: #23ac38;
+    color: #fff;
+}
+.fs_paycomfirm_btn_4{
+    /*color: #D63030;*/
+    color: #fff;
+    background: #D63030 !important;
+    font-size: 16px;
+    border: 1px solid #d63030;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+.fs_paycomfirm_btn_4:hover{
+    background: #c61017 !important;
+    color: #fff;
+}
+
+
+.fs_payhelp{
+    width: 500px;
+    overflow: hidden;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #FFFFFF;
+    border-radius: 3px;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    z-index: 999;
+    padding-bottom: 60px;
+}
+.fs_payhelp h3{
+    background: #F5F5F5;
+    color: #666666;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 20px;
+    line-height: 30px;
+}
+.fs_payhelp h3:after{
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+}
+.fs_payhelp span{
+    float: right;
+    /*margin-top: -5px;*/
+    /*margin-top: 10px;
+    margin-right: 5px;*/
+    height: 30px;
+    width: 30px;
+    display: block;
+    background: url(/includes/templates/fiberstore/images/shopcart_delete.png) no-repeat -8px 3px;
+    cursor: pointer;
+}
+.fs_payhelp span:hover{
+    background: url(/includes/templates/fiberstore/images/shopcart_delete.png) no-repeat -61px 3px;
+}
+.fs_payhelp_body{
+    padding:20px;
+    padding-top:50px;
+
+}
+.fs_payhelp_body p{
+    font-size:16px;
+    padding-bottom:15px;
+    color:rgb(102,102,102);
+}
+.fs_payhelp_body>a{
+    display:block;
+    font-size:14px;
+    padding:5px 0;
+    color:rgb(51,51,51);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+.fs_payhelp_body>a:hover{
+    color: #d63030;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+.fs_payhelp_body i{
+    padding-top:25px;
+    font-size:14px;
+    display:block;
+    color:rgb(102,102,102);
+    font-style:normal;
+}
+.fs_payhelp_body i a{
+    color:#0681d3;
+}
+.fs_payhelp_body i a:hover{
+    text-decoration:underline;
+}
+
+
+
+
+.osd_show{
+    display: block !important;
+}
+
+
+
+/*支付成功样式结束*/
+
+
+
+
+
+
+
+
+/*此样式包含购物流程公共头部尾部*/
+
+
+
+.FiberStore_new_style_0824 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.FiberStore_login_left_main {
+    padding: 40% 0 0 18%;
+    width: 281px;
+    text-align: center;
+}
+.FiberStore_login_left_main h2 {
+    font-weight: 400;
+}
+
+
+
+.box {
+    width: 100% !important;
+}
+
+.fs_regist_bg {
+    width: 100%;
+    background: #f4f4f4;
+    padding: 30px 0;
+}
+
+.FiberStore_rs_box{
+    width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+    padding: 170px 0 170px;
+}
+.FiberStore_rs_cavs_box{
+    /*padding-top: 70px;*/
+}
+.FiberStore_rs_box h1{
+    font-weight: 400;
+    font-size: 30px;
+    color: rgb(102,102,102);
+
+}
+
+.fs_show_psw {
+    position: relative;
+}
+.fs_show_psw input[type='text'],.fs_show_psw input[type='password']{
+    /*margin-bottom: 24px;*/
+}
+.fs_show_psw span {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+    height: 48px;
+    width: 30px;
+    background: url(/includes/templates/fiberstore/images/111_03.png) no-repeat -24px 19px;
+}
+.fs-pact{
+    margin-top: 2px;
+}
+.fs_checkbox_list {
+    color: #999;
+    font-size: 14px;
+    float: left;
+}
+
+.fs_checkbox_list a {
+    color: #666;
+    text-decoration: none;
+}
+
+.fs_checkbox {
+    float: left;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    background: url(/includes/templates/fiberstore/images/red_no.png) no-repeat 0 -16px;
+    /*opacity: 0;*/
+}
+.fs_checkbox:hover{
+    border-color: #d63030 !important;
+}
+.fs_checkbox input {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.fs_li_checkbox {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+input::-webkit-input-safebox-button {
+    -webkit-appearance: -webkit-input-safebox-button;
+    display: none !important;
+    vertical-align: top;
+    align-self: flex-start;
+    -webkit-user-modify: read-only;
+    flex: 0 0 auto;
+    margin: auto 0px;
+}
+
+.register_main_form_input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #999999;
+}
+
+.register_main_form_input::-moz-input-placeholder {
+    font-size: 14px;
+    color: #999999;
+}
+
+.register_main_form_input:-ms-input-placeholder {
+    font-size: 14px;
+    color: #999999;
+}
+
+.FiberStore_forgotpsw_box {
+    width: 100%;
+    margin: 0 auto;
+    background: #f4f4f4;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.FiberStore_forgotpsw_content {
+    width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    padding-bottom: 90px;
+}
+
+.FiberStore_forgotpsw_title {
+    font-size: 20px;
+    padding: 18px;
+    color: #333;
+    background: #fafafa;
+    text-align: center;
+    /*line-height: 32px;*/
+}
+
+.FiberStore_forgotten {
+    width: 340px;
+    margin: 0 auto;
+}
+
+.FiberStore_forgotten ul p {
+    font-size: 14px;
+    color: #666;
+    padding-top: 45px;
+    padding-bottom: 15px;
+}
+
+.FiberStore_forgot_txt_input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #666;
+    box-sizing: border-box;
+}
+
+.FiberStore_forgot_txt_input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #999999;
+}
+
+.FiberStore_forgot_txt_input::-moz-input-placeholder {
+    font-size: 14px;
+    color: #999999;
+}
+
+.FiberStore_forgot_txt_input:-ms-input-placeholder {
+    font-size: 14px;
+    color: #999999;
+}
+
+.FiberStore_forgot_txt_input:focus {
+    border: 1px solid rgba(51, 51, 51, 0.5);
+    /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px rgba(0, 0, 0, 0.2);*/
+    border-color: rgba(51, 51, 51, 0.5);
+    outline: 0 none;
+}
+
+.FiberStore_forgot_validate {
+    width: 100%;
+    padding: 0px 0 24px;
+    position: relative;
+    /*display: none;*/
+    /*opacity: 0;*/
+
+}
+.FiberStore_forgot_validate_show{
+    display: block;
+}
+.FiberStore_forgot_validate:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.FiberStore_forgot_validate_input {
+    width: 100%;
+    float: left;
+    height: 50px;
+    color: #666;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    /* border-right: 0; */
+    /* border-bottom-right-radius: 0; */
+    /* border-top-right-radius: 0; */
+}
+
+.FiberStore_forgot_validate_input:focus {
+    border: 1px solid rgba(51, 51, 51, 0.5);
+    /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px rgba(0, 0, 0, 0.2);*/
+    border-color: rgba(51, 51, 51, 0.5);
+    outline: 0 none;
+}
+
+.FiberStore_forgot_validate_input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #999999;
+}
+
+.FiberStore_forgot_validate_input::-moz-input-placeholder {
+    font-size: 14px;
+    color: #999999;
+}
+
+.FiberStore_forgot_validate_input:-ms-input-placeholder {
+    font-size: 14px;
+    color: #999999;
+}
+
+.FiberStore_forgot_validate_btn {
+    width: 35%;
+    float: left;
+    height: 30px;
+    box-sizing: border-box;
+    /* border-radius: 3px; */
+    /* border: 1px solid #dddddd; */
+    background: #fff;
+    border: 0;
+    border-left: 1px solid #ddd;
+    color: #666;
+    position: absolute;
+    top: 10px;
+    right: 2px;
+    font-size: 14px;
+    /* border-bottom-left-radius: 0; */
+    /* border-top-left-radius: 0; */
+    cursor: pointer;
+}
+.FiberStore_forgot_validate_btn:focus{
+    outline: none;
+}
+.FiberStore_forgot_validate_sub {
+    width: 100%;
+    background: #d63030;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.FiberStore_forgot_validate_sub:hover{
+    background-color: #c61017;
+}
+.FiberStore_forgot_validate_sub:focus{
+    outline: none;
+}
+.FiberStore_forgot_validate .tips{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: block;
+    font-size: 12px;
+    color: #D63030;
+    background: url(/includes/templates/fiberstore/images/login_alert_icon.png) no-repeat 0px 6px;
+    text-indent: 20px;
+    height: 24px;
+    line-height: 24px;
+
+}
+
+
+
+
+.FiberStore_password_update_list {
+    font-size: 14px;
+    color: #666;
+}
+
+.fs_ent_item {
+    width: 800px;
+    margin: 10px auto 0 auto;
+    background: #fafafa;
+}
+
+.fs_ent_item:after {
+    content: '';
+    width: 0;
+    height: 0;
+    clear: both;
+    display: block;
+}
+
+.fs_ent_item .fs_ent_item_list {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.fs_ent_item .fs_ent_item_list h3 {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #666;
+    font-weight: 400;
+}
+
+.fs_ent_item .fs_ent_item_list p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+    width: 60%;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.fs_ent_item_list_img {
+    height: 38px;
+    width: 38px;
+    margin: 40px auto 10px auto;
+    background: url(/includes/templates/fiberstore/images/regist_1_fs.png) no-repeat 0px 0px;
+}
+
+.fs_ent_item .fs_ent_item_list:nth-of-type(2) .fs_ent_item_list_img {
+    background: url(/includes/templates/fiberstore/images/regist_1_fs.png) no-repeat -190px 0px;
+}
+
+.fs_ent_item .fs_ent_item_list:nth-of-type(3) .fs_ent_item_list_img {
+    background: url(/includes/templates/fiberstore/images/regist_1_fs.png) no-repeat -380px 0px;
+}
+
+.fs_ent_item .fs_ent_item_list:nth-of-type(4) .fs_ent_item_list_img {
+    background: url(/includes/templates/fiberstore/images/regist_1_fs.png) no-repeat -570px 0px;
+}
+
+.fs_alert {
+    color: #d63030;
+    margin-bottom: 14px;
+}
+
+.FiberStore_validate_message {
+    width: 100%;
+    display: none;
+    margin-bottom: 14px;
+    color: #D63030;
+    background: url(/includes/templates/fiberstore/images/login_alert_icon.png) no-repeat 0px 2px;
+    text-indent: 20px;
+}
+
+.Fiberstore_shopcart_checkbox {
+    height: 100px;
+    padding: 15px 0;
+    position: relative;
+}
+.Fiberstore_shopcart_checkbox_btn{
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);*/
+}
+.fiberstore_shopcart_new_body{
+    width: 1440px;
+    margin: 0 auto;
+}
+.Fiberstore_getvali{
+    height: 30px;
+    cursor: pointer;
+    border: 0;
+    width: 126px;
+    border-left: 1px solid #e0e0e0;
+    /* border: 1px solid #e0e0e0; */
+    border-bottom-left-radius: 0;
+    background: #fff;
+    border-top-left-radius: 0;
+    outline: none;
+    color: #666;
+    position: absolute;
+    top: 9px;
+    font-size: 14px;
+    right: 1px;
+    /* border-left: 0; */
+}
+/*.Fiber_fjc{*/
+    /*min-height: 385px;*/
+/*}*/
+.FiberStore_myaccount{
+    float: right;
+    font-size: 14px;
+    color: #666;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+.FiberStore_myaccount>a{
+    text-decoration: none;
+}
+.FiberStore_myaccount:hover>a{
+    color: #D63030;
+    text-decoration: none;
+}
+.FiberStore_myaccount:hover .header_sign_more_s{
+    display: block;
+    top: 40px;
+    left: -18px;
+}
+
+/*支付方式结算页面样式*/
+.Fiberstore_order_submit{
+    width: 100%;
+    background: #F5F5F5;
+    padding-bottom: 60px;
+    padding-top: 30px;
+}
+.Fiberstore_order_submit_box{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.order_success_bank {
+    border-bottom: 1px solid #EEEEEE ;
+    overflow: hidden;
+    position: relative;
+}
+.order_success_bank dl {
+    overflow: hidden;
+    margin: 60px auto 20px;
+    /*height: 200px;*/
+}
+.order_success_bank dl dt {
+    /*width: 220px; */
+    /*height: 163px; */
+    /*background: #fafafa; */
+    float: left ;
+    width: 12%;
+    height: 80px;
+}
+.order_success_bank dl dt img {
+    display: block;
+    /*margin: 0 auto;*/
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    /*width: 70px;
+    height: 70px ;*/
+}
+.order_success_bank dl dd {
+    color: #666;
+    font-size: 14px;
+    /*padding: 20px 20px 20px 240px; */
+    line-height: 24px ;
+    float: left;
+    width: 88%;
+}
+.order_success_bank dl dd span {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 15px;
+    color: #333 ;
+}
+.order_success_bank dl dd span i{
+    float: right;
+    font-style: normal;
+    font-size: 14px;
+}
+.order_success_bank dl dd span i>em{
+    font-size: 20px;
+    color: #D63030;
+    font-style: normal;
+}
+.order_success_bank dl dd span:after{
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+}
+.order_success_bank dl dd p {
+    font-size: 16px;
+    display: block;
+    padding-bottom: 10px ;
+}
+.order_success_bank dl dd p b{
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+}
+.order_success_bank dl dd p:after{
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+}
+.order_success_bank dl dd p i{
+    float: right;
+    font-style: normal;
+    font-size: 14px;
+    color: #666666;
+    cursor: pointer;
+}
+.order_success_bank dl dd p i>em{
+    display: inline-block;
+    vertical-align: bottom;
+    height: 24px;
+    width: 12px;
+    margin: 0 3px;
+    background: url(/includes/templates/fiberstore/images/feisu_sprite_01.png) no-repeat -147px -397px;
+}
+.order_success_bank dl dd p i.active>em{
+    background: url(/includes/templates/fiberstore/images/feisu_sprite_01.png) no-repeat -147px -426px;
+}
+.order_success_bank dl dd p i:hover{
+    color: #d63030;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+}
+.order_success_bank dl dd p i:hover>em{
+    background: url(/includes/templates/fiberstore/images/feisu_sprite_01.png) no-repeat -108px -397px;
+}
+.order_success_bank dl dd p i.active:hover>em{
+    background: url(/includes/templates/fiberstore/images/feisu_sprite_01.png) no-repeat -108px -426px;
+
+}
+.Fiberstore_submit_list_txt{
+    float: left;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+}
+.Fiberstore_submit_list_content{
+    /*padding: 40px 0;*/
+    font-size: 14px;
+    /*padding-left: 12%;*/
+    /*border-bottom: 1px solid #EAEAEA;*/
+    overflow: hidden;
+    /*display: none;*/
+    /*opacity: 1;*/
+    height: 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+}
+.Fiberstore_submit_list_content.subt_show{
+    border-bottom: 1px solid #EEEEEE;
+}
+.Fiberstore_submit_list_content ul{
+    margin: 0;
+    padding: 35px 0 35px 12%;
+}
+.Fiberstore_submit_list_content ul li{
+    margin-bottom: 10px;
+    color: #666666;
+    font-size: 14px;
+    line-height: 24px;
+}
+.Fiberstore_submit_list_content ul li:last-child{
+    margin-bottom: 0;
+}
+.Fiberstore_submit_list_content ul li p{
+    display: inline-block;
+    line-height: 24px;
+}
+.Fiberstore_submit_list_content .Fiberstore_submit_Detail{
+    display: inline-block;
+    vertical-align: top;
+}
+.Fiberstore_submit_list_content .Fiberstore_submit_Detail span{
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+}
+.order_bank_tit {
+    font-size: 18px;
+    margin: 40px 0 20px;
+    color: #333333;
+    line-height: 30px ;
+    /*border-bottom: 1px solid #EAEAEA;*/
+}
+.order_bank_tit>a{
+    color: #999;
+    font-size: 14px;
+    padding-left: 60px;
+}
+.order_bank_tit>a:hover{
+    color: #D63030;
+}
+.order_bank_table{
+    /*border-top: 1px solid #EAEAEA;*/
+    padding-bottom: 40px;
+    border-bottom: 1px solid #EEEEEE;
+}
+.order_bank_table table { border: 1px solid #eaeaea; border-bottom: 0 }
+.order_bank_table table tr td { border-bottom: 1px solid #eaeaea; padding: 20px; font-size: 16px; text-align: center }
+.order_bank_popup { text-align: center }
+.order_bank_popup span { font-size: 24px; margin: 60px 0 20px; display: block }
+.order_bank_popup p { font-size: 14px; color: #666; margin-bottom: 50px }
+.order_bank_popup a.button_11 { margin: 0 10px; float: none; border: 1px solid #dedede; color: #666; padding: 10px 20px }
+.order_bank_fh { border-top: 1px solid #dedede; line-height: 42px; margin-top: 40px }
+.order_bank_fh a { color: #0681d3; font-size: 14px }
+.order_bank_logo ul:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+.order_bank_logo ul li{
+    float: left;
+    width: 16.666%;
+    padding-right: 20px;
+}
+.order_bank_logo ul li a {
+    /*	float: left;*/
+    display: block ;
+    height:60px;
+    background-color: #fff;
+    /*padding: 5px 1px; */
+    /*height: 28px; */
+    /*width: 165px; */
+    /*margin: 5px 10px 5px 0; */
+    cursor: pointer;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+.order_bank_logo ul li a:hover{
+    border:1px solid #d63030;
+}
+.order_bank_logo ul li a em { display: none; position: absolute; right: 0; bottom: 0; z-index: 2 }
+/*.order_bank_logo ul li a:hover, .order_bank_logo ul li.bank_icon a { border: 2px solid #d82d33; padding: 4px 0 }
+.order_bank_logo ul li a:hover em, .order_bank_logo ul li.bank_icon a em { display: block }*/
+.order_bank_logo ul li a span {
+    display: inline-block;
+    margin-top: 17px;
+    margin-left: 17px;
+}
+.order_bank_logo ul li:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+.bank-logo { background: url("/includes/templates/fiberstore/images/bank-logo.png") no-repeat bottom; display: block; width: 125px; height: 28px; overflow: hidden; text-indent: -9999px }
+.bank-alipay {
+    background-position: 0 -1655px ;
+    margin-left: 38px !important;
+}
+.bank-kq { background-position: 0 -1686px }
+.bank-hk { background-position: 0 -1731px }
+.bank-weixin { background-position: 0 -1762px }
+.bank-underline{
+    display: block;
+    font-size: 16px;
+    overflow: hidden;
+}
+.bank-underline img{
+    margin: 0 auto;
+}
+.order_bank_table_title{
+    padding-top: 35px;
+    padding-bottom: 18px;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 400;
+}
+.order_bank_tips{
+    line-height: 16px;
+    font-size: 14px;
+    color: #999999;
+    padding-top: 12px;
+}
+.order_bank_table_title span{
+    margin-left: 10px;
+    color: #999;
+    font-size: 14px;
+}
+.order_bank_but {
+    float: left;
+    width: 16.666%;
+    padding-right: 20px;
+    margin: 40px 0 50px;
+    /* background: #f6f6f6; */
+    overflow: hidden;
+}
+.order_bank_but .button_02 {
+    float: left;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0 25px;
+    line-height: 42px ;
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+}
+.order_bank_but .button_02:focus{
+    outline: none;
+}
+.subt_show{
+    /*border-bottom: 1px solid #EAEAEA;*/
+    /*display: block !important;*/
+    /*height: auto;*/
+    /*padding: 40px 0;*/
+    /*padding-left: 12%;*/
+    /*transition: all 0.5s ease;*/
+    /*-webkit-transition: all 0.5s ease;*/
+    /*-moz-transition: all 0.5s ease;*/
+    /*-ms-transition: all 0.5s ease;*/
+}
+.bank_icon a{
+    border: 1px solid #D63030 !important;
+}
+
+.Fiberstore_online_pay{
+    overflow: hidden;
+}
+.Fiberstore_undline_pay{
+    padding-bottom: 80px;
+    display: none;
+}
+.Fiberstore_undline_pay h3{
+    font-size: 18px;
+    margin: 40px 0 20px;
+    color: #333333;
+    font-weight: 400;
+    line-height: 30px;
+}
+.Fiberstore_undline_pay h3 a{
+    font-size: 14px;
+    /*color: #666666;*/
+    color: #D63030;
+    padding-left: 10px;
+}
+.Fiberstore_undline_pay h3 a:hover{
+    color: #D63030;
+}
+.Fiberstore_undline_box{
+    box-sizing: border-box;
+    /*border: 1px solid #eaeaea;*/
+}
+.Fiberstore_undline_box:after{
+    content: '';
+    display: block;
+    clear: both;
+    width: 0;
+    height: 0;
+}
+.Fiberstore_undline_box_left{
+    float: left;
+    width: 20%;
+    height: 160px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #f9f9f9;
+    background: #f9f9f9;
+    /*float: left;
+    width: 20%;
+    height: 160px;
+
+    text-align: center;
+    background: #f9f9f9;*/
+}
+.Fiberstore_undline_box_left p{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+.Fiberstore_undline_box_left img{
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.Fiberstore_undline_box_right{
+    float: left;
+    width: 80%;
+    height: 160px;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    border-left: 0;
+    /*float: left;
+    width: 80%;
+    height: 160px;*/
+}
+.Fiberstore_undline_box_right p{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.Fiberstore_undline_box_right_1{
+    margin-top: 35px;
+    padding-left: 40px;
+}
+.Fiberstore_undline_box_p{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+.Fiberstore_undline_box_p a{
+    color: #0681D3;
+}
+/*支付方式结算页面样式结束*/
+
+/*结算清单页面*/
+.FiberStore_checkout_body{
+    width: 100%;
+    background: #f5f5f5;
+    padding: 30px 0;
+}
+.FiberStore_checkout_content{
+    width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+}
+.fiberstore_checkout_title {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 40px 0 20px;
+    color: rgb(51,51,51);
+    line-height: 32px;
+}
+.Fiberstore_checkout_box_1{
+    /*border: 1px solid rgb(102,102,102);*/
+    padding: 0px 40px 40px;
+    margin-bottom: 30px;
+}
+/*.checkout_p_method{
+    height: 54px;
+}*/
+.checkout_p_method ul { clear: both }
+.checkout_p_method ul:after{
+    content: '';
+    clear: both;
+    width: 0;
+    height: 0;
+    display: block;
+}
+.checkout_p_method ul li {
+    float: left; margin: 0 15px 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    /*padding: 1px;*/
+    position: relative ;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+.checkout_p_method ul li:hover{
+    border:1px solid #d63030;
+}
+/*.checkout_p_method ul li:hover a{*/
+    /*color: #d63030;*/
+/*}*/
+.checkout_p_method ul li a {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 200px;
+    display: block;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: rgb(102,102,102);
+}
+.checkout_p_method ul li a em {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none
+}
+.checkout_p_method ul li a:hover {
+    text-decoration: none
+}
+.checkout_p_method ul li.p_icon {
+    padding: 0;
+    border: 1px solid #d63030 ;
+    border-radius: 3px;
+}
+.checkout_p_method ul li:hover{
+
+}
+.checkout_p_method ul li.p_icon a{
+    color: #d63030;
+}
+.checkout_p_method ul li.p_icon:hover a{
+    color: #d63030;
+}
+.checkout_p_method ul li:hover a{
+    color: #d63030;
+}
+.checkout_p_method ul li.p_icon a em, .checkout_p_method ul li:hover a em {
+    display: block
+}
+.checkout_icon_yes {
+    /*width: 12px;
+    height: 12px;
+    display: block;
+    background: url("../images/icon_fb.png") no-repeat -86px -103px */
+}
+.checkout_03 {
+    border-bottom: 1px solid #eaeaea;
+    font-size: 12px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.checkout_invoice { padding-bottom: 15px }
+.checkout_invoice a { color: #666; display: inline-block }
+.checkout_invoice a:hover { color: #d82d33 }
+.checkout_invoice span label input { vertical-align: middle; margin-right: 5px }
+.checkout_invoice_input { border: 1px solid #dedede; font-family: Arial, Helvetica, sans-serif; line-height: 30px; padding: 0 12px; width: 220px; float: left; margin-right: 15px }
+.checkout_invoice .checkout_p_method { padding-top: 15px }
+.checkout_p_method_a { line-height: 36px }
+.checkout_p_method_b { overflow: hidden }
+.checkout_ivs_con { padding:0;color: #666; overflow: hidden }
+.checkout_ivs_con p { padding-bottom: 10px }
+.checkout_ivs_con span { overflow: hidden }
+.checkout_ivs_con span .button_02 { margin-left: 10px }
+
+
+
+
+
+.Fiberstore_checkout_price{
+    height: 60px;
+    font-size: 12px;
+}
+.Fiberstore_checkout_invoice_input{
+    display: block;
+}
+.Fiberstore_checkout_invoice_input input{
+    display: block;
+    width: 418px;
+    border: 1px solid #ccc;
+    line-height: 36px;
+    height: 40px;
+    /*width: 232px;*/
+    text-indent: 10px;
+    font-size: 13px;
+    font-family: Open Sans;
+    color: #333;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    border-radius: 3px;
+    vertical-align: middle;
+    font-family:"Microsoft YaHei";
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.Fiberstore_checkout_invoice_input button{
+    display: block;
+}
+.Fiberstore_checkout_invoice_input p{
+    font-size: 14px;
+    color: #666666;
+}
+.Fiberstore_checkout_invoice_input p a{
+    color: #0681d3;
+    text-decoration: none;
+}
+.Fiberstore_checkout_invoice_input p a:hover{
+    text-decoration: underline;
+}
+.fiberstore_checkout_backshopcart_link{
+    float: right;
+    font-size: 14px;
+    color: #999999;
+}
+.fiberstore_checkout_backshopcart_link a{
+    color: #666;
+}
+.fiberstore_checkout_backshopcart_link a:hover{
+    color: #d63030;
+}
+.shopcart_summary { padding-bottom: 0px }
+
+.Fiberstore_list_lm{
+    /*width: 100%;*/
+    padding:  20px 0;
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    /*margin-bottom: 20px;*/
+    /*border-bottom: 1px solid #eee;*/
+}
+.Fiberstore_list_lm:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+.Fiberstore_list_lm p{
+    float: right;
+}
+.Fiberstore_list_lm span{
+    font-size: 14px;
+    color: #666;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    width: 20%;
+    display: inline-block;
+    /*margin-right: 5px;*/
+    /*width: 9%;*/
+
+}
+.Fiberstore_list_lm input::-webkit-input-placeholder{
+    color: #aaa;
+}
+.Fiberstore_list_lm textarea::-webkit-input-placeholder{
+    color: #aaa;
+    font-family: "Microsoft YaHei";
+}
+.Fiberstore_list_lm input,.Fiberstore_list_lm textarea{
+    width: 80%;
+    float: left;
+    box-sizing: border-box;
+    display: inline-block;
+    border:1px solid #dedede;
+    /*border:0;*/
+    /*border:1px solid transparent;
+    border-bottom: 1px solid #dedede;*/
+    font-family: "Microsoft YaHei";
+    border-radius: 3px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 14px;
+    outline: none;
+    color: #333;
+    padding: 0 10px;
+    line-height: 38px;
+    resize: none;
+    overflow-y: hidden;
+
+}
+
+.Fiberstore_list_lm input:focus,.Fiberstore_list_lm textarea:focus{
+    border:1px solid rgba(51,51,51,0.5);
+    outline: none;
+
+}
+.Fiberstore_list_lm textarea:focus{
+    border:1px solid rgba(51,51,51,0.5);
+    outline: none;
+
+}
+/*.remark #placeholder{
+	color: #eee;
+}*/
+
+/*.Fiberstore_list_lm input:-moz-placeholder {
+　　font-size: 14px;
+　　color: rgb(51, 51, 51);
+}*/
+.Fiberstore_list_lm input::-moz-placeholder{
+    　　font-size: 14px;
+    　　color: #aaa;
+}
+.Fiberstore_list_lm input:-ms-input-placeholder {
+    　　font-size: 14px;
+    　　color: #aaa;
+}
+.Fiberstore_list_lm textarea::-moz-placeholder{
+    　　font-size: 14px;
+    　　color: #aaa;
+}
+.Fiberstore_list_lm textarea:-ms-input-placeholder {
+    　　font-size: 14px;
+    　　color: #aaa;
+}
+.Fiberstore_list_lm input::-webkit-input-placeholder{
+    color: #aaa;
+}
+.checkout_all{
+    float: left;
+    width: 50%;
+    padding: 20px 0 0;
+}
+
+
+.Fiberstore_checkout_table{
+    border-bottom: 1px solid #E9E9E9;
+}
+.Fiberstore_checkout_table tr th{
+    font-size: 14px;
+    color: #666666;
+    padding: 15px;
+    font-weight: 400;
+    /*border-bottom: 2px solid #E9E9E9;*/
+}
+.Fiberstore_checkout_table tr td{
+    font-size: 14px;
+    color: #666666;
+    vertical-align: top;
+}
+.Fiberstore_checkout_table tr td a:hover{
+    color: #D63030;
+}
+.Fiberstore_checkout_table tr td.table_top_box{
+    vertical-align: top;
+    padding-top: 30px;
+}
+.Fiberstore_checkout_table tr td.table_top_img{
+    vertical-align: top;
+}
+.Fiberstore_checkout_table tr td.table_s_box{
+    padding-top: 40px;
+
+}
+.Fiberstore_checkout_table .Fiberstore_checkout_product .cartAttribsList{
+    margin-top: 0;
+
+}
+.fs_text_price{
+    color: #D63030 !important;
+}
+.checkout_price ul li .products_in_stock {
+    margin: 0 5px 0 0;
+    float: none ;
+}
+.checkout_price ul li .special_price {
+    display: inline-block;
+    text-align: left;
+    width: 124px;
+    padding-top: 0 ;
+}
+.checkout_price {
+    overflow: hidden;
+    display: block;
+    /*padding-top: 8px ;*/
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    /*padding-bottom: 20px;*/
+}
+.checkout_price ul li {
+    float: right;
+    padding: 0 1px 0 12px;
+}
+.checkout_price ul li.price_width {
+    min-width: 94px;
+    color: #D63030;
+    text-align: right ;
+}
+.Fiberstore_checkout_total_price{
+    /*height: 60px;*/
+    font-size: 12px;
+    font-size: 14px;
+    vertical-align: sub;
+    line-height: 40px;
+    height: 40px;
+}
+.Fiberstore_checkout_total_price:after{
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+}
+.Fiberstore_checkout_total_price dd{
+    float: right;
+    padding: 0 1px 0 12px;
+}
+.Fiberstore_dd_num{
+    min-width: 94px;
+    text-align: right;
+    color: #D63030;
+}
+.Fiberstore_dd_num span{
+    font-size: 20px;
+}
+.Fiberstore_dd_num_change1 span{
+    margin-top: 6px;
+    display: block;
+}
+.Fiberstore_checkout_submit_btn{
+    display: block;
+    float: right;
+}
+.Fiberstore_checkout_submit_btn a{
+    width: 200px;
+    height: 42px;
+    line-height: 42px;
+    border-radius:3px;
+    background: #D63030;
+    color: #FFFfFf;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    /*line-height: 50px;*/
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+.Fiberstore_checkout_submit_btn a:hover{
+    background: #c61017;
+}
+
+
+
+
+
+
+
+/*结算清单页面结束*/
+/*微信支付页面*/
+.payment_weixin { }
+.weixin_tishi { background: #f9f9f9; padding: 20px; overflow: hidden; font-size: 16px }
+.weixin_tishi b { float: left }
+.weixin_tishi span { float: right; color: #d82d33 }
+.weixin_tishi p { clear: both; font-size: 14px; padding-top: 10px }
+.payment_weixin_con {
+    /*border: 1px solid #eaeaea; */
+    overflow: hidden;
+    padding: 15px 0 40px;
+}
+.payment_weixin_con_left { float: left; width: 45%; text-align: right; margin-top: 18px }
+.payment_weixin_con_left img { border: 1px solid #f4f4f4 }
+.payment_weixin_con_left span { display: block; background: #83bd39; color: #fff; padding: 10px 0; width: 280px; text-align: center; float: right; border: 1px solid #83bd39 }
+.payment_weixin_con_left span em { display: inline-block; vertical-align: middle; width: 44px; height: 44px; background: url("../images/icon-red.png") no-repeat 0 0 }
+.payment_weixin_con_left span i { font-style: normal; display: inline-block; vertical-align: middle; padding-left: 15px; text-align: left }
+.payment_weixin_con_right { float: right; width: 45% }
+.payment_weixin_con_back { font-size: 14px; color: #2ea7e7; padding-left: 50px; background: url("../images/live_bg.png") no-repeat scroll -300px -258px; margin: 10px 0 }
+.payment_weixin_con_left img {
+    float: right;
+    /*margin-left:256px*/
+}
+/*微信支付页面结束*/
+/*线下支付页面*/
+.checkout_imgbtn{
+
+}
+.checkout_imgbtn input[type='file']{
+
+}
+.checkout_imgbtn input[type='file']::-webkit-file-upload-button{
+    cursor: pointer;
+}
+.upload_bnt_box{
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #EEEEEE;
+}
+.upload_img{
+    /*margin-bottom: 30px;*/
+    margin-top: 25px;
+}
+/*线下支付页面结束*/
+@media(max-width:1220px) {
+    .FiberStore_new_style_0824 {
+        width: 960px;
+    }
+    .FiberStore_cs_new_header {
+        width: 960px;
+    }
+    .FiberStore_cs_new_footer {
+        width: 960px;
+    }
+    .FiberStore_login_left_main {
+        padding: 66% 0 0 22%;
+    }
+    .FiberStore_checkout_content{
+        width: 960px;
+    }
+    .Fiberstore_order_submit_box{
+        width: 960px;
+    }
+    .payment_weixin_con_left{
+        width: 50%;
+
+    }
+    .payment_weixin_con_right{
+        width: 50%;
+
+    }
+    .payment_weixin_con_right img{
+        margin: 0 auto;
+    }
+    .payment_weixin_con_left img{
+        margin: 0 auto;
+        float: none;
+    }
+    .payment_weixin_con_left span{
+        margin: 0 auto;
+        float: initial;
+    }
+    .login_center_left{margin-left: 0;width: 300px;}
+    .login_center_left_main{padding-left:100px;}
+    .login-box{
+        width: 960px;
+    }
+}
+
+@media(max-width:960px) {
+    .FiberStore_new_style_0824 {
+        width: 100%;
+    }
+    .FiberStore_login_logo{ margin-left:10px;}
+    .FiberStore_cs_new_header {
+        width: 100%;
+    }
+    .FiberStore_cs_new_footer {
+        width: 100%;
+    }
+    .FiberStore_login_left_main {
+        padding: 50% 0 0 0;
+        margin: 0 auto;
+    }
+    .FiberStore_forgotpsw_content {
+        width: 800px;
+    }
+    .FiberStore_forgotpsw_content {
+        width: 800px;
+    }
+    .fs_ent_item {
+        width: 100%;
+    }
+    .FiberStore_checkout_content{
+        width: 100%;
+    }
+    .Fiberstore_add_addr{
+        width: 50%;
+        padding:0 10px;
+        box-sizing: border-box;
+    }
+    .checkout_address_02{
+        width: 50%;
+        padding:0 10px;
+    }
+    .Fiberstore_checkout_box_1{
+        padding: 0px 20px 40px;
+    }
+    .Fiberstore_order_submit_box{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+    .order_bank_table{
+        margin: 0 !important;
+    }
+    .order_success_bank{
+        margin: 0 !important;
+    }
+    .order_success_bank dl dd{
+        width: 100%;
+    }
+    .order_success_bank dl dd{
+        padding-left: 0 !important;
+    }
+    .Fiberstore_list_lm{
+        width: 100%;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .checkout_all{
+        width: 100%;
+    }
+    .FiberStore_rs_box{
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+        padding: 120px 0px;
+        box-sizing: border-box;
+    }
+    .progress_bar_two{
+        display: none;
+    }
+    .progress_bar_three{
+        display: none;
+    }
+    .Fiberstore_submit_list_content ul{
+        padding: 20px 0;
+    }
+    .order_success_bank dl dd p{
+        padding-bottom: 0;
+    }
+    .FiberStore_myaccount .header_sign_more_s{
+        display: none;
+    }
+    .login_center_left{width: 50%;}
+    .login_center_left_main{padding-left: 0;margin: 0 auto;}
+    .login_center_right{width: 50%;margin-right: 0;}
+    .login_center_right_main{margin: 0 auto;padding:0 20px;}
+    .register_body{width: 100%;}
+    .register_top{padding-left: 50px;}
+    .login-box{
+        width: 100%;
+    }
+
+
+
+    /*.FiberStore_forgotten{
+        width: 100%;
+    }*/
+}
+
+@media(max-width:768px) {
+    .FiberStore_login_bg {
+        display: none;
+    }
+    .FiberStore_login_left_main {
+        padding: 20px 0 0 0;
+    }
+    .FiberStore_forgotpsw_content {
+        width: 500px;
+    }
+    .Fiberstore_add_addr{
+        width: 100%;
+        padding:0 10px;
+        box-sizing: border-box;
+    }
+    .checkout_address_02{
+        width: 100%;
+        padding:0 10px;
+    }
+    .Fiberstore_checkout_table tr th{
+        display: none;
+    }
+    .Fiberstore_checkout_table tr td:nth-of-type(1){
+        width: 40%;
+
+    }
+    .Fiberstore_checkout_table tr td:nth-of-type(2){
+        width: 60%;
+    }
+    .Fiberstore_checkout_table tr td:nth-of-type(3){
+        display: none;
+
+    }
+
+    .Fiberstore_checkout_table tr td:nth-of-type(4){
+        display: none;
+
+    }
+    .Fiberstore_checkout_table tr td:nth-of-type(5){
+        display: none;
+
+    }
+    .order_bank_logo ul li {
+        float: left;
+        box-sizing: border-box;
+        width: 50%;
+        padding-right: 20px;
+    }
+    .order_bank_but{
+        width: 50%;
+        box-sizing: border-box;
+    }
+    .order_success_bank dl dd span i{
+        float: initial;
+        display: block;
+        margin: 10px 0;
+    }
+    .order_success_bank dl dd p i{
+        float: initial;
+        display: block;
+        margin: 10px 0;
+    }
+
+
+    .order_success_bank dl{
+        margin: 10px auto 0px;
+    }
+    .payment_weixin_con_left{
+        width: 100%;
+
+    }
+    .payment_weixin_con_right{
+        /*width: 50%;*/
+        display: none;
+
+    }
+
+    .order_success_bank dl dd span{
+        font-size: 18px;
+    }
+    .order_success_bank dl dd span i>em{
+        font-size: 14px;
+    }
+    .Fiberstore_undline_pay h3{
+        margin: 20px 0;
+    }
+    .Fiberstore_undline_box_right_1{
+        padding:0 10px;
+    }
+    .Fiberstore_undline_pay{
+        padding-bottom: 50px;
+    }
+    .Fiberstore_undline_box_right{
+        width: 100%;
+        border:1px solid #EEEEEE;
+        border-top: 0;
+    }
+    .Fiberstore_undline_box_left{
+        width: 100%;
+    }
+    .FiberStore_login_bg{
+        display: none;
+    }
+    .login_center{
+        height: auto;
+        background: #eff2f9;
+    }
+    .login_center_left{width: 100%;}
+    .login_center_right{width: 100%;margin-right: 0;}
+
+
+
+
+}
+
+@media(max-width:480px) {
+    .FiberStore_forgotpsw_content {
+        width: 100%;
+    }
+    .Fiberstore_checkout_invoice_input input{
+        width: 99%;
+    }
+    .FiberStore_forgotten {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .fs_ent_item .fs_ent_item_list {
+        width: 50%;
+    }
+    .Fiberstore_checkout_table tr td{
+        width: 50% !important;
+
+    }
+    .order_bank_but{
+        width: 100%;
+        padding:20px 0;
+    }
+    .order_bank_logo ul li{
+        width: 100%;
+        padding:10px 0;
+    }
+    .Fiberstore_submit_list_txt{
+        display: none;
+    }
+    .Fiberstore_submit_list_content{
+        display: block;
+        opacity: 1;
+        padding: 0;
+        /*padding: 15px 0;*/
+        /*padding-left: 20px;*/
+    }
+    .Fiberstore_submit_list_content.subt_show{
+        padding: 0;
+    }
+    .Fiberstore_submit_list_content ul li{
+        height: auto;
+    }
+    .Fiberstore_submit_list_content ul li span{
+        float: right;
+        width: 100%;
+
+    }
+    .Fiberstore_submit_list_content ul li:after{
+        content: '';
+        display: block;
+        width: 0;
+        height:0;
+        clear:both;
+    }
+    .order_success_bank dl{
+        margin: 30px 0 0 0;
+    }
+    .order_success_bank dl dd p{
+        padding-bottom: 0;
+    }
+    .Fiberstore_list_lm span{
+        width: 100%;
+    }
+    .Fiberstore_list_lm input,.Fiberstore_list_lm textarea{
+        width: 100%;
+    }
+    .Fiberstore_checkout_table tr td:nth-of-type(1){
+        width: 10% !important;
+    }
+    .checkout_price ul{
+        float: left;
+        width: 100%;
+    }
+    .checkout_price ul li.price_width{
+        text-align: right;
+        width: 120px;
+    }
+    .checkout_price ul li{
+        padding: 0;
+    }
+    .checkout_price ul li:nth-of-type(2){
+        width: 75px;
+        text-align: left;
+        float: left;
+        font-size: 13px;
+    }
+    .Fiberstore_dd_num_change1 span{
+        width: 75px;
+        text-align: left;
+    }
+    .Fiberstore_dd_num_change1{
+        /*float: left;*/
+        width: 70px;
+        float: left !important;
+        line-height: 34px;
+    }
+    .Fiberstore_checkout_total_price dd{
+        padding:0;
+        text-align: right;
+    }
+    .Fiberstore_dd_num {
+        font-size: 13px;
+        min-width: 120px;
+        /*width: 75%;*/
+        text-align: left;
+        color: #D63030;
+    }
+    .fs_paycomfirm_error{
+        width: 98%;
+    }
+    .fs_paycomfirm_btn button{
+        width: 130px;
+        font-size: 14px;
+    }
+    .fs_payhelp{
+        width: 98%;
+    }
+    .fs_paycomfirm{
+        width: 98%;
+    }
+    .FiberStore_login_logo{
+        float: left;
+        width: 120px;
+        height: 34px;
+    }
+    .FiberStore_login_logo_1ine{
+        float: left;
+        width: 1px;
+        height: 17px;
+        background-color: #999;
+        margin: 9px 8px 0;
+    }
+    .FiberStore_cs_new_header p {
+        float: left;
+        font-size: 16px;
+        color: #999;
+        line-height: 34px;
+    }
+    .FiberStore_myaccount{
+        line-height: 34px;
+        padding-right: 20px;
+    }
+    .checkout_breadcrumb{
+        display: none;
+    }
+    .Fiberstore_checkout_submit_btn{
+        float: left;
+    }
+    .Fiberstore_checkout_submit_btn{
+        width: 100%;
+    }
+    .Fiberstore_checkout_submit_btn a{
+        width: 100%;
+    }
+    .checkout_p_method ul li{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .checkout_p_method ul li a{
+        width: 100%;
+    }
+    .checkout_address_02{
+        width: 100%;
+        padding: 0;
+    }
+    .Fiberstore_add_addr{
+        padding:0;
+    }
+    .order_bank_logo ul li a{
+        box-sizing: border-box;
+    }
+    .order_bank_table_title{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .order_bank_table{
+        padding-bottom: 20px;
+    }
+    .Fs-invoice-pop{
+        width: 100%;
+    }
+    .invoice-right-btn{
+        margin-bottom: 16px;
+    }
+    .invoice-right input[type='text']{
+        width: 92%;
+    }
+    .invoice-list .invoice-left{
+        width: 100%;
+        padding-left: 0;
+    }
+    .invoice-right{
+        width: 100%;
+    }
+
+
+    .login_center_right_main{width: 100%;box-sizing: border-box;}
+    .login_center_right_other>div:nth-of-type(1){}
+    .register_top{padding-left: 10px;}
+    .login_center_right_other span{width: 105px;}
+    .register_main_tit h2{padding-left: 15px;padding-right: 15px;}
+    .register_main{
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .register_main_form_input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .register_main_form_input.code{
+        width: 100%;
+    }
+
+    /*	.Fiberstore_checkout_table tr td:nth-of-type(2){
+            width: 50% !important;
+    }*/
+}
+@media(max-width:380px){
+    .login_center_right_other span{width: 85px;}
+    .register_main{
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

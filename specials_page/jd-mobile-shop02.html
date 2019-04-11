@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/special_default.css"/>
+		
+	</head>
+	
+	<body>
+		<style type="text/css">
+			.jd-wx{
+				width: 750px;
+				margin: 0 auto;
+			}
+			.jd-wx *{
+				font-family: "微软雅黑";
+			}
+			.jd-wx img{
+				max-width: 100%;
+				height: auto;
+				vertical-align: middle;
+			}
+			.jd-wx-tem{
+				padding: 10px 0;
+				background: #071a36;
+				text-align: center;
+			}
+			.jd-wx-tem01{
+				padding: 40px 0 10px;
+				background: #071a36;
+				text-align: center;
+			}
+			.jd-wx-tem-wrap{
+				background: #0b3694;
+				padding: 40px 25px 0 25px;
+				box-sizing: border-box;
+			}
+			.jd-wx-tem-wrap:after{
+				content: '';
+				clear: both;
+				display: block;
+				width: 0;
+				height: 0;
+			}
+			.jd-wx-tem-wrap-head{
+				font-weight: 600;
+				text-align: center;
+				font-size: 36px;
+				position: relative;
+				color: #FFFFFF;
+				line-height: 70px;
+				width: 100%;
+				clear: both;
+				padding-bottom: 10px;
+			}
+			.jd-wx-tem-wrap-head:before{
+				content: '';
+				display: block;
+				background: #FFFFFF;
+				width: 80px;
+				height: 5px;
+				position: absolute;
+				left: 50%;
+				top: 0;
+				transform: translateX(-50%);
+			}
+			.jd-wx-tem-wrap-item{
+				float: left;
+				width: 50%;
+				padding: 0 10px 40px 10px;
+				box-sizing: border-box;
+			}
+			.jd-wx-tem-wrap-bg{
+				text-align: center;
+				color: #333;
+				text-decoration: none;
+				background: #FFFFFF;
+				display: block;
+				padding-bottom: 35px;
+			}
+			.jd-wx-tem-wrap-bg h3{
+				font-size: 30px;
+				line-height: 32px;
+				padding-top: 20px;
+				font-weight: 400;
+				height: 64px;
+				overflow: hidden;
+			}
+			.jd-wx-tem-wrap-bg p{
+				color: #666666;
+				font-size: 26px;
+				line-height: 30px;
+				padding: 10px 0;
+			}
+			.jd-wx-tem-wrap-bg span{
+				color: #D63030;
+				font-size: 26px;
+				
+			}
+			.jd-wx-tem-wrap-bg b{
+				font-size: 40px;
+				font-weight: 400;
+			}
+			@media(max-width:750px){
+				.jd-wx{
+					width: 100%;
+				}
+			}
+			@media(max-width:680px){
+				.jd-wx-tem-wrap{
+				    padding: 40px 10px 0 10px;
+				}
+				.jd-wx-tem-wrap-bg h3 {
+				    font-size: 24px;
+				    line-height: 30px;
+				    padding-top: 20px;
+				    font-weight: 400;
+				    height: 60px;
+				    overflow: hidden;
+				}
+				.jd-wx-tem-wrap-bg p {
+				    color: #666666;
+				    font-size: 20px;
+				    line-height: 30px;
+				    padding: 10px 0;
+				}
+				.jd-wx-tem-wrap-bg span {
+				    color: #D63030;
+				    font-size: 18px;
+				}
+				.jd-wx-tem-wrap-bg b {
+				    font-size: 30px;
+				    font-weight: 400;
+				}
+			}
+			@media(max-width:480px){
+				.jd-wx-tem-wrap-bg p {
+				    color: #666666;
+				    font-size: 16px;
+				    line-height: 30px;
+				    padding: 10px 0;
+				}
+				.jd-wx-tem-wrap-bg h3 {
+				    font-size: 20px;
+				    line-height: 24px;
+				    padding-top: 10px;
+				    font-weight: 400;
+				    height: 48px;
+				    overflow: hidden;
+				}
+				.jd-wx-tem-wrap {
+				    padding: 20px 5px 0 5px;
+				}
+				.jd-wx-tem-wrap-item {
+				    float: left;
+				    width: 50%;
+				    padding: 0 5px 20px 5px;
+				    box-sizing: border-box;
+				}
+				.jd-wx-tem01 {
+				    padding: 20px 0 10px;
+				    background: #071a36;
+				    text-align: center;
+				}
+				.jd-wx-tem-wrap-bg{
+					text-align: center;
+				    color: #333;
+				    text-decoration: none;
+				    background: #FFFFFF;
+				    display: block;
+				    padding-bottom: 20px;
+				    padding-top: 10px;
+				}
+				.jd-wx-tem-wrap-head {
+				    font-weight: 600;
+				    text-align: center;
+				    font-size: 26px;
+				    position: relative;
+				    color: #FFFFFF;
+				    line-height: 50px;
+				    width: 100%;
+				    clear: both;
+				    padding-bottom: 10px;
+				}
+			}
+			@media(max-width:380px){
+				.jd-wx-tem-wrap-bg h3 {
+				    font-size: 16px;
+				    line-height: 20px;
+				    padding-top: 0px;
+				    font-weight: 400;
+				    height: 40px;
+				    overflow: hidden;
+				}
+				.jd-wx-tem-wrap-bg p {
+				    color: #666666;
+				    font-size: 12px;
+				    line-height: 20px;
+				    padding: 5px 0;
+				}
+				.jd-wx-tem-wrap-bg b {
+				    font-size: 24px;
+				    font-weight: 400;
+				}
+				.jd-wx-tem-wrap-bg span {
+				    color: #D63030;
+				    font-size: 14px;
+				}
+			}
+		</style>
+		<div class="jd-wx">
+			<div class="jd-wx-tem">
+				<img src="/includes/templates/fiberstore/images/specials/jd-mobile-shop02/FS-xc_01.jpg" alt="" />
+			</div>
+			<div class="jd-wx-tem">
+				<img src="/includes/templates/fiberstore/images/specials/jd-mobile-shop02/FS-xc_02.jpg"/>			
+			</div>
+			<div class="jd-wx-tem">
+				<a href="http://www.feisu.com/c/ethernet-switches-3079?hmsr=%E5%BE%AE%E4%BF%A1&hmpl=%E4%BA%A4%E6%8D%A2%E6%9C%BA&hmcu=&hmkw=&hmci=%E5%88%97&hmkw=&hmci=">
+					<img src="/includes/templates/fiberstore/images/specials/jd-mobile-shop02/FS-xc_03.jpg"/>
+				</a>
+			</div>
+			<div class="jd-wx-tem">
+				<a href="http://www.feisu.com/c/fiber-optic-transceivers-9?hmsr=%E5%BE%AE%E4%BF%A1&hmpl=%E5%85%89%E6%A8%A1%E5%9D%97&hmcu=&hmkw=&hmci=">
+					<img src="/includes/templates/fiberstore/images/specials/jd-mobile-shop02/FS-xc_04.jpg"/>
+				</a>	
+			</div>
+			<div class="jd-wx-tem">
+				<a href="http://www.feisu.com/c/racks-enclosures-1308?hmsr=%E5%BE%AE%E4%BF%A1&hmpl=%E9%85%8D%E7%BA%BF%E4%BA%A7%E5%93%81&hmcu=&hmkw=&hmci=">
+					<img src="/includes/templates/fiberstore/images/specials/jd-mobile-shop02/FS-xc_05.jpg"/>
+				</a>		
+			</div>
+			<div class="jd-wx-tem01">
+				<img src="/includes/templates/fiberstore/images/specials/jd-mobile-shop02/FS-xc_06.jpg"/>
+			</div>
+			<div class="jd-wx-tem-wrap">
+				<div class="jd-wx-tem-wrap-head">
+					光纤跳线系列
+				</div>
+				<div class="jd-wx-tem-wrap-item">
+					<a href="http://www.feisu.com/c/fiber-patch-cables-261?hmsr=%E5%BE%AE%E4%BF%A1&hmpl=%E5%85%89%E7%BA%A4%E8%B7%B3%E7%BA%BF&hmcu=&hmkw=&hmci=" class="jd-wx-tem-wrap-bg">
+						<img src="/includes/templates/fiberstore/images/specials/jd-mobile-shop02/FS-xc_07.jpg" alt="" />
+						<h3>
+							LC/SC/ST/FC<br>光纤跳线
+						</h3>
+						<p>
+							电信级|低插损
+						</p>
+						<span>
+							￥<b>9</b>.00起
+						</span>
+					</a>
+				</div>
+				
+				<div class="jd-wx-tem-wrap-item">
+					<a href="http://www.feisu.com/c/mtp-mpo-fiber-cabling-899?hmsr=%E5%BE%AE%E4%BF%A1&hmpl=%E5%85%89%E7%BA%A4%E8%B7%B3%E7%BA%BF&hmcu=&hmkw=&hmci=" class="jd-wx-tem-wrap-bg">
+						<img src="/includes/templates/fiberstore/images/specials/jd-mobile-shop02/FS-xc_08.jpg" alt="" />
+						<h3>
+							MTP/MPO<br>光纤跳线
+						</h3>
+						<p>
+							40G/100G网络升级
+						</p>
+						<span>
+							￥<b>170</b>.00起
+						</span>
+					</a>
+				</div>
+				
+				
+				<div class="jd-wx-tem-wrap-head">
+					综合布线系列
+				</div>
+				<div class="jd-wx-tem-wrap-item">
+					<a href="http://www.feisu.com/c/patch-cables-960?hmsr=%E5%BE%AE%E4%BF%A1&hmpl=%E7%BB%BC%E5%90%88%E5%B8%83%E7%BA%BF&hmcu=&hmkw=&hmci=" class="jd-wx-tem-wrap-bg">
+						<img src="/includes/templates/fiberstore/images/specials/jd-mobile-shop02/FS-xc_09.jpg" alt="" />
+						<h3>
+							Cat5/Cat6/Cat7<br>/Cat8
+						</h3>
+						<p>
+							抗拉|耐折|防腐蚀
+						</p>
+						<span>
+							￥<b>5</b>.80起
+						</span>
+					</a>
+				</div>
+				<div class="jd-wx-tem-wrap-item">
+					<a href="http://www.feisu.com/c/cables-management-3?hmsr=%E5%BE%AE%E4%BF%A1&hmpl=%E7%BB%BC%E5%90%88%E5%B8%83%E7%BA%BF&hmcu=&hmkw=&hmci=" class="jd-wx-tem-wrap-bg">
+						<img src="/includes/templates/fiberstore/images/specials/jd-mobile-shop02/FS-xc_10.jpg" alt="" />
+						<h3>
+							理线器/理线架
+						</h3>
+						<p>
+							简约|整洁|美观
+						</p>
+						<span>
+							￥<b>15</b>.00起
+						</span>
+					</a>
+				</div>
+				
+				
+				<div class="jd-wx-tem-wrap-head">
+					光纤工具系列
+				</div>
+				<div class="jd-wx-tem-wrap-item">
+					<a href="http://www.feisu.com/c/fiber-optic-cleaning-23?hmsr=%E5%BE%AE%E4%BF%A1&hmpl=%E5%85%89%E7%BA%A4%E5%B7%A5%E5%85%B7&hmcu=&hmkw=&hmci=" class="jd-wx-tem-wrap-bg">
+						<img src="/includes/templates/fiberstore/images/specials/jd-mobile-shop02/FS-xc_11.jpg" alt="" />
+						<h3>
+							光纤清洁工具
+						</h3>
+						<p>
+							操作简单|清洁快速
+						</p>
+						<span>
+							￥<b>110</b>.00起
+						</span>
+					</a>
+				</div>
+				<div class="jd-wx-tem-wrap-item">
+					<a href="http://www.feisu.com/c/basic-fiber-testing-18?hmsr=%E5%BE%AE%E4%BF%A1&hmpl=%E5%85%89%E7%BA%A4%E5%B7%A5%E5%85%B7&hmcu=&hmkw=&hmci=" class="jd-wx-tem-wrap-bg">
+						<img src="/includes/templates/fiberstore/images/specials/jd-mobile-shop02/FS-xc_12.jpg" alt="" />
+						<h3>
+							光纤测试工具
+						</h3>
+						<p>
+							高精准度|高灵敏度
+						</p>
+						<span>
+							￥<b>89</b>.00起
+						</span>
+					</a>
+				</div>
+				
+				
+				
+			</div>
+			
+			
+			<div class="jd-wx-tem01">
+				<img src="/includes/templates/fiberstore/images/specials/jd-mobile-shop02/FS-xc_13.jpg"/>
+			</div>
+			<div class="jd-wx-tem">
+				<img src="/includes/templates/fiberstore/images/specials/jd-mobile-shop02/FS-xc_14.jpg"/>
+				<a href="http://www.feisu.com/">
+					<img src="/includes/templates/fiberstore/images/specials/jd-mobile-shop02/FS-xc_15.jpg"/>
+				</a>
+				
+			</div>
+			
+		</div>
+		
+		
+	</body>
+</html>

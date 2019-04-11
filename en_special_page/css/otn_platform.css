@@ -1,0 +1,689 @@
+
+
+.otn-platform-head-bg img{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    transition: transform 12s cubic-bezier(.23,1,.32,1);
+    transform: scale(1);
+}
+.otn-platform-head-bg{
+    position: relative;
+    height: 100%;
+    /*height: 900px;*/
+    overflow: hidden;
+}
+.otn-platform-head-bg:hover img{
+    transition: transform 12s cubic-bezier(.23,1,.32,1);
+    transform: scale(1.1);
+}
+.otn-platform-head-txt {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+.otn-platform-head-txt h3{
+    font-size: 48px;
+    font-weight: 400;
+    padding: 206px 0 40px 0;
+}
+.otn-platform-head-txt p{
+    font-size: 22px;
+    font-weight: 400;
+}
+.otn-platform-pd{
+    padding: 70px 0;
+}
+.otn-platform-pd-left{
+    width: 50%;
+    float: left;
+    padding-right: 25px;
+}
+.otn-platform-pd-right{
+    width: 50%;
+    float: left;
+    padding-left: 25px;
+}
+.otn-platform-pd-left-box{
+    text-align: center;
+    background: #f7f8f9;
+    display: block;
+    padding: 60px 10px 54px 10px;
+}
+.otn-platform-pd-left-box img{
+    max-width: 100%;
+    height: auto;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+.otn-platform-pd-left-box:hover img{
+    max-width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+.otn-platform-pd-left-box span{
+    display: block;
+    overflow: hidden;
+}
+.otn-platform-pd-left-box p{
+    font-size: 16px;
+    color: #333333;
+    margin-top: 10px;
+}
+.otn-platform-pd-left-box:hover{
+    text-decoration: none;
+}
+.otn-platform-pd-right-box h3{
+    color: #333333;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 34px;
+    margin-bottom: 8px;
+}
+.otn-platform-pd-right-box h3 a:hover{
+    text-decoration: none;
+}
+.otn-platform-pd-right-box .otn-platform-pd-right-detail{
+    line-height: 22px;
+    font-size: 14px;
+    color: #666666;
+    padding-top: 12px;
+}
+
+.otn-platform-pd-right-pannel{
+    padding-top: 26px;
+    margin-top: 26px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid transparent;
+}
+.otn-platform-pd-right-price b{
+    font-size: 22px;
+    color: #333333;
+    font-weight: 400;
+    display: block;
+}
+.otn-platform-pd-right-price s{
+    font-size: 14px;
+    color: #999999;
+    font-weight: 400;
+}
+.otn-platform-pd-right-pannel .picture_array_from{
+    margin-top: 6px;
+}
+.otn-platform-pd-right-pannel .product_list_qty{
+    height: 38px;
+    line-height: 36px;
+}
+.otn-platform-pd-right-pannel .product_list_text{
+    margin-top: 0;
+}
+.otn-platform-pd-right-pannel .product_list_text .cart_qty_reduce {
+    height: 18px;
+    background-position:-180px -210px;
+}
+.otn-platform-pd-right-pannel .product_list_btn{
+    float: left;
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+.otn-platform-sys-row .otn-platform-sys-item{
+    width: 50%;
+    float: left;
+}
+.otn-platform-sys-item ul{
+    padding-right: 10px;
+}
+.otn-platform-sys-item li{
+    position: relative;
+    line-height: 24px;
+    font-size: 14px;
+    color: #666666;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.otn-platform-sys-item li:last-child{
+    margin-bottom: 0;
+}
+.otn-platform-sys-item li span{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 20px;
+    height: 24px;
+    font-size: 18px;
+    text-align: center;
+}
+.otn-platform-sys-item img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+.otn-platform-sys-item img:hover{
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+.otn-platform-sys .sp-sm-title{
+    padding: 70px 10px 50px 10px;
+}
+.otn-platform-sys-btn{
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 70px;
+}
+.otn-platform-sys-btn a{
+    display: inline-block;
+    width: 150px;
+    height: 38px;
+    line-height: 36px;
+    text-align: center;
+    color: #1e8dd7;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid #1e8dd7;
+}
+.otn-platform-sys-btn a:hover{
+    background: #1e8dd7;
+    color: #ffffff;
+    text-decoration: none;
+}
+.otn-platform-build .sp-sm-title{
+    padding: 70px 10px 26px 10px;
+}
+.otn-platform-build-img{
+    padding-top: 45px;
+    padding-bottom: 12px;
+}
+.otn-platform-build-img img{
+    max-width: 100%;
+    height:auto;
+}
+.otn-platform-adv{
+    padding: 40px 0 30px;
+}
+.otn-platform-adv-item{
+    width: 33.333%;
+    float: left;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.otn-platform-l{
+    background: #f7f8f9;
+    text-align: center;
+    padding: 30px 50px 45px 50px;
+    transition: all 0.3s ease;
+}
+.otn-platform-l:hover{
+    /*transform: translateY(-6px);*/
+    /*box-shadow: 0px 5px 15px 1px rgba(199,199,199,0.3);*/
+    /*transition: all 0.6s ease;*/
+}
+.otn-platform-l span{
+    display: block;
+    margin: 0px auto;
+    width: 60px;
+    height: 60px;
+    background: url("../img/otn/OTN-icon.png") no-repeat;
+}
+.otn-platform-adv-item:nth-of-type(1) .otn-platform-l span{
+    background-position: 3px 0px;
+}
+.otn-platform-adv-item:nth-of-type(2) .otn-platform-l span{
+    background-position: -130px 0px;
+}
+.otn-platform-adv-item:nth-of-type(3) .otn-platform-l span{
+    background-position: -262px 0px;
+}
+.otn-platform-l h3{
+    color: #333333;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    padding-top: 14px;
+}
+.otn-platform-l p{
+    color: #666666;
+    font-size: 14px;
+    line-height: 22px;
+    height: 66px;
+}
+.otn-banner{
+    padding: 60px 0 40px;
+    background: url("../img/otn/OTN-pro-bg.jpg") no-repeat center;
+    background-size: 100% 100%;
+    transition: all 3s cubic-bezier(.23,1,.32,1);
+}
+.otn-banner:hover{
+    background-size: 108% 108%;
+    transition: background-size 3s cubic-bezier(.23,1,.32,1);
+}
+.otn-banner-wrap{
+    position: relative;
+}
+.otn-banner-img{
+    width: 100%;
+    padding-right: 55%;
+}
+.otn-banner-img img{
+    width: 100%;
+    height: auto;
+    transform: scale(0.9);
+    transition: all 3s cubic-bezier(.23,1,.32,1);
+}
+/*.otn-banner-img img:hover{*/
+    /*transform: scale(1);*/
+    /*transition: all 0.3s ease;*/
+/*}*/
+.otn-banner:hover .otn-banner-img img{
+    transform: scale(1);
+    transition: all 3s cubic-bezier(.23,1,.32,1);
+}
+.otn-banner-text{
+    position: absolute;
+    top:50%;
+    right: 0;
+    width: 55%;
+    padding-left: 40px;
+    padding-right: 10px;
+    text-align: left;
+    color: #ffffff;
+    transform: translateY(-50%);
+}
+.otn-banner-text h3{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-bottom: 24px;
+}
+.otn-banner-text p{
+    font-size: 14px;
+    line-height: 22px;
+}
+.otn-products-t .sp-sm-title{
+    padding: 70px 10px 50px 10px;
+}
+.otn-products-table-box{
+    padding: 0 10px;
+    /*overflow: hidden;*/
+}
+.otn-products-table{
+    width: 100%;
+}
+.otn-products-table th{
+    text-align: center;
+    font-weight: 400;
+    padding: 16px 20px;
+    line-height: 18px;
+    font-size: 16px;
+    color: #333;
+}
+.otn-products-table td{
+    text-align: center;
+    font-weight: 400;
+    padding: 0px 20px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #666;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee;
+}
+.otn-products-table td a{
+    color: #0681d3;
+}
+.otn-products-table td img{
+    width: 60px;
+    height: 60px;
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+.otn-products-table td img:hover{
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+.otn-products-table .title{
+    background: #e1f0f9;
+}
+.otn-products-table .des{
+    text-align: left;
+}
+.otn-products-table .left{
+    text-align: left;
+}
+.otn-products-table .name{
+    background: #f7f8f9;
+    font-size: 16px;
+    color: #333333;
+    padding: 16px 20px;
+    line-height: 18px;
+}
+.otn-products-table .product_list_text{
+    margin-top: 0;
+}
+.otn-products-table .product_list_qty{
+    height: 38px;
+}
+.otn-products-total{
+    text-align: right;
+    font-size: 22px;
+    color: #333333;
+    padding: 30px 0 20px;
+}
+.otn-products-sub{
+    text-align: right;
+    margin-bottom: 70px;
+}
+.otn-platform-bottom .sp-sm-title{
+    padding: 70px 10px 50px 10px;
+}
+.otn-platform-case-box{
+    background: #ffffff;
+    border-top: 6px solid #0681d3;
+    height: 423px;
+    transition: all 0.3s ease;
+}
+.otn-platform-case-box:hover{
+    /*transform: translateY(-6px);*/
+    box-shadow: 0px 5px 10px 1px rgba(199,199,199,0.3);
+    transition: all 0.8s ease;
+}
+.otn-platform-case-left{
+    float: left;
+    width: 66.667%;
+    padding: 0 10px;
+}
+.otn-platform-case-right{
+    float: left;
+    padding: 0 10px;
+    width: 33.333%;
+}
+
+.otn-platform-case-txt{
+    text-align: center;
+}
+.otn-platform-case-txt h3{
+    color: #333333;
+    font-size: 24px;
+    padding: 50px 10px 25px 10px;
+    font-weight: 400;
+}
+.otn-platform-case-txt p{
+    font-size: 16px;
+    color: #666666;
+    line-height: 24px;
+    padding-bottom: 30px;
+}
+.otn-platform-case-ul li{
+    float: left;
+    width: 33.333%;
+}
+.otn-platform-case-ul li a{
+    display: block;
+}
+.otn-platform-case-ul li a span{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background: url("../img/otn/OTN-icon.png") no-repeat;
+}
+.otn-platform-case-ul li a p{
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+    line-height: 22px;
+    margin-top: 20px;
+
+}
+.otn-platform-case-ul li:nth-of-type(1) a span{
+    background-position: 3px -80px;
+}
+.otn-platform-case-ul li:nth-of-type(2) a span{
+    background-position: -130px -80px;
+}
+.otn-platform-case-ul li:nth-of-type(3) a span{
+    background-position: -262px -80px;
+}
+.otn-platform-case-box .otn-platform-sys-btn{
+    padding: 50px 0 54px;
+}
+.otn-platform-case-right{
+    text-align: center;
+}
+.otn-profile{
+    display: block;
+    width: 82px;
+    height: 82px;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 1px solid #eeeeee;
+    background: url(https://img-en.fs.com/includes/templates/fiberstore/images/specials/1G_img_new/solution-contact-icon.png) no-repeat 1px -130px;
+}
+.otn-platform-expert p{
+    font-size: 14px;
+    color: #666666;
+    line-height: 22px;
+    padding: 12px 10px 16px 10px;
+}
+.otn-platform-case-btn{
+    margin-bottom: 14px;
+}
+.otn-platform-case-btn a{
+    display: inline-block;
+    width: 150px;
+    height: 38px;
+    line-height: 36px;
+    text-align: center;
+    color: #1e8dd7;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid #1e8dd7;
+}
+.otn-platform-case-btn a:hover{
+    background: #1e8dd7;
+    color: #ffffff;
+    text-decoration: none;
+}
+.otn-platform-bottom{
+    padding-bottom: 75px;
+}
+
+
+@media (max-width: 1440px) {
+    
+}
+@media (max-width: 1240px) {
+    .otn-platform-head-txt h3 {
+        font-size: 34px;
+        font-weight: 400;
+        padding: 20px 10px;
+        line-height: 36px;
+    }
+    .otn-platform-head-txt{
+        position: absolute;
+        top:28%;
+        transform: translateY(-50%);
+    }
+    .otn-platform-sys-item li{
+        margin-bottom: 4px;
+    }
+}
+@media (max-width: 960px) {
+    .otn-products-table{
+        width: 1200px;
+    }
+    .otn-products-table-box-wrap{
+        overflow-x: auto;
+    }
+    .otn-platform-pd{
+        padding: 30px 10px;
+    }
+    .otn-platform-l{
+        padding: 20px;
+    }
+    .otn-platform-l h3 {
+        color: #333333;
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 10px;
+        padding-top: 0px;
+    }
+    .otn-platform-l p{
+        height: 110px;
+    }
+    .otn-platform-case-left{
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .otn-platform-case-right{
+        width: 100%;
+        padding: 0;
+    }
+    .otn-platform-bottom .sp-sm-title {
+        padding: 40px 10px 30px 10px;
+    }
+    .otn-products-t .sp-sm-title {
+        padding: 40px 10px 30px 10px;
+    }
+    .otn-platform-build .sp-sm-title {
+        padding: 40px 10px 20px 10px;
+    }
+    .otn-platform-sys-btn {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .otn-platform-sys .sp-sm-title {
+        padding: 40px 10px 30px 10px;
+    }
+    .otn-platform-pd-right-pannel {
+        padding-top: 16px;
+        margin-top: 14px;
+        border-top: 1px solid #eeeeee;
+        border-bottom: 1px solid transparent;
+    }
+    .otn-platform-pd-right-box h3 {
+        color: #333333;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 0px;
+    }
+    .otn-platform-pd-right-box .otn-platform-pd-right-detail {
+        line-height: 22px;
+        font-size: 14px;
+        color: #666666;
+        padding-top: 4px;
+    }
+}
+@media (max-width: 768px){
+    .otn-platform-pd-left{
+        width: 100%;
+        padding: 0 6px;
+    }
+    .otn-platform-pd-right{
+        width: 100%;
+        padding: 0 6px;
+    }
+    .otn-platform-pd{
+        padding: 20px 10px;
+    }
+    .otn-platform-sys-row .otn-platform-sys-item{
+        width: 100%;
+    }
+    .otn-platform-adv-item{
+        width: 100%;
+    }
+    .otn-platform-l p {
+        height: auto;
+    }
+    .otn-platform-adv {
+        padding: 20px 0 0px;
+    }
+    .otn-platform-build-img {
+        padding-top: 20px;
+        padding-bottom: 0px;
+        overflow-x: auto;
+        margin-bottom: 15px;
+    }
+    .otn-platform-build-img img{
+        max-width: none;
+        width: auto;
+        height: auto;
+    }
+    .otn-banner{
+        padding: 0 0 10px 0;
+        /*background-position: 0px 0px;*/
+        /*background-size: cover;*/
+        background-size: initial;
+        transition: initial;
+    }
+    .otn-banner:hover{
+        /*background-position: 0px 0px;*/
+        background-size: initial;
+        transition: initial;
+    }
+    .otn-banner-text {
+        position: static;
+        top: 0;
+        right: 0;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: left;
+        color: #ffffff;
+        transform: initial;
+    }
+    .otn-banner-img {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+    .otn-banner-img img{
+        width: 320px;
+        height:auto;
+    }
+    .otn-banner-text p{
+        padding-bottom: 10px;
+    }
+    .otn-banner-text h3 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        padding-bottom: 10px;
+        padding-top: 40px;
+    }
+    .otn-platform-head-txt h3{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .otn-platform-head-txt p{
+        display: none;
+    }
+    .otn-platform-pd-left-box {
+        text-align: center;
+        background: #f7f8f9;
+        display: block;
+        padding: 20px 10px 14px 10px;
+    }
+    .otn-platform-pd-right-box h3{
+        padding-top: 10px;
+    }
+
+}
+@media (max-width: 480px){
+
+}
+
+
+
+
+
+

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>复制代付链接页面</title>
+		<link rel="stylesheet" href="http://www.feisu.com/includes/templates/fiberstore/css/public.css?v=2018082101" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="http://www.feisu.com/includes/templates/fiberstore/css/fs_allCss.css?v=18082101" />
+		<link rel="stylesheet" type="text/css" href="http://www.feisu.com/includes/templates/fiberstore/css/backstage.css?v=2018082001"/>
+		<link rel="stylesheet" type="text/css" href="http://www.feisu.com/includes/templates/fiberstore/css/top_bottom.css?v=18081701"/>		
+		<link rel="stylesheet" type="text/css" href="http://www.feisu.com/includes/templates/fiberstore/css/media.css?v=2018082101" />
+		<script src="http://www.feisu.com/includes/templates/fiberstore/jscript/jquery1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://www.feisu.com/includes/templates/fiberstore/jscript/main.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="FiberStore_cs_new_header">
+		    <a href="" class="FiberStore_login_logo"></a>
+		    <span class="FiberStore_login_logo_1ine"></span>
+		    <p>支付订单</p>
+		    <div class="FiberStore_myaccount">
+		        <a href="my_dashboard.html">我的账户</a>
+		                <div class="header_sign_more_s">
+		            <div class="header_sign_more_arrow"></div>
+		            <div class="header_sign_more_main_s">
+		                <ul>
+		                    <li><a href="http://www.fs_cn.test/index.php?main_page=manage_orders">我的订单</a></li>
+		                    <li><a href="http://www.fs_cn.test/index.php?main_page=manage_orders&amp;status=wait_pay">待付款（80）</a></li>
+		                    <li><a href="http://www.fs_cn.test/index.php?main_page=manage_wishlists">我的收藏</a></li>
+		                    <li><a href="http://www.fs_cn.test/index.php?main_page=logoff">退出</a></li>
+		                </ul>
+		            </div>
+		        </div>
+		    </div>
+		    <ul class="progress_bar_two">
+		        <li>购物车</li>
+		        <li>确认订单</li>
+		        <li>支付订单</li>
+		        <li>完成</li>
+		    </ul>
+		</div>
+		
+		
+		<div class="Fiberstore_order_submit">
+		    <div class="Fiberstore_order_submit_box">
+                <div class="order_success_bank">
+	                <div class="order-head">
+	                    <img src="http://www.feisu.com/includes/templates/fiberstore/images/pay_default_02.png">
+	                </div>
+	                <div class="head-md order-head">找人代付！请确认代付信息并复制链接给好友~</div>
+	                <div class="order-head-tips">
+                    	请您在<span>3天内</span>完成支付，否则链接将会失效！
+	                </div>
+	            </div>
+		
+	            <!--更多信息板块-->
+	            <div class="Fiberstore_submit_list_content">
+	                <ul>
+	                    <li>
+	                        <div class="list-l">
+                            	应付总额：
+	                        </div>
+	                        <div class="list-r">
+	                            <span class="price">￥&nbsp;1,664.04</span>
+	                        </div>
+	                    </li>
+	                    <li>
+	                        <div class="list-l">
+	                            订单号：
+	                        </div>
+	                        <div class="list-r">
+	                            FSCN180821003501                            
+	                        </div>
+	                    </li>
+	                    <li>
+	                        <div class="list-l">
+	                            收货信息：
+	                        </div>
+	                        <div class="list-r">
+                            	北京                            昌平区                            城区以外                            市区                            测试地址                            13588888888                        
+	                        </div>
+	                    </li>
+	                </ul>
+	            </div>
+	            <!--更多信息板块结束-->
+				
+				<!--代付板块-->
+				<style type="text/css">
+					.other-afford-link{
+						margin-top: -1px;
+						background: #FFFFFF;
+						position: relative;
+						z-index: 2;
+					}
+					.other-afford-link input{
+						width: 650px;
+						height: 38px;
+						border: 1px solid #f7d7d8;
+						background: #fdf9f8;
+						outline: none;
+						color: #333333;
+						padding: 0 10px;
+						font-size: 14px;
+					    overflow: hidden;
+					    text-overflow: ellipsis;
+					    white-space: nowrap;
+
+					}
+					.other-afford-link input:focus{
+						outline: none;
+					}
+					.other-afford-bt{
+						padding-top: 20px;
+						padding-bottom: 48px;
+					}
+					.other-afford-button{
+						width: 178px;
+						height: 40px;
+						font-size: 16px;
+						line-height: 38px;
+						border-radius: 3px;
+						background: #d63030;
+						color: #FFFFFF;
+						text-align: center;
+						outline: none;
+						border: none;
+					    vertical-align: middle;
+					    cursor: pointer;
+					}
+					.other-afford-button:hover{
+						background: #C61017;
+					}
+					.other-afford-bt a{
+						display: inline-block;
+						margin: 0 16px;
+						width: 178px;
+						height: 38px;
+						font-size: 14px;
+						line-height: 36px;
+						border-radius: 3px;
+						background: #FFFFFF;
+						color: #d63030;
+						text-align: center;
+						outline: none;
+					    vertical-align: middle;
+						border: 1px solid #d63030;
+					}
+					.other-afford-bt a:hover{
+						text-decoration: none;
+					}
+					.fs-checkbox-de{
+						vertical-align: middle;
+						line-height: 24px;
+						margin-top: 26px;
+						cursor: pointer;
+						background: url('http://www.feisu.com/includes/templates/fiberstore/images/forum_select.png') no-repeat 0px 3px;
+					}
+					.fs-checkbox-de input[type="checkbox"]{
+						opacity: 0;
+					    display: inline-block;
+					    vertical-align: middle;
+					    height: 18px;
+					    width: 18px;
+					    margin-right: 5px;
+					    cursor: pointer;
+					}
+					.fs-checkbox-de span{
+						font-size: 14px;
+						color: #666666;
+					}
+					.fs-checkbox-de.active{
+						background: url('http://www.feisu.com/includes/templates/fiberstore/images/forum_select.png') no-repeat 0px -39px;
+					}
+				</style>
+				<div class="other-afford-link">
+					<input type="text" name="" id="afford_link" readonly="readonly" value="https://pcashdsfdsfsdfier.jd.com/instead/pay?id=77428659925&total=1799.00&compdasdasdasdanyid=600&OrderType=0&key=6EDDA8278F349B0CBFB25F4AAC6922D38C9C495E525F94E0F8B41064B46449E5&userName=feda2e2cee28c93d7846f71a95fa3b97"/>
+				</div>	
+				<div class="other-afford-bt">
+					<button class="other-afford-button" onclick="copyText()">
+						复制链接
+					</button>
+					<a href="">
+						改变主意，自己在线付款
+					</a>
+				</div>
+				<script type="text/javascript">
+					/**
+				     * 复制文本
+				     * @param id 复制节点Id   该节点不能隐藏
+				     */
+				    function copyText(){
+				        //获取节点
+				        var n = document.getElementById('afford_link');
+				        if(n == null){
+				            //节点为空直接返回
+				            return;
+				        }
+				        try {
+				            //取得浏览器的userAgent字符串
+				            var userAgent = navigator.userAgent;
+				            //判断Ie
+				            if (userAgent.indexOf("MSIE") > 0){
+				                window.clipboardData.setData('text', n.val());
+				                var copyContent = window.clipboardData.getData("text");
+				                //判断复制成功，ie复制可选择是否允许
+				                if(copyContent == n.val()){
+//				                    alert("复制成功。现在您可以将其粘贴（Ctrl+V）给您的好友。");
+				                    zAlert({
+						        		title:'提示',
+						        		msg:'复制成功。现在您可以将其粘贴（Ctrl+V）给您的好友。',
+						        		btn:'确认'
+						        	});
+				                    return;
+				                }
+				            }else{
+				                n.select();
+				                therange = void 0;
+				                if (n.createTextRange) therange = n.createTextRange();
+				                therange = therange ? therange : document;
+				                if (therange.execCommand("Copy")) {
+//				                    alert("复制成功。现在您可以将其粘贴（Ctrl+V）给您的好友。");
+				                    zAlert({
+						        		title:'提示',
+						        		msg:'复制成功。现在您可以将其粘贴（Ctrl+V）给您的好友。',
+						        		btn:'确认'
+						        	});
+				                    return;
+				                }
+				            }
+				        } catch (i) {
+//				        	alert("您使用的浏览器不支持此复制功能，请使用Ctrl+C或鼠标右键。");
+				        	zAlert({
+				        		title:'错误',
+				        		msg:'您使用的浏览器不支持此复制功能，请使用Ctrl+C或鼠标右键。',
+				        		btn:'确认'
+				        	});
+				        }
+				        
+				    }
+				</script>
+						
+						
+				<!--代付板块结束-->
+	            
+		
+		
+		        
+		
+		
+		
+		
+		
+		    </div>
+		</div>
+    
+		
+		<!--新尾部开始-->
+		<div class="FiberStore_cs_new_footer">
+		    <div class="fs-footer-list">
+		        <a href="questions-answers.html">问题中心</a>
+		        <a href="privacy-policy.html">隐私政策</a>
+		        <a href="terms-of-use.html">使用条款</a>
+		        <a href="customer-service.html">联系客服</a>
+		    </div>
+		    <div class="fs-footer-txt">
+		        Copyright © 2009-2018 深圳市宇轩网络技术有限公司 版权所有 粤ICP备12032516号
+		    </div>
+		</div>
+		<!--新尾部结束-->
+		
+		
+	</body>
+</html>

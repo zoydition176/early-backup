@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<style type="text/css">
+			.abc li{
+				height: 24px;
+				line-height: 24px;
+			}
+			.box{
+				height: 300px;
+				width: 300px;
+				background: #EEEEEE;
+			}
+			.circle{
+				display: block;
+				width: 50px;
+				height: 50px;
+				border-style: solid;
+				/*border: 3px solid #d63030;*/
+				border-radius: 50px;
+				border-image: -webkit-linear-gradient( transparent , #666) 1 1;
+				border-image: -moz-linear-gradient( transparent , #666) 1 1;
+				border-image: linear-gradient( transparent , #666) 1 1;
+			}
+		</style>
+	</head>
+	<body>
+		<button id="add">add</button>
+		<div class="abc">
+			<ul>
+				<li id="kkk">123123</li>
+				<li>123123</li>
+				<li>123123</li>
+				<li>123123</li>
+			</ul>
+		</div>
+		
+		
+		<div class="box">
+			<span class="circle"></span>
+		</div>
+		
+		
+		
+	</body>
+	<script type="text/javascript">
+		$.fn.tranSition = function(value){
+			var elem = this[ 0 ] || {},
+				i = 0,
+				l = this.length;
+			if ( value === undefined && elem.nodeType === 1 ) {
+				return elem.innerHTML;
+			}
+			
+			if ( elem ) {
+				this.css({
+					'opacity':'0'
+				}).empty().append( value ).animate({
+					'opacity':'1'
+				},500);
+				this.empty().append( value );
+			}
+		}
+		
+		
+		$('#add').on('click',function(){
+			$('#kkk').tranSition('<div class="sadasd" style="background:#d63030">dasdasd</div>');
+		})
+		
+	</script>
+</html>

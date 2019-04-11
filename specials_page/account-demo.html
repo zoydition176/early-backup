@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <title>account-demo</title>
+	    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	    <link rel="stylesheet" href="http://www.fs_cn.test/includes/templates/fiberstore/css/public.css" />
+	    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	    <link rel="stylesheet" type="text/css" href="http://www.fs_cn.test/includes/templates/fiberstore/css/fs_allCss.css" />
+	    <!--<link rel="stylesheet" type="text/css" href="https://www.feisu.com/includes/templates/fiberstore/css/backstage.css"/>-->
+	    <link rel="stylesheet" type="text/css" href="https://www.feisu.com/includes/templates/fiberstore/css/top_bottom.css"/>
+	    <link rel="stylesheet" type="text/css" href="http://www.feisu.com/includes/templates/fiberstore/css/index_popup_opinion.css"/>
+	    <link rel="stylesheet" type="text/css" href="https://www.feisu.com/includes/templates/fiberstore/css/media.css" />
+	    <link rel="stylesheet" href="https://www.feisu.com/includes/templates/fiberstore/css/swiper-3.4.0.min.css?v=3">
+	    <script src="https://www.feisu.com/includes/templates/fiberstore/jscript/jquery1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="https://www.feisu.com/includes/templates/fiberstore/jscript/swiper.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="https://www.feisu.com/includes/templates/fiberstore/jscript/main.js" type="text/javascript" charset="utf-8"></script>
+	    <script type="text/javascript" src="https://www.feisu.com/includes/templates/fiberstore/jscript/layer/layer.js"></script>
+	</head>
+	<body>
+		<link rel="stylesheet" type="text/css" href="http://www.fs_cn.test/includes/templates/fiberstore/css/my_account.css"/>
+		<div class="box">
+			<div class="content">
+				<h2 style="margin-bottom: 30px;">分支名：feature-accountUpdate-0319</h2>
+				
+				
+				
+				<div style="margin-bottom: 30px;">
+					<p>
+						头部公共标题  自带下边框
+					</p>
+
+					<div class="account_content_07">
+					    <span class="account_content_07_01">订单详情</span>
+					</div>
+					
+					<div class="account_content_07">
+					    <span class="account_content_07_01">我的收藏</span>
+					</div>
+					
+					<div class="account_content_07">
+					    <span class="account_content_07_01">我的订单</span>
+					</div>
+					
+				</div>
+				
+					
+				<div style="margin-bottom: 30px;">
+					<p>
+						订单头部多个链接切换搜索订单版块公共样式
+					</p>
+					
+					
+					<div class="account_select">
+						<div class="account_select_left">
+				            <a href="http://www.feisu.com/index.php?main_page=manage_orders" style="color:#d63030;">全部订单</a>
+				            <a href="http://www.feisu.com/index.php?main_page=manage_orders&amp;status=wait_pay">待支付（58）</a>
+				            <a href="http://www.feisu.com/index.php?main_page=manage_orders&amp;status=wait_receive">待收货</a>
+				            <a href="http://www.feisu.com/index.php?main_page=manage_orders&amp;status=cancelled">已取消</a>
+				        </div>
+				        <div class="account_select_right">
+            				<div class="orders_filter">
+            					全部订单
+		                    	<div class="order_filter_sel">
+				                    <ul>
+				                        <li><a href="http://www.feisu.com/index.php?main_page=manage_orders&amp;status=&amp;type=three_month">近三个月订单</a></li>
+				                        <li><a href="http://www.feisu.com/index.php?main_page=manage_orders&amp;status=&amp;type=now_year">今年内订单</a></li>
+				                        <li><a href="http://www.feisu.com/index.php?main_page=manage_orders&amp;status=&amp;type=one_year">2018年订单</a></li>
+				                        <li><a href="http://www.feisu.com/index.php?main_page=manage_orders&amp;status=&amp;type=two_year">2017年订单</a></li>
+				                        <li><a href="http://www.feisu.com/index.php?main_page=manage_orders&amp;status=&amp;type=two_year_ago">2017年以前订单</a></li>                    
+				                    </ul>
+		    					</div>
+            				</div>
+				            <div class="orders_search">
+				                <input type="text" name="order_search" id="order_search" placeholder="输入商品名称/订单号" value="">
+				                <span onclick="order_search()"></span>
+				            </div>
+				        </div>
+					</div>
+					
+				</div>
+				
+				
+				<div style="margin-bottom: 30px;">
+					<p>
+						公共按钮样式
+					</p>
+					<br />
+
+					<button class="button_sub_red" type="button">保存</button>		
+					<button class="button_sub_hollow" type="button">取消</button>
+				</div>
+				
+				<div style="margin-bottom: 30px;">
+					<p>
+						公共输入框
+					</p>
+					<br />
+
+					<div>
+						<input class="big_input" type="text" name="" id="" value="" />
+					</div>
+				</div>
+				
+				<div style="margin-bottom: 30px;">
+					<p>
+						公共提示弹窗1 
+					</p>
+					<br />
+
+					<button class="button_sub_red" type="button" onclick="zAlert({title:'修改个人信息成功！',msg:'修改个人信息成功！',btn:'确定'})">test</button>		
+				</div>
+				
+				<div style="margin-bottom: 30px;">
+					<p>
+						公共提示弹窗2  layer
+					</p>
+					<br />
+
+					<button class="button_sub_red" type="button" onclick="openLayer()">test2</button>	
+					
+					<!--隐藏弹框-->
+					<div class="error_message_show" style="display: none">
+				        <div class="ui_fixed_alert">
+				            <span class="iconfont icon email_Delete" onclick="layer.closeAll()"></span>
+				            <h2 class="email_delete_img">
+				                <i class="icon iconfont"></i>
+				                <p class="new_checkout_txt01">您的报价已提交成功，稍后会有客户经理与您联系！</p>
+				            </h2>
+				        </div>
+				    </div>
+				    
+					<script type="text/javascript">
+						function openLayer(){
+							layer.open({
+	                            type: 1,
+	                            title: false,
+	                            skin: 'layui-layer-demo',
+	                            content: $(".error_message_show"),
+	                            closeBtn: 0,
+	                            area: '680px',
+	                            shadeClose:true
+	                        });
+						}
+					</script>
+				</div>
+				
+				
+				<div style="margin-bottom: 30px;">
+					<p>
+						公共加入购物车(不隐藏)
+					</p>
+					<br />
+
+					<div class="after">
+						<a href="" class="default_button_02">加入购物车</a>
+					</div>
+				</div>
+				
+				<div style="margin-bottom: 30px;">
+					<p>
+						公共加入购物车(隐藏)
+					</p>
+					<br />
+
+					<div class="after">
+						<div class="FS_ProductList_Item">
+                            <div class="FS_ProductItem">
+                                <div class="new_proList_ListBox">
+                                    <ul class="new_proList_List01">
+                                        <li class="new_proList_ListBstardev">
+                                            <div class="new_proList_ListBstarBox">
+                                                <a href="https://www.feisu.com/products/36171.html" target="_blank">
+                                                    <div class="pro_star01">
+                                                        <div class="pro_star_gray01">
+                                                            <div class="pro_star_hover01"></div>
+                                                        </div>
+                                                        <div class="pro_star_gray01">
+                                                            <div class="pro_star_hover01"></div>
+                                                        </div>
+                                                        <div class="pro_star_gray01">
+                                                            <div class="pro_star_hover01"></div>
+                                                        </div>
+                                                        <div class="pro_star_gray01">
+                                                            <div class="pro_star_hover01"></div>
+                                                        </div>
+                                                        <div class="pro_star_gray01">
+                                                            <div class="pro_star_hover01"></div>
+                                                        </div>
+                                                    <span class="new_proList_ListBtxt">1349</span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="FS_ProductItem_Btn">
+                                            <p class="FS_ProductItem_tp">
+                                                <i>646 件</i> 武汉仓库存&nbsp;当天发货                                            
+                                            </p>
+                                            <div class="FS_ProductItem_BtnCart" style="width: 347.5px;">
+                                                <a href="javascript:;" class="FS_AddCollect " onclick="">
+                                                	<span>喜欢</span>
+                                                </a>
+                                            	<button href="javascript:;" class="FS_AddShopCart ">加入购物车</button>                                                                                       
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+				</div>
+				
+				<div style="margin-bottom: 30px;">
+					<p>
+						公共数量加减
+					</p>
+					<br />
+
+					<div class="after">
+						<div class="FS_product_num_default">
+                            <a class="product_num_reduce"></a>
+                            <input type="text" value="1" class="product_num_input">
+                            <a class="product_num_add"></a>
+                        </div>
+					</div>
+				</div>
+				
+				<div style="margin-bottom: 30px;">
+					<p>
+						公共加载方法 01
+					</p>
+					<br />
+
+					<div class="after">
+						<button onclick="commonLoading('.test-demo',0,'on')">loading 01 on</button>
+						<button onclick="commonLoading('.test-demo',0,'off')">loading 01 off</button>
+						<div class="test-demo" style="background: #d63030;width: 200px;height: 200px;color: #FFF;">01</div>
+					</div>
+				</div>
+				
+				<div style="margin-bottom: 30px;">
+					<button onclick="attt()">test comfirm</button>
+					<script type="text/javascript">
+						function attt(){
+							zConfirm({
+								title:'修改个人信息成功！',
+								message:'修改个人信息成功！',
+								_width:'680px',
+								btnGroup:[
+									{msg:'确定',btnClass:'zt_01',cb:function(){
+										console.log(111)
+									}},
+									{msg:'取消',btnClass:'zt_02',cb:function(){
+										console.log(222)
+									}}
+								]								
+							})
+						}
+						function zConfirm(textObj){
+							if(typeof(textObj) == "undefined"){
+								console.log(0)
+								return false;
+							}
+							var btnhtml = '';
+							for(var i = 0; i < textObj.btnGroup.length; i++){								
+								btnhtml += '<button class="'+textObj.btnGroup[i].btnClass+'">'+textObj.btnGroup[i].msg+'</button>';					
+							}
+							var backdrop = '<div class="zt_backdrop"></div>';
+							if(!textObj._width){
+								textObj._width = '0';
+							}
+					        var confirmHtml = '<div class="zt_popup zConfirm" id="zConfirm" style="min-width:'+textObj._width+'"><h3>'
+					            + textObj.title +'<span></span></h3><div class="zt_popup_body"><div class="zt_popup_content">'
+					            + textObj.message +'</div><div class="zt_popup_btnset">'
+					            + btnhtml +'</div></div></div>';
+				            var closeConfirm = function(){
+					            $('body #zConfirm').fadeOut().remove();
+					            $('.zt_backdrop').remove();
+					        }
+				            var showConfirm = function(){
+				            	if($('.zt_backdrop').length>0){
+						            $('body').append(confirmHtml);
+						        }else{
+						            $('body').append(confirmHtml + backdrop);
+						        }
+						        $('#zConfirm').show();
+				            }
+				            showConfirm();
+				            for(var q = 0; q < textObj.btnGroup.length; q++){
+				            	var str = '.zConfirm .';
+				            		str += textObj.btnGroup[q].btnClass;
+				            	var dom = document.querySelector(str);
+				            	(function(index){
+				            		$(str).on('click',function(){
+				            			if(textObj.btnGroup[index].cb){
+					            			textObj.btnGroup[index].cb();
+					            			closeConfirm();
+					            		}else{
+					            			closeConfirm();
+					            		}
+					            		$(str).off('click');
+				            		})
+				            	})(q)				            	
+				            }           
+				            $(document).on('click','#zConfirm>h3 span',function(){
+				            	closeConfirm();
+				            })				            
+				            /*	        
+					        $(document).on('click','#zConfirm>h3 span,#zConfirm .zt_01',function () {				                        
+					            if($(this).hasClass(textObj.btnGroup.btnConfirm[1])){	
+					            	closeConfirm();
+					            	if(btnConfirmCb){
+					            		btnConfirmCb();					          		
+					            	}				            	
+					            }else{
+					            	closeConfirm();
+						            if(btnCancelCb){
+						            	btnCancelCb()
+						            }
+					            }
+					            $(document).off('click','#zConfirm>h3 span,#zConfirm .zt_01');
+					        });*/
+						}
+						
+						
+						
+					</script>
+					
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

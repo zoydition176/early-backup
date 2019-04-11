@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" href="css/fs_allCss.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/solution-support.css"/>
+		<script src="js/jquery1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="ss_main">
+			<div class="ss_main_left">
+			    <div class="ss_main_left_top">
+		        	<span>
+		        		<img src="img/solution-support/tb.png" alt="" />
+		        	</span>
+		        	<h3>解决方案支持</h3>
+			    </div>
+			    <div class="ss_main_left_list">
+			        <ul>
+			            <li class="choose">
+			                <span class="ss_main_left_list_face face01"></span>
+			                <div class="ss_main_left_list_name">
+			                    <h3>
+			                    	光传输技术团队
+			                    </h3>
+			                </div>
+			                <span class="ss_main_left_list_right"></span>
+			            </li>
+			            <li >
+			                <span class="ss_main_left_list_face face02"></span>
+			                <div class="ss_main_left_list_name">
+			                    <h3>
+			                    	企业网技术团队
+			                    </h3>
+			                </div>
+			                <span class="ss_main_left_list_right"></span>
+			            </li>
+			            <li >
+			                <span class="ss_main_left_list_face face03"></span>
+			                <div class="ss_main_left_list_name">
+			                    <h3>
+			                    	数据中心技术团队
+			                    </h3>
+			                </div>
+			                <span class="ss_main_left_list_right"></span>
+			            </li>
+			            <li >
+			                <span class="ss_main_left_list_face face04"></span>
+			                <div class="ss_main_left_list_name">
+			                    <h3>
+			                    	OEM技术团队
+			                    </h3>
+			                </div>
+			                <span class="ss_main_left_list_right"></span>
+			            </li>
+			            <li >
+			                <span class="ss_main_left_list_face face05"></span>
+			                <div class="ss_main_left_list_name">
+			                    <h3>
+			                    	云硬件技术团队
+			                    </h3>
+			                </div>
+			                <span class="ss_main_left_list_right"></span>
+			            </li>
+			            <li >
+			                <span class="ss_main_left_list_face face06"></span>
+			                <div class="ss_main_left_list_name">
+			                    <h3>
+			                    	FTTX技术团队
+			                    </h3>
+			                </div>
+			                <span class="ss_main_left_list_right"></span>
+			            </li>
+			        </ul>
+			    </div>
+			</div>
+			
+			<div class="ss_main_right">
+			    <div class="ss_main_right_box">
+			        <div class="ss_main_right_logo">
+			            <a href=""></a>
+			        </div>
+			        <p class="ss_main_right_txt">请完善以下信息，以便技术团队给您提供完整的解决方案</p>
+			        <form id="from">
+			            <div class="ss_main_right_main">
+			                <div class="ss_main_right_main_input">
+			                    <input type="text" placeholder="您的称呼*" name="name"    class="ss_main_right_main_ipt"/>
+			                    <p class="ss_main_right_main_input_prompt change_name">请填写您的称呼</p>
+			                </div>
+			                <div class="ss_main_right_main_input">
+			                    <input type="text" placeholder="电话*" name="tel"  class="ss_main_right_main_ipt tel"/>
+			                    <p class="ss_main_right_main_input_prompt change_tel">请填写您的电话号码</p>
+			                </div>
+			                <div class="ss_main_right_main_input">
+			                    <input type="text" placeholder="邮箱*" name="email"  class="ss_main_right_main_ipt email"/>
+			                    <p class="ss_main_right_main_input_prompt change_email">请填写您的邮箱地址</p>
+			                </div>
+			            </div>
+		                <div>
+		                	<h3 class="ss_main_right_main_tit">
+		                		方案关键词
+		                	</h3>
+		                    <div class="ss_main_right_main_cb"
+		                        style="display: block" id="main_cb_1">
+		                        <a href="javascript:;">WDM</a>
+		                        <a href="javascript:;">Long-haul Transmission</a>
+		                        <a href="javascript:;">Monitoring</a>
+		                        <a href="javascript:;">Multi-service Transmission</a>
+		                        <a href="javascript:;">Optical Protection</a>
+		                        <p class="ss_main_right_main_input_prompt change_mark">请最少选择一个关键词</p>
+		                    </div>
+		                    <div class="ss_main_right_main_cb" id="main_cb_2"
+		                        style="display: none">
+		                        <a href="javascript:;">Ring Topology</a>
+		                        <a href="javascript:;">Tree Topology</a>
+		                        <a href="javascript:;">Leaf-spine Topology</a>
+		                        <a href="javascript:;">Basic Topology</a>
+		                        <p class="ss_main_right_main_input_prompt change_mark">请最少选择一个关键词</p>
+		                    </div>
+		                    <div class="ss_main_right_main_cb" id="main_cb_3"
+		                        style="display: none">
+		
+		                        <a href="javascript:;">Inter/Cross-connect</a>
+		                        <a href="javascript:;">Leaf-spine</a>
+		                        <a href="javascript:;">Top-of-Rack</a>
+		                        <a href="javascript:;">Backbone Cabling</a>
+		                        <a href="javascript:;">Horizontal Cabling</a>
+		                        <p class="ss_main_right_main_input_prompt change_mark">请最少选择一个关键词</p>
+		                    </div>
+		                    <div class="ss_main_right_main_cb" id="main_cb_4"
+		                        style="display: none">
+		                        <a href="javascript:;">Personalized Requirements</a>
+		                        <a href="javascript:;">Product Custom</a>
+		                        <a href="javascript:;">Network Architecture</a>
+		                        <a href="javascript:;">Application Environment</a>
+		                        <p class="ss_main_right_main_input_prompt change_mark">请最少选择一个关键词</p>
+		                    </div>
+		                    <div class="ss_main_right_main_cb" id="main_cb_5"
+		                        style="display: none">
+		                        <a href="javascript:;">Private Cloud</a>
+		                        <a href="javascript:;">Cloud Desktop</a>
+		                        <a href="javascript:;">Server Virtualization</a>
+		                        <a href="javascript:;">Hyper-converged Infrastructure</a>
+		                        <p class="ss_main_right_main_input_prompt change_mark">请最少选择一个关键词</p>
+		                    </div>
+		                    <div class="ss_main_right_main_cb" id="main_cb_6"
+		                        style="display: none">
+		                        <a href="javascript:;">FTTH</a>
+		                        <a href="javascript:;">FTTB</a>
+		                        <a href="javascript:;">FTTC</a>
+		                        <a href="javascript:;">PON Systems</a>
+		                        <p class="ss_main_right_main_input_prompt change_mark">请最少选择一个关键词</p>
+		                    </div>
+		                </div>
+		                <div class="ss_main_right_main_input textarea">
+			                <textarea class="ss_main_right_main_textarea" id="textarea_1" style="display: block" placeholder="*Project Description: Like Network Physical Structure, Fiber Information, Business Path/Rate, Network Protection/Monitoring etc."></textarea>
+			                <textarea class="ss_main_right_main_textarea" id="textarea_2" style="display: none" placeholder="*Project Description: Like Network Topology, Hardware Description, Wired/Wireless/Monitoring, Protocol Function etc."></textarea>
+			                <textarea class="ss_main_right_main_textarea" id="textarea_3" style="display: none" placeholder="*Project Description: Like Network Topology, Business/Rate, Working Environment, Expansion/Upgrading, Relative Products etc."></textarea>
+			                <textarea class="ss_main_right_main_textarea" id="textarea_4" style="display: none" placeholder="*Project Description: Like Working Environment, Core Products, CATV/Industrial Network/IoT, Network Topology, etc."></textarea>
+			                <textarea class="ss_main_right_main_textarea" id="textarea_5" style="display: none" placeholder="*Project Description: Like Virtualization, Memory & Storage Capacity, CPU Type & Core, RAID Level etc."></textarea>
+			                <textarea class="ss_main_right_main_textarea" id="textarea_6" style="display: none" placeholder="*Project Description: Like Application/Solution Type, Construction Drawings, End Users, Distance etc."></textarea>
+		                    <p class="ss_main_right_main_input_prompt change_text">请描述您的方案需求</p>
+		                </div>
+			
+		                <div class="ss_main_right_main_upload">
+		                    <div class="ss_main_right_main_upload_allbtn">
+		                        <div class="ss_main_right_main_upload_btn">
+		                            <input type="file" id="upload_file"/>
+		                            <a href="javascript:;">
+		                            	<span></span>
+		                            	上传附件
+		                            </a>
+		                        </div>
+		                    </div>
+		                    <div class="ss_main_right_main_upload_prompt">
+		                        <span></span>
+		                        <div class="ss_main_right_main_upload_prompt_content">
+		                            <div class="ss_main_right_main_upload_prompt_content_arrow"></div>
+		                            <p>文件类型：PDF/JPG/PMG</p>
+		                            <p>文件大小：≤5MB</p>
+		                        </div>
+		                    </div>
+		                    <div class="ss_main_right_main_upload_name">
+		                    </div>
+		                </div>
+			
+		                <!--<p class="eu_cookie">
+		                	By clicking the button below, you agree to FS.COM's  
+		                	<a href="privacy_policy.html">Privacy and Cookies policy</a> and 
+		                	<a href="terms_of_use.html">Terms of Use.</a>
+		                </p>-->
+			
+		                <input type="button" value="获取技术支持" onclick="uploadPic()" class="ss_main_right_main_submit">
+			            
+			        </form>
+			    </div>
+			</div>
+		</div>
+		<div class="solution_support_popup">
+			<div class="ui-widget-overlay"></div>
+			<div class="solution_popup_main">
+			    <dl>
+			        <dt></dt>
+			        <dd>
+			            <h2>您的信息已提交成功</h2>
+			            <p>
+			            	我们专业的工程师团队会在24小时内给您回复，请时刻关注您的邮箱。
+			            </p>
+			        </dd>
+			    </dl>
+			    <div class="solution_popup_main_btn">
+			        <a href="javascript:;" class="solution_popup_main_btn_start">获取新的技术支持</a>
+			        <a href="javascript:;" class="solution_popup_main_btn_ok">关闭</a>
+			    </div>
+			</div>
+		</div>
+	</body>
+	<!--<script type="text/javascript">
+		$('#test').on('click',function(){
+			window.open('solution-support.html', 'c_TW', 'location=no, toolbar=no, resizable=yes, scrollbars=yes, directories=no, status=no, width=803, height=715, left=500, top=100'); 
+			return false;
+		})
+	</script>-->
+	<script type="text/javascript">
+		
+		
+		
+		var oPlace = "";
+		$('input,.ss_main_right_main_textarea').focus(function() {
+			oPlace = $(this).attr('placeholder');
+			$(this).attr('placeholder', '');
+		});
+		$('input,.ss_main_right_main_textarea').blur(function() {
+			$(this).attr('placeholder', oPlace);
+		});
+		$('.ss_main_left_list li').on('click', function() {
+			$(this).addClass('choose').siblings().removeClass('choose');
+			var oIndex = $(this).index();
+			$('.ss_main_right_main_cb').eq(oIndex).show().siblings('.ss_main_right_main_cb').hide();
+			$('.ss_main_right_main_textarea').eq(oIndex).show().siblings('.ss_main_right_main_textarea').hide();
+			$('.ss_main_right_main_input_prompt').removeClass('active');
+			var oUpFile = '<div class="ss_main_right_main_upload_allbtn"><div class="ss_main_right_main_upload_btn"><input type="file" id="upload_file" placeholder=""><a href="javascript:;"><span></span>上传附件</a></div></div><div class="ss_main_right_main_upload_prompt"><span></span><div class="ss_main_right_main_upload_prompt_content"><div class="ss_main_right_main_upload_prompt_content_arrow"></div><p>文件类型：PDF/JPG/PMG</p><p>文件大小：≤5MB</p></div></div><div class="ss_main_right_main_upload_name"></div>';
+			$('.ss_main_right_main_upload').html(oUpFile);
+		});
+		$('.ss_main_right_main_cb a').on('click',function(){
+			if($(this).hasClass('active')){
+				$(this).removeClass('active');
+			}else{
+				$(this).addClass('active');
+			}
+		});
+		$('.ss_main_right_main_upload_name span').click(function(){
+			$('.ss_main_right_main_upload_name').hide();
+			$('.ss_main_right_main_upload_btn input').val("");
+		});
+		
+		$('.solution_popup_main_btn a').click(function(){
+			window.location.reload();
+		});
+//		$('.ss_main_right_main_submit').click(function(){
+//			if($(window).width()>=800){
+//				$('.ss_main_left').height($('.ss_main_right').outerHeight());
+//			}
+//		});
+//		setInterval(function(){
+//			if($(window).width()>=800){
+//				$('.ss_main_left').height($('.ss_main_right').outerHeight());
+//			};
+//		})
+//		setTimeout(function(){
+//			if($(window).width()<=800){
+//				var oUlWidth = 0;
+//				for(var i=0;i<$('.ss_main_left_list li').length;i++){
+//					oUlWidth += $('.ss_main_left_list li').eq(i).outerWidth();
+//					console.log(oUlWidth)
+//				}
+//				$('.ss_main_left_list ul').width(oUlWidth+10);
+//			};
+//		})
+		
+		
+		$('body').on('change','.ss_main_right_main_upload_btn input',function(){
+			var oFiles = $(this).get(0).files[0].name;
+			if(oFiles.length>20){
+				var oFilesHeader = oFiles.slice(0,3);
+				var oFilesFooter = oFiles.slice(oFiles.length-7);
+				oFiles = oFilesHeader + '...' + oFilesFooter;
+			};
+			if($('.ss_main_right_main_upload_btn').length == 5){
+				alert('You can upload up to 4 files.');
+			}else{
+				$(this).parent('.ss_main_right_main_upload_btn').hide();
+				var oHtml = '<div class="ss_main_right_main_upload_btn"><input type="file" id="upload_file"/><a href="javascript:;"><span></span>上传附件</a></div>';
+				$('.ss_main_right_main_upload_allbtn').append(oHtml);
+				var oName = '<p><b>File</b><em>'+oFiles+'</em><span class="icon iconfont">&#xf092;</span></p>';
+				$('.ss_main_right_main_upload_name').append(oName);
+				$('.ss_main_right_main_upload_name').show();
+				if($(window).width()>=800){
+					$('.ss_main_left').height($('.ss_main_right').outerHeight());
+				}
+			}
+		});
+		$('body').on('click','.ss_main_right_main_upload_name span',function(){//删除上传图片
+			var oIndex= $(this).parent('p').index();
+			$('.ss_main_right_main_upload_btn').eq(oIndex).remove();
+			$(this).parent('p').remove();
+		});
+		$('.ss_main_right_main_cb a').on('click',function(){//去掉关键词下面的提示语
+			$(this).siblings('.ss_main_right_main_input_prompt').removeClass('active');
+		})
+		$('.ss_main_right_main_ipt,.ss_main_right_main_textarea').keydown(function(){//去掉问题描述下面的提示语
+			$(this).siblings('.ss_main_right_main_input_prompt').removeClass('active');
+		})
+		
+		$(".ss_main_right_main_ipt.email").bind('blur',function(){
+			var oEmail=$('.email').val();
+			var oReg = new RegExp("^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$"); //正则表达式
+			if(oEmail==""){
+				$('.change_email').html("请填写您的邮箱地址").addClass('active');
+			}else{
+				if(!oReg.test(oEmail)){
+					$('.change_email').html("邮箱地址有误").addClass('active');
+				}else {
+					$('.change_email').removeClass('active');
+				};
+			};
+		});
+		$('.solution_popup_main_btn_ok').click(function(){
+			window.close();
+		})
+		
+	</script>
+	<script>
+	    function uploadPic(){
+	    	var reg = new RegExp(/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/); //正则表达式
+	    	var oReg = new RegExp("^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$"); //正则表达式
+	    	var regu = /^\d{11}$/;
+//	    	alert('1')
+	        var entrance = "1";
+	        var oChoose;
+	        var text,
+	            name=$('input[name="name"]').val();
+            var email=$('.email').val();
+            var tel = $('input[name="tel"]').val();
+//	            countries= $('.choose_country').attr('title'),
+//	            customers_country = $('.choose_country').find('em').eq(0).attr('class');
+	        arr = [];
+	        for(var i=0;i<$('.ss_main_left_list li').length;i++){
+	            if($('.ss_main_left_list li').eq(i).hasClass('choose')){
+	                oChoose = i+1;
+	            }
+	        }
+	        
+	        for(var i=0;i<$('.ss_main_right_main_textarea').length;i++){
+	            if(!$('.ss_main_right_main_textarea').eq(i).is(':hidden')){
+	                text = $('.ss_main_right_main_textarea').eq(i).val();
+	            }
+	        }
+	        for(var j=0;j<$('.ss_main_right_main_cb').length;j++){
+	            if(!$('.ss_main_right_main_cb').eq(j).is(':hidden')){
+	                for(var i=0;i<$('.ss_main_right_main_cb').eq(j).find('a').length;i++){
+	                    if($('.ss_main_right_main_cb').eq(j).find('a').eq(i).hasClass('active')){
+	                        arr.push($('.ss_main_right_main_cb').eq(j).find('a').eq(i).text())
+	                    }
+	                }
+	            }
+	        }
+	        if($.trim(name).length<=0){
+	            $('.change_name').addClass('active');
+	        }else{
+	            $('.change_name').removeClass('active');
+	        }
+	        if($.trim(tel).length<=0){
+	            $('.change_tel').html("请填写您的电话号码").addClass('active');
+	        }else{
+	            if(!regu.test(tel)){
+	                $('.change_tel').html("请填写中国大陆11位手机电话号码").addClass('active');
+	            }else {
+	                $('.change_tel').removeClass('active');
+	            }
+	        }
+	        if($.trim(email).length<=0){
+	            $('.change_email').html("请填写您的邮箱地址").addClass('active');
+	        }else{
+	            if(!reg.test(email)){
+	                $('.change_email').html("邮箱地址格式有误").addClass('active');
+	            }else {
+	                $('.change_email').removeClass('active');
+	            }
+	        }
+//	        if(!countries){
+//	            countries = "cn"
+//	        }
+	        if(arr.length<1){
+	            $('.change_mark').addClass('active');
+	        }else{
+	            $('.change_mark').removeClass('active');
+	        }
+	        if(text.replace(/\s/g,"") == ""){
+	            $('.change_text').addClass('active');
+	        }else{
+	            $('.change_text').removeClass('active');
+	        }
+	
+	        if(name=="" || email=="" ||  arr.length<1 || text.replace(/\s/g,"") == "" || !reg.test(email)){
+	            return false;
+	        }
+	        var fd = new FormData();
+	        fd.append('oChoose', oChoose);
+	        fd.append('name', name);
+	        fd.append('email', email);
+//	        fd.append('countries', countries);
+	        fd.append('arr' , arr);
+	        fd.append('text', text);
+	        fd.append('entrance', entrance);
+	
+//	        fd.append('customers_country',customers_country);
+	        for(var i=0;i<$('.ss_main_right_main_upload_btn').length-1;i++){
+	            var files = $('.ss_main_right_main_upload_btn').eq(i).find('input').get(0).files[0];
+	            fd.append('uploadFile['+i+']', files);
+	        }
+	        $.ajax({
+	            url:"test.php",
+	            type:"post",
+	            // Form数据
+	            data: fd,
+	            cache: false,
+	            contentType: false,
+	            processData: false,
+	            beforeSend:function(){
+	                $('#fs_loading,#loading_mask').show();
+	            },
+	            success:function(data){
+	                $('#fs_loading,#loading_mask').hide();
+	                $('.solution_support_popup').show();
+	            }
+	        });
+//	        if($(window).width()>=800){
+//	            $('.ss_main_left').height($('.ss_main_right').outerHeight());
+//	        };
+//	        $(".ss_main_right_main_ipt.email").bind('input porpertychange',function(){
+//	            var oEmail=$('.email').val();
+//	            
+//	            if(oEmail==""){
+//	                $('.change_email').html("Email address is required.").show();
+//	            }else{
+//	                if(!oReg.test(oEmail)){
+//	                    $('.change_email').html("Please enter valid email address.").show();
+//	                }else {
+//	                    $('.change_email').hide();
+//	                }
+//	            }
+//	        });
+	    }
+	</script>
+	<script type="text/javascript">
+	    function previewImage(file, id) {
+	        var MAXWIDTH = 120;
+	        var MAXHEIGHT = 120;
+	        var div = document.getElementById('preview');
+	        var img = new Array(), $i = 0, $len = 0;
+	        $('input[name^="reviews_img"]').each(function () {
+	            img[$i++] = $(this).val();
+	        });
+	        $len = img.length;
+	        var newID = parseInt(id) + 1;
+	        var str = '<div id="upload'+newID+'"><i>"Attach Image" +</i><input type="file" onchange="previewImage(this,this.id)" id="'+newID+'"/ name="reviews_img[]"></div>';
+	        var newImg = '<div class="write_review_increase_img" style="display:none" id="display' + newID + '"><img id="imghead' + newID + '" src="" title=" " width="100" height="100" border="0"><span onclick="cls(' + newID + ')"><i></i></span></div>';
+	        var imgsrc = $("#imghead" + id).attr('src');
+	        if ($len <4) {
+	            $("#review_img_show").append(newImg);
+	            $("#addinput").append(str);
+	        }
+	        // alert(imgsrc);
+	        if (id > 4 || ($len == 2 && id == 3 ) || imgsrc.length > 0) {
+	            selectID = newID;
+	        } else {
+	            selectID = id;
+	        }
+	        //alert(selectID);
+	        if (file.files && file.files[0]) {
+	            var img = document.getElementById('imghead' + selectID);
+	            img.onload = function () {
+	                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+	                img.width = rect.width;
+	                img.height = rect.height;
+	                img.style.marginTop = rect.top + 'px';
+	            }
+	            var reader = new FileReader();
+	            reader.onload = function (evt) {
+	                img.src = evt.target.result;
+	            }
+	            reader.readAsDataURL(file.files[0]);
+	        } else {
+	            var sFilter = 'filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+	            file.select();
+	            var src = document.selection.createRange().text;
+	            div.innerHTML = '<img id=imghead >';
+	            var img = document.getElementById('imghead');
+	            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+	            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+	            status = ('rect:' + rect.top + ',' + rect.left + ',' + rect.width + ',' + rect.height);
+	        }
+	        //alert(selectID);
+	        $("#display" + selectID).show();
+	        if ($len == 5) {
+	            $("#addinput").hide();
+	            $('.write_review_fromonly').hide();
+	        }
+	    }
+	    //移除上传的图片
+	    function cls(id) {
+	        var img = new Array(), $i = 0, $len = 0;
+	        $('input[name^="reviews_img"]').each(function () {
+	            img[$i++] = $(this).val();
+	        });
+	        $len = img.length;
+	
+	        $("#upload" + id).remove(); // 删除某个div
+	        $("#display" + id).remove();// 删除某个div
+	        if ($len < 2) {
+	            $("#review_img_show").append('<div class="write_review_increase_img" id="display1" style="display:none"><img id="imghead1" src="" title=" " width="100" height="100" border="0"><span onclick="cls(1)"><i></i></span></div>');
+	            $("#addinput").append('<div id="upload1"><i>"Attach Image" +</i><input type="file" onchange="previewImage(this,this.id)" id="1" name="reviews_img[]"/></div> ');
+	        }
+	
+	        // if($(this).attr('src')==''){ $(this).attr('src','/img/default.png');               }
+	        //document.getElementById("imghead"+id).src='';
+	        $("#addinput").show();
+	    }
+	    function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+	        var param = {top:0, left:0, width:width, height:height};
+	        if( width>maxWidth || height>maxHeight )
+	        {
+	            rateWidth = width / maxWidth;
+	            rateHeight = height / maxHeight;
+	
+	            if( rateWidth > rateHeight )
+	            {
+	                param.width =  maxWidth;
+	                param.height = Math.round(height / rateWidth);
+	            }else
+	            {
+	                param.width = Math.round(width / rateHeight);
+	                param.height = maxHeight;
+	            }
+	        }
+	        param.left = Math.round((maxWidth - param.width) / 2);
+	        param.top = Math.round((maxHeight - param.height) / 2);
+	        return param;
+	    }
+//	    $('.ss_main_left_top_con_font.sale a').click(function(){
+//	        window.location.href="https://messenger.providesupport.com/messenger/1vc93rc9z32rz0pyuigv77l5tr.html";
+//	    })
+	
+	</script>
+</html>

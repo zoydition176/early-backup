@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            font-family: "Microsoft YaHei UI";
+            box-sizing: border-box;
+        }
+        .fs-survey-box{
+            width: 1440px;
+            margin: 0 auto;
+        }
+        .fs-survey-head{
+            text-align: center;
+            font-weight: 400;
+            color: #333;
+            margin: 20px 0 40px;
+        }
+        .survey-question{
+            padding: 0 0 20px;
+        }
+        .survey-question-title{
+            font-weight: 400;
+            color: #333;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+        .answer-list label{
+            color: #666;
+            font-size: 16px;
+            line-height: 24px;
+            cursor: pointer;
+        }
+
+        .fs-survey-footer{
+            text-align: center;
+        }
+        .fs-survey-footer button{
+            color: #ffffff;
+            background: #d63030;
+            height: 40px;
+            line-height: 40px;
+            outline: none;
+            cursor: pointer;
+            font-size: 16px;
+            width: 150px;
+            border:0;
+            border-radius: 3px;
+        }
+        .fs-survey-footer button:focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<div class="fs-survey-box">
+    <h1 class="fs-survey-head">
+        飞速中文站用户调研问卷
+    </h1>
+    <div class="fs-survey-body">
+        <div class="survey-question">
+            <h3 class="survey-question-title">
+                Q1.请问您对飞速平台网页设计所具备的以下各项不满意项做出选择。（可多选）
+            </h3>
+            <div class="survey-question-content">
+                <div class="answer-list">
+                    <label for="q1_a1">
+                        <input type="checkbox" id="q1_a1">
+                        网站稳定性及兼容性表现差
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="q1_a2">
+                        <input type="checkbox" id="q1_a2">
+                        页面布局不合理
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="q1_a3">
+                        <input type="checkbox" id="q1_a3">
+                        菜单设置不便捷
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="q1_a4">
+                        <input type="checkbox" id="q1_a4">
+                        产品搜索不便捷快速
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="q1_a5">
+                        <input type="checkbox" id="q1_a5">
+                        购物车使用不方便
+                    </label>
+                </div>
+                <div class="answer-list answer-text">
+                    <label for="q1_a6">
+                        <input type="checkbox" id="q1_a6">
+                        还有其他问题请写出
+                    </label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="survey-question">
+            <h3 class="survey-question-title">
+                Q2.请问您对飞速平台设计中后台账户中心方面所具备的项不满意项做出选择。（可多选）
+            </h3>
+            <div class="survey-question-content">
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        账户管理不简洁缺少合理性
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        注册、订单及支付各环节的表现不合理
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        订单信息不简明清楚
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        个人信息的保密性差和支付安全性不可靠不稳定
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="survey-question">
+            <h3 class="survey-question-title">
+                Q3.请问您主要对飞速网站设计的哪些方面不满意？ （可多选）
+            </h3>
+            <div class="survey-question-content">
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        页面布局复杂、花哨
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品菜单分类不清晰
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品搜索位置不显眼、不容易查找
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品搜索不能准确找到我想要的产品
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="survey-question">
+            <h3 class="survey-question-title">
+                Q4. 请问您对飞速网站购物车功能设计的哪些方面不满意？ （可多选）
+            </h3>
+            <div class="survey-question-content">
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        购物车收藏的产品降价从来不提醒
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        购物车内没有快速下单的快捷按钮
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        购物车内产品信息展示不清
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        购物车内的产品不能自动分类
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="survey-question">
+            <h3 class="survey-question-title">
+                Q5.请问您主要对网站操作便捷性的哪些方面不满意？（可多选）
+            </h3>
+            <div class="survey-question-content">
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        网站注册流程繁琐
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品搜索不方便
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        不能快速下单
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        不能快速将我想要的产品加入购物车
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        购物车内收藏的物品不能快速下单
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="survey-question">
+            <h3 class="survey-question-title">
+                Q6.请您对飞速平台的产品搜索及查找各项哪些方面不满意？（可多选）
+            </h3>
+            <div class="survey-question-content">
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品搜索种类不齐全
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品搜索不到
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品没有提示搜索栏
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="survey-question">
+            <h3 class="survey-question-title">
+                Q7.请您对飞速平台设计的产品管理各项不满意项做出选择。（可多选）
+            </h3>
+            <div class="survey-question-content">
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品价格不合理
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品的品类、型号、相匹配的配件种类不丰富
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品不能随时购买，预约、抢购
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品性能与产品质量差
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="survey-question">
+            <h3 class="survey-question-title">
+                Q8. 请您对飞速平台产品详情设计的各项不满意项做出选择。（可多选）
+            </h3>
+            <div class="survey-question-content">
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品信息页面没有美观呈现
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品的配置、设计工艺、规格参数信息描述不全面
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        实际产品与页面描述不一致
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="survey-question">
+            <h3 class="survey-question-title">
+                Q9.请问您认为在页面设计中哪些产品信息描述不全面？（可多选）
+            </h3>
+            <div class="survey-question-content">
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品所属的品类、功能
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品的型号、上市时间
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品的配置、尺寸
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品的参数、设计工艺
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        产品的物流说明
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="survey-question">
+            <h3 class="survey-question-title">
+                Q10.请问您对飞速平台设计的下单购买过程有哪几点不满意？（可多选）
+            </h3>
+            <div class="survey-question-content">
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        订单信息不准确
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        信息变更不便捷
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        支付方式单一
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="survey-question">
+            <h3 class="survey-question-title">
+                Q11.请您对飞速平台设计的购买过程中所不满意的各项做出选择。（可多选）
+            </h3>
+            <div class="survey-question-content">
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        订单信息不完整，发货遗漏、产品发货时间与下单前看到的不一致
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        订单信息变更不便捷
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        支付不便捷性
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        下单时没有推荐相关配件或内容
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="survey-question">
+            <h3 class="survey-question-title">
+                Q12.请您对飞速与同类平台的设计相比有哪些方面不满意做出选择。（可多选）
+            </h3>
+            <div class="survey-question-content">
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        界面布局比同类平台不合理、设计美性差
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        页面操作比同类平台麻烦、不能快速找到想要的产品
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        和同类平台网站比整体品牌感塑造性弱、缺乏专业性
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="checkbox" >
+                        页面基本功能比同类平台产品少、不能快速便捷操作
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="survey-question">
+            <h3 class="survey-question-title">
+                Q13.请您对飞速平台网页设计的安全性、网站设计、操作便捷性总体满意度进行选择。
+            </h3>
+            <div class="survey-question-content">
+                <div class="answer-list">
+                    <label for="">
+                        <input type="radio" name="q13">
+                        非常满意
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="radio" name="q13">
+                        比较满意
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="radio" name="q13">
+                        一般
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="radio" name="q13">
+                        比较不满意
+                    </label>
+                </div>
+                <div class="answer-list">
+                    <label for="">
+                        <input type="radio" name="q13">
+                        非常不满意
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="survey-question">
+            <h3 class="survey-question-title">
+                Q14.如有其他未涉及到的问题或建议，可以在下方列出。
+            </h3>
+            <div class="survey-question-content">
+                <div class="survey-question-tarea">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="fs-survey-footer">
+        <button>提交</button>
+    </div>
+
+</div>
+<script type="text/javascript">
+    $(function(){
+        $('.answer-text input[type="checkbox"]').change(function () {
+            
+        })
+
+    })
+
+
+</script>
+
+
+
+
+</body>
+</html>

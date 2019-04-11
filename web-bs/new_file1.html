@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.yhq-box{
+				text-align: center;
+			}
+			.yhq-315{
+				text-align: center;
+				width: 310px;
+				height: 190px;
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="yhq-box">
+			<a href="//coupon.jd.com/ilink/couponSendFront/send_index.action?key=30541a1622724ee1b329d268f54dc106&roleId=10827080&to=mall.jd.com/index-593311.html" class="yhq-315">
+				<img src="//img10.360buyimg.com/imgzone/jfs/t16204/291/2418501516/12042/1a34387d/5aaa5dd7Nf6819739.png"/>
+			</a>
+			<a href="//coupon.jd.com/ilink/couponSendFront/send_index.action?key=fa3dd10e049447f9af338d337e4517b1&roleId=10827302&to=mall.jd.com/index-593311.html" class="yhq-315">
+				<img src="//img10.360buyimg.com/imgzone/jfs/t16474/26/2318534497/13665/50eb1ea8/5aaa5dd7N5dac6a42.png"/>
+			</a>
+			<a href="//coupon.jd.com/ilink/couponSendFront/send_index.action?key=922fcc2b7b8b41c5a764c9dd14982f0f&roleId=10827396&to=mall.jd.com/index-593311.html" class="yhq-315">
+				<img src="//img10.360buyimg.com/imgzone/jfs/t18541/92/837276101/13511/c3102790/5aaa5dd7N29d61744.png"/>
+			</a>
+			<a href="//coupon.jd.com/ilink/couponSendFront/send_index.action?key=0c52c1b168e94be9ab606e80d7b10d58&roleId=10827433&to=mall.jd.com/index-593311.html" class="yhq-315">
+				<img src="//img10.360buyimg.com/imgzone/jfs/t15553/265/2450541235/13122/2336a14a/5aaa5dd8Na10d4c90.png"/>
+			</a>
+		</div>
+		<div id="test"></div>
+		<a onclick="abc(6.9,10)">123123123</a>
+		<div class="hot-word-01">
+			<a href="" class="hot-word-word">1</a>
+			<a href="" class="hot-word-word">2</a>
+			<a href="" class="hot-word-word">3</a>
+		</div>
+		<input type="text" id="rg"/>
+		<button onclick="treg()">xxx</button>
+		
+		
+		<video width="800" height="" controls>
+			<source src="img/40gtom.mp4" type="video/mp4"></source>			
+			当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+		</video>
+		
+		
+	
+	</body>
+	<script>
+		var treg = function(){
+			var reg = /^((0\d{2,3}-\d{7,8})|(1[3584]\d{9})|(\d{7,8}))$/;
+			console.log(reg.test($('#rg').val()));
+		}
+		function abc(a,b){
+		
+			alert(a%b)
+		}
+		
+		
+		var header_search_input_news=[
+    ['100G QSFP28光模块','http://www.feisu.com/c/qsfp28-100g-transceivers-1159'],
+    ['40G 交换机','http://www.feisu.com/c/40g-switches-3215'],
+    ['10G 有源光缆','http://www.feisu.com/c/10g-sfp-aoc-2689'],
+    ['10G电口模块','http://www.feisu.com/c/10g-copper-3193'],
+    ['OS2单模单工跳线','http://www.feisu.com/c/os2-9-125-singlemode-simplex-1082'],
+    ['一管双芯LC跳线','http://www.feisu.com/c/uniboot-lc-fiber-cables-974'],
+    ['弯曲不敏感跳线','http://www.feisu.com/c/bend-insensitive-fiber-patch-cables-1326'],
+    ['波分复用器','http://www.feisu.com/c/dwdm-mux-demux-178'],
+    ['CWDM SFP+光模块','http://www.feisu.com/c/cwdm-sfp-plus-65']
+
+
+];
+function hot_word(){
+    var length=header_search_input_news.length,
+    	num=Math.floor(Math.random()*length),
+    	num_01 = (num+1)%length,
+    	num_02 = (num+2)%length
+    console.log(num+'+'+((num+1)%length)+'+'+((num+2)%length));
+    $('.hot-word-01 .hot-word-word').eq(0).html(header_search_input_news[num][0]);
+    $('.hot-word-01 .hot-word-word').eq(0).attr('href',header_search_input_news[num][1]);
+    $('.hot-word-01 .hot-word-word').eq(1).html(header_search_input_news[num_01][0]);
+    $('.hot-word-01 .hot-word-word').eq(1).attr('href',header_search_input_news[num_01][1]);
+    $('.hot-word-01 .hot-word-word').eq(2).html(header_search_input_news[num_02][0]);
+    $('.hot-word-01 .hot-word-word').eq(2).attr('href',header_search_input_news[num_02][1]);
+    
+}
+hot_word();
+		
+		$(function(){
+			if(typeof(Swiper)!="undefined"){
+				var SwiperHotproduct = new Swiper('.hot_products .swiper-container', {
+    paginationClickable: true,
+    prevButton: '.home_mobile_hotproduct .swiper-button-prev',
+    nextButton: '.home_mobile_hotproduct .swiper-button-next',
+    slidesPerView: 'auto',
+    spaceBetween: 50,
+    breakpoints: {
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 40
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 10
+        }
+    }
+});
+var SwiperCategories = new Swiper('.all_categories .swiper-container', {
+    paginationClickable: true,
+    prevButton: '.home_mobile_categories .swiper-button-prev',
+    nextButton: '.home_mobile_categories .swiper-button-next',
+    slidesPerView: 'auto',
+    spaceBetween: 50,
+    breakpoints: {
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 40
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        640: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+        320: {
+            slidesPerView: 3,
+            spaceBetween: 10
+        }
+    }
+});
+var mySwiperBanner = new Swiper('.banner_right .swiper-container', {
+    //      effect : 'coverflow',//fade:透明度   flip:翻转   coverflow:覆盖
+    flip: {
+        slideShadows: true,
+        limitRotation: true,
+    },
+    //          coverflow: {   //当选用覆盖时    必须使用这段代码
+    //              rotate: 50,
+    //              stretch: 0,
+    //              depth: 100,
+    //              modifier: 1,
+    //              slideShadows : true
+    //          },
+    pagination: '.banner_right .swiper-pagination',
+    paginationHide: true,
+    autoplay: 5000,
+    loop: true,
+    paginationClickable: '.banner_right .swiper-pagination',
+    autoplayDisableOnInteraction: false
+})
+
+/*2017.5.25手机自适应Swipper结束*/
+			}else{
+				console.log('no swiper')
+			}
+			
+		})
+		
+		
+		
+	</script>
+	
+</html>

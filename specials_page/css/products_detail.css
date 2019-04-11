@@ -1,0 +1,79 @@
+.box{
+    width: 100% !important;
+}
+.menu_02{
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.fs-public-bg{
+    background: #f7f8f9;
+}
+
+.new-products-container{
+    width: 1420px;
+    margin: 0 auto;
+}
+.new-products-container-md{
+    width: 1200px;
+    margin: 0 auto;
+}
+.new-reviews-container{
+    padding-top: 96px;
+    /*padding-bottom: 68px;*/
+}
+.new-product-head{
+
+}
+.new-products-reviews-head{
+    height: 50px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #eeeeee;
+}
+.new-products-score{
+    float: left;
+    font-size: 50px;
+    line-height: 50px;
+    color: #fdaa01;
+}
+.new-products-stars{
+    float: left;
+    padding: 10px 12px 0 12px;
+}
+.new-products-stars p{
+    float: none;
+    clear: both;
+    font-size: 14px;
+    line-height: 14px;
+}
+.new-products-reviews-tab{
+    float: right;
+    padding-top: 28px;
+}
+.new-products-reviews-tab li{
+    float: left;
+    font-size: 16px;
+    color: #999999;
+    margin-left: 50px;
+    line-height: 16px;
+    cursor: pointer;
+}
+.new-products-reviews-tab li.active{
+    color: #3b3e40;
+    font-weight: 600;
+}
+.bottom-questions { padding-top: 70px }
+.bottom-questions h3 {
+    /*text-align: center; */
+    font-size: 26px;
+    color: #3b3e40;
+    font-weight: 400;
+    line-height: 40px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #eeeeee;
+    /*background: #f6f6f6;*/
+}
+.bottom-questions-list dl { border-bottom: 1px solid #eee; padding-bottom: 26px }
+.bottom-questions-list dl:last-child {}
+.bottom-questions-list dl dt { font-size: 16px; color: #3b3e40; padding-top: 26px;line-height: 24px}
+.bottom-questions-list dl dd { font-size: 14px; color: #6c7073; padding-top: 12px; line-height: 24px }

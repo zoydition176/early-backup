@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.red {
+			    color: red
+			}
+			
+			.blue {
+			    color: blue
+			}
+			.abc{
+				margin: 10px 0;
+				padding: 10px;
+				line-height: 20px;
+			}
+		</style>
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="red blue">123</div>
+		<div class="blue red">123</div>
+		<input type="text" onEnterCheck="func2()"/>
+		<input type="text" onEnterCheck="func3()"/>
+		<input type="text" onEnterCheck="func2()"/>
+		<input type="text" onEnterCheck="func3()"/>
+		<button id="enteremit" onclick="func2()">1123</button>
+		
+		<div class="abc">13123</div>
+	</body>
+	<script type="text/javascript">
+		var student = {
+			name:'zdx',
+			id:'001',
+//			act:function(){
+//				console.log(this.name + ' is act')
+//			}
+		}
+		
+		function cb(name){
+			var a = Object.create(student);//这个方法创建了一个以制定原型为原型的空对象 js的oop是以继承的方式来实现的  对象继承了类proto里面的方法与属性
+//			a.name = name;
+			return a;
+		}
+		var b = {
+			name:'ddd'
+		}
+		function Student(name) {
+		    this.name = name;
+//		    console.log(this);
+//		    this.hello = function () {
+//		        alert('Hello, ' + this.name + '!');
+//		    }
+			this.fn = function(){
+				console.log(name);
+			}
+		}
+		Student.prototype.hello = function(){
+			alert('Hello, ' + this.name + '!');
+		}
+		var k = new Student('mmm');//new是实例化了一个类  student这个普通函数  因为有new的存在 变成了一个构造实例的构造函数
+		var q = new Student('nnn');
+		
+		function teacher(){
+			var a = 1;
+		}
+		var z = new teacher();
+		
+		var kof = document.getElementById('enteremit');
+		
+		function onInputEnterUp(){
+		    var objattr = document.querySelectorAll('[onEnterCheck]');
+		    for(var i = 0;i<objattr.length;i++){
+		        objattr[i].addEventListener('focus',function(){
+		            var t = this.getAttribute('onEnterCheck');
+		            document.onkeyup = function(e){
+		                if(e.keyCode === 13){
+		                    if( t.length<=0 && typeof (eval(t)) !== 'function'){
+		                        return false
+		                    }else{
+		                        eval(t);
+		                    }
+		                }
+		            }
+		        });
+		        objattr[i].addEventListener('blur',function(){
+		            document.onkeyup = null
+		        });
+		    }
+		}
+		onInputEnterUp();
+
+		
+		
+		
+		
+//		for(x in kof){
+//			
+//		}
+//		function fun1(){
+//			alert('1')
+//		}
+		function func2(){
+			alert('2')
+		}
+		function func3(){
+			alert('3')
+		}
+		
+	</script>
+</html>

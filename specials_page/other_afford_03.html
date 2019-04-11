@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>链接失效页面</title>
+		<link rel="stylesheet" href="http://www.feisu.com/includes/templates/fiberstore/css/public.css?v=2018082101" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="http://www.feisu.com/includes/templates/fiberstore/css/fs_allCss.css?v=18082101" />
+		
+		<link rel="stylesheet" type="text/css" href="http://www.feisu.com/includes/templates/fiberstore/css/top_bottom.css?v=18081701"/>		
+		<link rel="stylesheet" type="text/css" href="http://www.feisu.com/includes/templates/fiberstore/css/media.css?v=2018082101" />
+		<script src="http://www.feisu.com/includes/templates/fiberstore/jscript/jquery1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://www.feisu.com/includes/templates/fiberstore/jscript/main.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="http://www.feisu.com/includes/templates/fiberstore/css/backstage.css?v=2018082001"/>
+	</head>
+	<body>
+		<div class="FiberStore_cs_new_header">
+		    <a href="" class="FiberStore_login_logo"></a>
+		    <span class="FiberStore_login_logo_1ine"></span>
+		    <p>支付订单</p>
+		    <div class="FiberStore_myaccount">
+		        <a href="my_dashboard.html">我的账户</a>
+		                <div class="header_sign_more_s">
+		            <div class="header_sign_more_arrow"></div>
+		            <div class="header_sign_more_main_s">
+		                <ul>
+		                    <li><a href="http://www.fs_cn.test/index.php?main_page=manage_orders">我的订单</a></li>
+		                    <li><a href="http://www.fs_cn.test/index.php?main_page=manage_orders&amp;status=wait_pay">待付款（80）</a></li>
+		                    <li><a href="http://www.fs_cn.test/index.php?main_page=manage_wishlists">我的收藏</a></li>
+		                    <li><a href="http://www.fs_cn.test/index.php?main_page=logoff">退出</a></li>
+		                </ul>
+		            </div>
+		        </div>
+		    </div>
+		    <ul class="progress_bar_two">
+		        <li>购物车</li>
+		        <li>确认订单</li>
+		        <li>支付订单</li>
+		        <li>完成</li>
+		    </ul>
+		</div>
+		
+		<style type="text/css">
+			.other-afford-link{
+				margin-top: -1px;
+				background: #FFFFFF;
+				position: relative;
+				z-index: 2;
+			}
+			.other-afford-link input{
+				width: 650px;
+				height: 38px;
+				border: 1px solid #f7d7d8;
+				background: #fdf9f8;
+				outline: none;
+				color: #333333;
+				padding: 0 10px;
+				font-size: 14px;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: nowrap;
+
+			}
+			.other-afford-link input:focus{
+				outline: none;
+			}
+			.other-afford-bt{
+				padding-top: 20px;
+				padding-bottom: 48px;
+			}
+			.other-afford-button{
+				width: 178px;
+				height: 40px;
+				font-size: 16px;
+				line-height: 38px;
+				border-radius: 3px;
+				background: #d63030;
+				color: #FFFFFF;
+				text-align: center;
+				outline: none;
+				border: none;
+			    vertical-align: middle;
+			    cursor: pointer;
+			}
+			.other-afford-button:hover{
+				background: #C61017;
+			}
+			.other-afford-bt a{
+				display: inline-block;
+				margin: 0 16px;
+				width: 178px;
+				height: 38px;
+				font-size: 14px;
+				line-height: 36px;
+				border-radius: 3px;
+				background: #FFFFFF;
+				color: #d63030;
+				text-align: center;
+				outline: none;
+			    vertical-align: middle;
+				border: 1px solid #d63030;
+			}
+			.other-afford-bt a:hover{
+				text-decoration: none;
+			}
+			.fs-checkbox-de{
+				vertical-align: middle;
+				line-height: 24px;
+				margin-top: 26px;
+				cursor: pointer;
+				
+			}
+			.fs-checkbox-de input[type="checkbox"]{
+				opacity: 0;
+			    display: inline-block;
+			    vertical-align: middle;
+			    height: 100%;
+			    width: 100%;
+			    cursor: pointer;
+			}
+			.fs-checkbox-de b{
+				display: inline-block;
+			    /*vertical-align: middle;*/
+			    height: 24px;
+			    width: 18px;
+			    margin-right: 5px;	    
+			    background: url('http://www.feisu.com/includes/templates/fiberstore/images/forum_select.png') no-repeat 0px 3px;
+			}
+			.fs-checkbox-de span{
+				font-size: 14px;
+				color: #666666;
+			}
+			.fs-checkbox-de.active b{
+				background: url('http://www.feisu.com/includes/templates/fiberstore/images/forum_select.png') no-repeat 0px -39px;
+			}
+			.fs_afford_df {
+			    width: 460px;
+			    display: none;
+			    overflow: hidden;
+			    position: fixed;
+			    top: 50%;
+			    left: 50%;
+			    background: #FFFFFF;
+			    border-radius: 3px;
+			    transform: translate(-50%,-50%);
+			    -webkit-transform: translate(-50%,-50%);
+			    -moz-transform: translate(-50%,-50%);
+			    -ms-transform: translate(-50%,-50%);
+			    z-index: 999;
+			    padding-bottom: 40px;
+			}
+			.fs_afford_df>h3 {
+			    background: #F5F5F5;
+			    color: #666666;
+			    font-size: 16px;
+			    line-height: 30px;
+			    font-weight: 400;
+			    padding: 15px 20px;
+			}
+			.fs_afford_df>h3 span {
+			    float: right;
+			    height: 30px;
+			    width: 30px;
+			    display: block;
+			    background: url('http://www.feisu.com/includes/templates/fiberstore/images/shopcart_delete.png') no-repeat 1px 3px;
+			    cursor: pointer;
+			}
+			.fs_afford_df>h3:after {
+			    content: '';
+			    display: block;
+			    width: 0;
+			    height: 0;
+			    clear: both;
+			}
+			.fs_afford_df p {
+			    color: #666666;
+			    font-size: 14px;
+			    line-height: 24px;
+			    text-align: center;
+			    padding-top: 34px;
+			    padding-bottom: 24px;
+			}
+			.fs_afford_df_btn{
+				text-align: center;
+			}
+			.fs_afford_df_btn a{
+				display: inline-block;
+				width: 130px;
+				height: 38px;
+				line-height: 36px;
+				text-align: center;
+				margin: 0 8px;
+				border: 1px solid #dedede;
+				border-radius: 3px;
+				text-indent: 999px;
+				overflow: hidden;
+				vertical-align: middle;
+				text-decoration: none;
+				background: url('http://www.feisu.com/includes/templates/fiberstore/images/bank-logo.png') no-repeat center;
+			}  
+			.fs_afford_df_btn a:hover,.fs_afford_df_btn a.active{
+				border-color: #d63030;
+			}
+			.fs_afford_df_btn a.alipay{
+				background-position: 25px -1649px;
+			}
+			.fs_afford_df_btn a.wepay{
+		        background-position: 13px -1757px;
+			}
+			.other-afford-button.complete{
+				background: #999999;
+				color: #FFFFFF;
+			}
+			.Fiberstore_order_link_error{
+				width: 580px;
+				margin: 0 auto;
+				background: #FFFFFF;
+				text-align: center;
+				padding-bottom: 84px;
+			}
+			.other-afford-error-text{
+				padding-left: 42px;
+				line-height: 34px;
+				font-size: 20px;
+				font-weight: 400;
+				display: inline-block;
+				background: url('http://www.feisu.com/includes/templates/fiberstore/images/pay_default_03.png') no-repeat 0px 1px;
+				margin: 80px 0 20px 0;
+			}
+			.Fiberstore_order_link_error .other-afford-button{
+				display: block;
+				margin: 0 auto;
+			}
+		</style>
+		<div class="Fiberstore_order_submit">
+		    <div class="Fiberstore_order_link_error">
+		    	<h3 class="other-afford-error-text">
+		    		链接已失效~
+		    	</h3>
+		    	<button class="other-afford-button">
+		    		去首页看看
+		    	</button>
+		    </div>
+		    
+		    
+		    
+		    
+		    
+		</div>
+    
+		
+		<!--新尾部开始-->
+		<div class="FiberStore_cs_new_footer">
+		    <div class="fs-footer-list">
+		        <a href="questions-answers.html">问题中心</a>
+		        <a href="privacy-policy.html">隐私政策</a>
+		        <a href="terms-of-use.html">使用条款</a>
+		        <a href="customer-service.html">联系客服</a>
+		    </div>
+		    <div class="fs-footer-txt">
+		        Copyright © 2009-2018 深圳市宇轩网络技术有限公司 版权所有 粤ICP备12032516号
+		    </div>
+		</div>
+		<!--新尾部结束-->
+		
+		
+	</body>
+</html>
+

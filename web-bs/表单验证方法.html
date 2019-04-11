@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>validate</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/validate.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<form action="" id="myf">
+			<ul>
+				<li>
+					<span>account</span>
+					<input type="text" name="" id="account" value="" />		
+					<span class="alert" id="acc_alert"></span>
+				</li>
+				<li>
+					<span>password</span>
+					<input type="password" name="" id="password" value="" />
+					<span class="alert"></span>
+				</li>
+				<li>
+					<span>fav</span>
+					<input type="text" name="" id="fav" value="" />
+					<span class="alert"></span>
+				</li>
+				<li>
+					<span>text</span>
+					<input type="text" name="" id="text" value="" />
+					<span class="alert"></span>
+				</li>
+				<li>
+					<span>sex</span>
+					<input type="radio" name="sex" id="male" value="male" />
+					<input type="radio" name="sex" id="female" value="female" />
+					<input type="radio" name="sex" id="secret" value="secret" />
+					<span class="alert"></span>
+				</li>
+				<li>
+					<input type="button" name="" id="submitButton" value="submit" />
+				</li>
+			</ul>
+		</form>
+		<textarea name="" rows="" cols="" style="width: 500px;height: 300px;"></textarea>
+		
+		
+		
+		
+	</body>
+	<script type="text/javascript">
+//		var zvalidate = function(vobj,vfn,msg){
+//			
+//			
+//			
+//			
+//		}
+		(function(){
+			var zva = function(strategies){
+				this.strategies = strategies;
+				this.checkMethods = [];
+			};
+			zva.prototype.add = function(vobj,vfn,msg){
+				var t = this;
+				var validateObj = $(vobj);//验证对象
+				var vl = validateObj.val();
+				var message = msg;//提示信息
+				var config = eval('('+vfn+')');//验证方法str
+				var arg = [];
+				for(e in config){
+					this.checkMethods.push(function(){
+						arg = [];
+						arg.push(vl);
+						
+						arg.push(msg);
+						
+						return t.strategies[e].apply(validateObj,arg);
+					})
+				}
+	
+			};
+			zva.prototype.init = function(){
+				for(i=0;i<this.checkMethods.length;i++){
+					var a = this.checkMethods[i]();
+					console.log(this);
+					if(a){
+						return a;
+					}
+					
+					
+				}
+			};
+			
+			
+			
+			
+			
+			window.zva = zva;
+		})()
+		
+		
+		var mod = {
+			isMobile:function(mobile,message){
+				var regu = /^\d{11}$/;
+				var re = new RegExp(regu);
+				if (!re.test(mobile)) {
+//					$(this).next('.alert').html(message);
+					return message;
+				}				
+			},
+			isEmail:function(email,message){
+				var reg=/(^\s*)\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*(\s*$)/;
+			   	if(!reg.test(email)){
+//			   		$(this).next('.alert').html(message);
+			   		return message;
+			   	}
+			}
+		};
+		
+		var fm = document.getElementById('myf');
+		
+		$(function(){
+			var myv = new zva(mod);
+			
+			$('#submitButton').on('click',function(){
+				myv.add('#account','{isMobile:true}','请输入手机号');
+				myv.add('#fav','{isEmail:true}','请输入正确得邮箱号');
+				var a = myv.init();
+//				myv.init()
+				$('#acc_alert').html(a);
+				console.log('123')
+			})
+		})
+		
+		
+	</script>
+</html>

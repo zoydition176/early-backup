@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/fs_allCss.css"/>
+		<link rel="stylesheet" href="css/special_default.css" />
+		<link rel="stylesheet" href="css/download-search.css" />	
+		<script src="js/jquery1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vf.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vue-router.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="s-box d-search-box" id="searchApp">
+			<div class="s-md-brand d-search">
+				<div class="s-ab-bg"></div>
+				<div class="s-brand-txt">
+	                <h3>
+	                   	产品目录&规格书资料下载
+	                </h3>
+	            </div> 
+			</div>
+			<div class="search-m-banner">
+				<img src="img/search/jj_02.jpg" alt="" />
+				<div class="m-head-text">
+					<h3>
+	                   	产品目录&规格书资料下载
+	               </h3>
+				</div>
+			</div>
+			
+			<div class="d-search-group">
+				<div class="d-search-input">
+					<input type="text" class="d-search-text fs-plh" id="search_data" v-model="search_txt" placeholder="产品名称/产品ID/型号名/关键词"/>
+					<a class="d-search-button" @click='search'>搜索</a>
+					<img src="img/search/Magnifier.png" alt="" />
+				</div>
+			</div>
+			
+			
+			<div class="d-search-wrapper" v-if="showList">
+				<div class="d-search-title">产品分类</div>
+				<ul class="d-search-ul">
+					<li class="d-search-list">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/search/jj_05.jpg" alt="" />
+									以太网交换机
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_20.jpg" alt="" />
+									DAC高速线缆
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_30.jpg" alt="" />
+									光纤配线箱
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_42.jpg" alt="" />
+									光纤配线盒
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_52.jpg" alt="" />
+									线缆管理
+								</a>		
+							</li>
+						</ul>
+					</li>
+					<li class="d-search-list">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/search/jj_07.jpg" alt="" />
+									POE供电交换机
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_21.jpg" alt="" />
+									AOC有源光缆
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_32.jpg" alt="" />
+									光纤配线架
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_43.jpg" alt="" />
+									光纤收发器
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_53.jpg" alt="" />
+									企业WIFI
+								</a>		
+							</li>
+						</ul>
+					</li>
+					<li class="d-search-list">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/search/jj_09.jpg" alt="" />
+									10G SFP+万兆
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_22.jpg" alt="" />
+									常规光纤跳线
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_34.jpg" alt="" />
+									FMT光纤放大器
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_44.jpg" alt="" />
+									FMT光传输网络
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_54.jpg" alt="" />
+									数据中心电源线
+								</a>		
+							</li>
+						</ul>
+					</li>
+					<li class="d-search-list">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/search/jj_11.jpg" alt="" />
+									QSFP-LR4-40G QSFP
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_23.jpg" alt="" />
+									MPO/MTP光纤跳线
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_35.jpg" alt="" />
+									FMU无源波分复用器
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_45.jpg" alt="" />
+									KVM切换器
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_55.jpg" alt="" />
+									无源光器件
+								</a>		
+							</li>
+						</ul>
+					</li>
+					<li class="d-search-list">
+						<ul>
+							<li>
+								<a href="">
+									<img src="img/search/jj_13.jpg" alt="" />
+									1000M SFP千兆
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_24.jpg" alt="" />
+									配线光缆光缆
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_36.jpg" alt="" />
+									光纤清洁工具
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_46.jpg" alt="" />
+									光纤测试设备
+								</a>		
+							</li>
+							<li>
+								<a href="">
+									<img src="img/search/jj_56.jpg" alt="" />
+									机架&机柜
+								</a>		
+							</li>
+						</ul>
+					</li>
+				</ul>	
+			</div>
+			
+			<div class="d-search-bg">
+				<div class="d-search-wrapper">
+					<div class="d-search-head">
+						<span id="result_length" v-html="result_list.length"></span>个结果，关于<span id="result_str">“S3800”</span>
+					</div>
+					
+					
+					<ul class="search-result-content s-row" >
+						<li class="search-result-list" v-for="item in result_list">
+							<a class="search-result-link" :href="item.link" :data-id="item.id">
+								<span class="iconfont icon search-result-icon">&#xf184;</span>
+								<p>
+									{{item.name}}
+								</p>
+								<span class="iconfont icon search-result-dowm">&#xf153;</span>
+							</a>
+						</li>
+						<li class="search-no-result" v-if='result_list.length==0'>
+							<img src="img/search/Empty_cn.png" alt="" />
+							<p>
+								搜索无结果
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<router-view></router-view>
+			
+			
+			<div class="d-search-wrapper">
+				<div class="d-search-title">产品目录</div>
+				<div class="d-search-ul s-row">
+					<div class="d-search-item">
+						<a class="d-search-item-all" href="">
+							<img src="img/search/jj_63.jpg" alt="" />
+							<span>交换机</span>
+						</a>
+					</div>
+					<div class="d-search-item">
+						<a class="d-search-item-all" href="">
+							<img src="img/search/jj_65.jpg" alt="" />
+							<span>布线管理</span>
+						</a>
+						<a class="d-search-item-half" href="">
+							<img src="img/search/jj_74.jpg" alt="" />
+							<span>WDM & FTTx</span>
+						</a>
+					</div>
+					<div class="d-search-item">
+						<a class="d-search-item-half" href="">
+							<img src="img/search/jj_67.jpg" alt="" />
+							<span>光模块</span>
+						</a>
+						<a class="d-search-item-half" href="">
+							<img src="img/search/jj_75.jpg" alt="" />
+							<span>企业网</span>
+						</a>
+					</div>
+					<div class="d-search-item">
+						<a class="d-search-item-half" href="">
+							<img src="img/search/jj_69.jpg" alt="" />
+							<span>光纤跳线 & 铜揽网线</span>
+						</a>
+						<a class="d-search-item-half" href="">
+							<img src="img/search/jj_76.jpg" alt="" />
+							<span>光纤测试 & 安装设备</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+		</div>
+		
+		<script type="text/javascript">
+			console.log('this page is not work on old version browser or which not support on es6');
+			const search_result = {
+				template:'<div class="d-search-bg">has data</div>'
+			};
+			const search_empty = {
+				template:'<div class="d-search-bg">no data</div>'
+			};
+			const routes = [
+				{
+					path:'/search_result',component:search_result
+				},
+				{
+					path:'/search_empty',component:search_empty
+				}
+			];
+			var myrouter = new VueRouter({
+				routes:routes
+			})
+			
+			var vm = new Vue({
+				data:{
+					showList:true,
+					search_txt:'',
+					result_list:[
+						{id:'',link:'',name:'S3800系列交换机数据参数'},
+						{id:'',link:'',name:'S3800系列交换机数据参数2'},
+						{id:'',link:'',name:'S3800系列交换机数据参数3'}
+					]
+				},
+				methods:{
+					search(){
+						var text = this.search_txt;
+						this.showList = false;
+						$('#result_str').html('“' + text + '”');
+						if(text.length==0){
+							this.$router.push({path:'/'})
+						}else{
+							if(this.result_list.length==0){
+								
+								this.$router.push({path:'/search_empty'})
+							}else{
+								console.log(this.$route.params.name);
+								this.$router.push({path:'/search_result'})
+							}
+						}
+						
+						
+					}
+				},
+				router:myrouter
+			}).$mount('#searchApp');
+			
+			
+		</script>
+		
+		
+		
+	</body>
+</html>
+

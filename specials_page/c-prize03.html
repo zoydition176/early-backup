@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/fs_allCss.css"/>
+		<link rel="stylesheet" type="text/css" href="css/special_default.css"/>
+		<link rel="stylesheet" href="css/customized-product.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<script src="js/jquery1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vf.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/customized-product.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<script src="js/swiper-3.4.0.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/swiper-3.4.0.min.css" />
+		<div class="s-box cp-box" id="cpApp" v-cloak>
+			<div class="s-md-brand cp-header c-wdm">
+				<div class="s-ab-bg"></div>
+				<div class="s-brand-txt">
+	                <h3>
+	                   	 定制WDM Mux波分复用器
+	                </h3>
+	                <p>
+                		飞速(FS)自主研发高集成化WDM波分复用器，可根据您的应用需求定制通道数和特殊口，便于管理和扩容
+	                </p>
+	            </div> 
+			</div>
+			<div class="cp-m-banner">
+				<img src="img/oem-product-center/m-banner-wdm.jpg" alt="" />
+				<div class="m-head-text">
+					<h3>
+	                   	 定制WDM Mux波分复用器
+	                </h3>
+	                <p>
+                		飞速(FS)自主研发高集成化WDM波分复用器，可根据您的应用需求定制通道数和特殊口，便于管理和扩容
+	                </p>
+				</div>
+			</div>
+			<div class="cp-body">
+				<ul class="cp-items">
+					<li class="cp-items-list" v-for="(item,index) in productItem" @click='toggletb(index)' v-bind:class="{active:index===showtab}">
+						{{item}}
+					</li>
+				</ul>
+				<div class="cp-filter-box">
+					<div class="cp-filter" v-show="showtab===0">
+						<ul>
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">接线类型</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										卡勾设计
+									</span>
+									<span class="cp-filter-it">
+										无尾套
+									</span>
+									<span class="cp-filter-it">
+										可伸缩网线
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">屏蔽类型</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										非屏蔽(UTP)
+									</span>
+									<span class="cp-filter-it">
+										屏蔽(FTP)
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">外皮材质</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										PVC/OFNR
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">网线长度</div>
+								<div class="cp-filter-v">
+									<input type="text" name="material" id="" value="" class="cp-filter-length"/>
+									
+									<select class="cp-filter-unit">
+										<option value="米">米</option>
+										<option value="千米">千米</option>
+										<!--<span>米</span>
+										<em></em>
+										<ul class="cp-filter-unit-list">
+											<li>
+												米
+											</li>
+											<li>
+												千米
+											</li>
+										</ul>-->
+									</select>
+									
+									<span class="cp-filter-error">
+										请填写网线长度
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">接头/极性</div>
+								<div class="cp-filter-v">				
+									<select class="cp-filter-select">
+										<option value="LC双工接头--标准型1">LC双工接头--标准型1</option>
+										<option value="LC双工接头--标准型2">LC双工接头--标准型2</option>
+										<!--<span>LC双工接头--标准型</span>
+										<em></em>
+										<ul class="cp-filter-unit-list">
+											<li>
+												LC双工接头--标准型1
+											</li>
+											<li>
+												LC双工接头--标准型2
+											</li>
+										</ul>-->
+									</select>
+									
+									<span class="cp-filter-error">
+										请填写网线长度
+									</span>
+								</div>
+							</li>
+							
+							
+							<li class="cp-filter-list-num">
+								<div class="cp-filter-ln">数量</div>
+								<div class="cp-filter-v">
+									<div class="FS_product_num_default cp-filter-bottom">
+	                                    <input type="text" value="1" class="cp-count" name="cart_quantity" maxlength = "4"  min="1">
+	                                </div>
+									<a class="cp-submit-btn cp-filter-bottom" onclick="subcheck(this)">提交</a>
+									<span class="cp-filter-error">
+										请填写正确的数量
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="cp-filter" v-show="showtab===1">
+						<ul>						
+							
+							
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">包装类型</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										飞速(FS)包装
+									</span>
+									<span class="cp-filter-it">
+										中性包装
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list-num">
+								<div class="cp-filter-ln">数量</div>
+								<div class="cp-filter-v">
+									<div class="FS_product_num_default cp-filter-bottom">
+	                                    <input type="text" value="1" class="cp-count" name="cart_quantity" maxlength = "4"  min="1">
+	                                </div>
+									<a class="cp-submit-btn cp-filter-bottom" onclick="subcheck(this)">提交</a>
+									<span class="cp-filter-error">
+										请填写正确的数量
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="cp-filter" v-show="showtab===2">
+						<ul>						
+												
+							
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">包装类型</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										飞速(FS)包装
+									</span>
+									<span class="cp-filter-it">
+										中性包装
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list-num">
+								<div class="cp-filter-ln">数量</div>
+								<div class="cp-filter-v">
+									<div class="FS_product_num_default cp-filter-bottom">
+	                                    <input type="text" value="1" class="cp-count" name="cart_quantity" maxlength = "4"  min="1">
+	                                </div>
+									<a class="cp-submit-btn cp-filter-bottom" onclick="subcheck(this)">提交</a>
+									<span class="cp-filter-error">
+										请填写正确的数量
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="cp-filter" v-show="showtab===3">
+						<ul>						
+													
+							
+							
+							<li class="cp-filter-list">
+								<div class="cp-filter-ln">包装类型</div>
+								<div class="cp-filter-v">
+									<span class="cp-filter-it choose">
+										飞速(FS)包装
+									</span>
+									<span class="cp-filter-it">
+										中性包装
+									</span>
+								</div>
+							</li>
+							
+							<li class="cp-filter-list-num">
+								<div class="cp-filter-ln">数量</div>
+								<div class="cp-filter-v">
+									<div class="FS_product_num_default cp-filter-bottom">
+	                                    <input type="text" value="1" class="cp-count" name="cart_quantity" maxlength = "4"  min="1">
+	                                </div>
+									<a class="cp-submit-btn cp-filter-bottom" onclick="subcheck(this)">提交</a>
+									<span class="cp-filter-error">
+										请填写正确的数量
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+
+				</div>
+				
+				
+				<div class="cp-footer">
+					<div class="cp-tx cp-footer-list">
+						<h3>高性能OTN光传输相关配件</h3>
+						<p>
+							飞速(FS)提供长途光传输网全系列产品定制服务，且可根据应用需求设计解决方案
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="cp-wdm-carousel">
+				<!-- index footer -->
+				<div class="all_categories">
+					<div class="all_categories_show">
+						<ul>
+							<li class="all_categories_show_li">
+								<a href="http://www.feisu.com/products/35926.html">
+									<img src="img/oem-product-center/wdm/c_wdm_05.jpg">
+									<h2>定制EDFA掺铒光放大器</h2>
+								</a>
+							</li>
+							<li class="all_categories_show_li">
+								<a href="http://www.feisu.com/products/30515.html">
+									<img src="img/oem-product-center/wdm/c_wdm_07.jpg">
+									<h2>4ch WDM SFP/SFP+ OEO光放大中继器/转换器</h2>
+								</a>
+							</li>
+				            <li class="all_categories_show_li">
+				                <a href="http://www.feisu.com/products/65779.html">
+				                    <img src="img/oem-product-center/wdm/c_wdm_09.jpg">
+				                    <h2>80KM DCM光纤色散补偿器，插入式</h2>
+				                </a>
+				            </li>
+				            <li class="all_categories_show_li">
+								<a href="http://www.feisu.com/products/66010.html">
+									<img src="img/oem-product-center/wdm/c_wdm_11.jpg">
+									<h2>光旁路保护系统，插卡式</h2>
+								</a>
+							</li>
+							<li class="all_categories_show_li">
+								<a href="http://www.feisu.com/products/48523.html">
+								<!-- patch-cable.html -->				
+									<img src="img/oem-product-center/wdm/c_wdm_13.jpg">
+									<h2>LC/UPC 阴阳式 单模 固定式光纤衰减器 5dB</h2>
+								</a>
+							</li>
+							<li class="all_categories_show_li">
+								<a href="http://www.feisu.com/screen/286-61844/c/dwdm-sfp-plus-66">
+									<img src="img/oem-product-center/wdm/c_wdm_15.jpg">
+									<h2>DWDM SFP+万兆光模块 80km</h2>
+								</a>
+							</li>
+							<li class="all_categories_show_li">
+								<a href="http://www.feisu.com/screen/343-18588/c/cwdm-sfp-plus-65/sort-sellers">
+									<img src="img/oem-product-center/wdm/c_wdm_16.jpg">
+									<h2>CWDM SFP+万兆光模块 40km</h2>
+								</a>
+							</li>
+							<li class="all_categories_show_li">
+								<a href="http://www.feisu.com/products/35926.html">
+									<img src="img/oem-product-center/wdm/c_wdm_05.jpg">
+									<h2>定制EDFA掺铒光放大器</h2>
+								</a>
+							</li>
+							<li class="all_categories_show_li">
+								<a href="http://www.feisu.com/products/30515.html">
+									<img src="img/oem-product-center/wdm/c_wdm_07.jpg">
+									<h2>4ch WDM SFP/SFP+ OEO光放大中继器/转换器</h2>
+								</a>
+							</li>
+				            <li class="all_categories_show_li">
+				                <a href="http://www.feisu.com/products/65779.html">
+				                    <img src="img/oem-product-center/wdm/c_wdm_09.jpg">
+				                    <h2>80KM DCM光纤色散补偿器，插入式</h2>
+				                </a>
+				            </li>
+				            <li class="all_categories_show_li">
+								<a href="http://www.feisu.com/products/66010.html">
+									<img src="img/oem-product-center/wdm/c_wdm_11.jpg">
+									<h2>光旁路保护系统，插卡式</h2>
+								</a>
+							</li>
+							<li class="all_categories_show_li">
+								<a href="http://www.feisu.com/products/48523.html">
+								<!-- patch-cable.html -->				
+									<img src="img/oem-product-center/wdm/c_wdm_13.jpg">
+									<h2>LC/UPC 阴阳式 单模 固定式光纤衰减器 5dB</h2>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="all_categories_prev"></div>
+					<div class="all_categories_next"></div>
+				</div>
+				
+				<div class="swiper-container swiper-container-horizontal home_mobile_categories">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="http://www.feisu.com/products/35926.html">
+								<img src="img/oem-product-center/wdm/c_wdm_05.jpg">
+								<h2>定制EDFA掺铒光放大器</h2>
+							</a>
+						</div>
+						
+						<div class="swiper-slide">
+							<a href="http://www.feisu.com/products/30515.html">
+								<img src="img/oem-product-center/wdm/c_wdm_07.jpg">
+								<h2>4ch WDM SFP/SFP+ OEO光放大中继器/转换器</h2>
+							</a>
+						</div>
+						
+						<div class="swiper-slide">
+							<a href="http://www.feisu.com/products/65779.html">
+			                    <img src="img/oem-product-center/wdm/c_wdm_09.jpg">
+			                    <h2>80KM DCM光纤色散补偿器，插入式</h2>
+			                </a>
+						</div>
+						
+						<div class="swiper-slide">
+							<a href="http://www.feisu.com/products/66010.html">
+								<img src="img/oem-product-center/wdm/c_wdm_11.jpg">
+								<h2>光旁路保护系统，插卡式</h2>
+							</a>
+						</div>
+						
+						<div class="swiper-slide">
+							<a href="http://www.feisu.com/products/48523.html">
+								<!-- patch-cable.html -->				
+								<img src="img/oem-product-center/wdm/c_wdm_13.jpg">
+								<h2>LC/UPC 阴阳式 单模 固定式光纤衰减器 5dB</h2>
+							</a>
+						</div>
+						
+						<div class="swiper-slide">
+							<a href="http://www.feisu.com/screen/286-61844/c/dwdm-sfp-plus-66">
+								<img src="img/oem-product-center/wdm/c_wdm_15.jpg">
+								<h2>DWDM SFP+万兆光模块 80km</h2>
+							</a>
+						</div>
+						
+						<div class="swiper-slide">
+							<a href="http://www.feisu.com/screen/343-18588/c/cwdm-sfp-plus-65/sort-sellers">
+								<img src="img/oem-product-center/wdm/c_wdm_16.jpg">
+								<h2>CWDM SFP+万兆光模块 40km</h2>
+							</a>
+						</div>
+						
+					</div>
+					<div class="swiper-button-prev icon iconfont">&#xf090;</div>
+					<div class="swiper-button-next icon iconfont">&#xf089;</div>
+				</div>
+				
+			</div>
+			
+			
+			
+			<div class="cp-modal" id="cpModal">
+				<div class="cp-modal-head">
+					请确认定制信息
+					<span></span>
+				</div>
+				<div class="cp-modal-body">
+					<ul class="cp-modal-info">
+						<li v-for="i in modalist">
+							<span class="cp-modal-info-name">
+								{{i.t}}
+							</span>
+							<em class="cp-modal-info-v">
+								{{i.value}}
+							</em>
+						</li>
+					</ul>
+					<div class="cp-modal-form">
+						<div class="cp-modal-area">
+							<h3>其他定制要求</h3>
+							<textarea name="" rows="" cols=""></textarea>
+							<div class="cp-modal-error"></div>
+						</div>
+						<ul class="cp-modal-grp">
+							<li class="cp-modal-list">
+								<h3>
+									名称<b>*</b>
+								</h3>
+								<div class="cp-modal-input">
+									<input type="text" name="" id="clientName"/>
+									<div class="cp-modal-error"></div>
+								</div>
+							</li>
+							<li class="cp-modal-list">
+								<h3>
+									电话<b>*</b>
+								</h3>
+								<div class="cp-modal-input">
+									<input type="text" name="" id="clientTel"/>
+									<div class="cp-modal-error"></div>
+								</div>
+							</li>
+							<li class="cp-modal-list">
+								<h3>
+									公司<b>*</b>
+								</h3>
+								<div class="cp-modal-input">
+									<input type="text" name="" id="clientCompany"/>
+									<div class="cp-modal-error"></div>
+								</div>
+							</li>
+							<li class="cp-modal-list">
+								<h3>
+									邮箱<b>*</b>
+								</h3>
+								<div class="cp-modal-input">
+									<input type="text" name="" id="clientMail"/>
+									<div class="cp-modal-error"></div>
+								</div>
+							</li>
+						</ul>
+						<div class="cp-modal-btn">
+							<button class="cp-modal-sub" onclick="submodal()">确认提交</button>
+						</div>
+					</div>
+					
+				</div>
+				
+				
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el:'#cpApp',
+			data:{
+				productItem:['CWDM粗波分复用器','DWDM密集波分复用器','CWDM OADM粗波光分插复用器','DWDM OADM密集波光分插复用器'],
+				lengthUnit:[
+					{name:'米',key:0},
+					{name:'千米',key:1}
+				],
+				modalist:[],
+				showtab:0,
+				showunit:0
+			},
+			methods:{//只有切换的方法 不影响数据
+				toggletb:function(s){
+					this.showtab = s;
+					$('.cp-filter-unit>span').html('米');
+				},
+				showUnit:function(){
+					if(!this.showunit){
+						this.showunit = 1;
+					}else{
+						this.showunit = 0;
+					}
+				}
+			}
+		});
+		
+		
+		
+		//中文站首页方法
+		$('.all_categories_next').click(function() {
+		    if ($('.all_categories_show ul').is(':animated')) {
+		        return false
+		    } else {
+		        var oSlideLeft = parseInt($('.all_categories_show ul').css('left'));
+		        var oUlWidth = $('.all_categories_show ul').width();
+		        var oSlideWidth = $('.all_categories_show').width();
+		        if (oUlWidth - Math.abs(oSlideLeft) - oSlideWidth <= oSlideWidth) {
+		            $('.all_categories_show ul').stop().animate({ left: -(oUlWidth - oSlideWidth) });
+		            $(this).css('background-position-x', '-91px');
+		            $('.all_categories_prev').css('background-position-y', '-280px')
+		        } else {
+		            $('.all_categories_show ul').stop().animate({ left: oSlideLeft - oSlideWidth });
+		        }
+		
+		    }
+		})
+		$('.all_categories_prev').click(function() {
+		    if ($('.all_categories_show ul').is(':animated')) {
+		        return false
+		    } else {
+		        var oSlideLeft = parseInt($('.all_categories_show ul').css('left'));
+		        var oUlWidth = $('.all_categories_show ul').width();
+		        var oSlideWidth = $('.all_categories_show').width();
+		        if (Math.abs(oSlideLeft) <= oSlideWidth) {
+		            $('.all_categories_show ul').stop().animate({ left: 0 });
+		            $(this).css('background-position-y', '-320px');
+		            $('.all_categories_next').css('background-position-x', '-53px')
+		        } else {
+		            $('.all_categories_show ul').stop().animate({ left: oSlideLeft + oSlideWidth });
+		        }
+		
+		    }
+		})
+		
+		var SwiperCategories = new Swiper('.home_mobile_categories', {
+            paginationClickable: true,
+            prevButton: '.home_mobile_categories .swiper-button-prev',
+            nextButton: '.home_mobile_categories .swiper-button-next',
+            slidesPerView: 'auto',
+            spaceBetween: 50,
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                320: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                }
+            }
+        });
+	</script>
+</html>
+
+
