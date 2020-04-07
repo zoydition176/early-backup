@@ -16,8 +16,8 @@
                 </svg>
 
                 <ul class="top-list after">
-                    <li class="top-list-link">
-                        <a href="javascript:;" class="active">首页</a>
+                    <li class="top-list-link active">
+                        <a href="javascript:;">首页</a>
                     </li>
                     <li class="top-list-link">
                         <a href="javascript:;">发现</a>
@@ -27,10 +27,19 @@
         </div>
     </div>
 
-    <div class="content-box"></div>
+    <div class="content-box">
+        <div class="work-box content-box-main after">
+            111
+        </div>
+    </div>
 
     <div class="footer-box"></div>
 </div>
 
 </body>
+<script type="text/javascript">
+$(document).on('click','.top-list-link',function () {
+    $(this).addClass('active').siblings('li').removeClass('active');
+})
+</script>
 </html>
